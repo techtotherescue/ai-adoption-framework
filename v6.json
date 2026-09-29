@@ -1,0 +1,731 @@
+{
+  "framework": "AI Adoption Framework",
+  "version": "v6",
+  "source": "docs/framework/v6.md",
+  "licence": "CC BY 4.0",
+  "citation": "Cite an identifier with its version, e.g. v6:S4.gate.7. Identifiers are never reused.",
+  "lists": [
+    {
+      "list": "S1.def",
+      "heading": "Stage 1: Resisting › What Defines This Stage",
+      "count": 4
+    },
+    {
+      "list": "S2.def",
+      "heading": "Stage 2: Exploring › What Defines This Stage",
+      "count": 5
+    },
+    {
+      "list": "S3.def",
+      "heading": "Stage 3: Systematizing › What Defines This Stage",
+      "count": 6
+    },
+    {
+      "list": "S4.def",
+      "heading": "Stage 4: Innovating › What Defines This Stage",
+      "count": 7
+    },
+    {
+      "list": "S5.def",
+      "heading": "Stage 5: Enabling › What Defines This Stage",
+      "count": 6
+    },
+    {
+      "list": "S3.signal",
+      "heading": "Stage 3: Systematizing › Stage 3 Completion Signals",
+      "count": 13
+    },
+    {
+      "list": "S4.gate",
+      "heading": "Stage 4: Innovating › Stage 4 Operating Gates",
+      "count": 15
+    },
+    {
+      "list": "S4.exposure",
+      "heading": "Stage 4: Innovating › Additional Gates For Beneficiary Or External Exposure",
+      "count": 7
+    },
+    {
+      "list": "S5.guardrail",
+      "heading": "Stage 5: Enabling › Stage 5 Guardrails",
+      "count": 12
+    },
+    {
+      "list": "flag.leadership_ownership",
+      "heading": "7. Fragility Flags › Leadership And Ownership",
+      "count": 3
+    },
+    {
+      "list": "flag.people_workflows_change",
+      "heading": "7. Fragility Flags › People, Workflows, And Change",
+      "count": 3
+    },
+    {
+      "list": "flag.data_context",
+      "heading": "7. Fragility Flags › Data And Organizational Context",
+      "count": 3
+    },
+    {
+      "list": "flag.technology_resilience",
+      "heading": "7. Fragility Flags › Technology, Implementation, And Resilience",
+      "count": 5
+    },
+    {
+      "list": "flag.governance_risk",
+      "heading": "7. Fragility Flags › Governance, Risk, And Accountability",
+      "count": 3
+    },
+    {
+      "list": "flag.evidence_learning",
+      "heading": "7. Fragility Flags › Evidence And Learning",
+      "count": 3
+    },
+    {
+      "list": "flag.resources_sustainability",
+      "heading": "7. Fragility Flags › Resources And Sustainability",
+      "count": 3
+    },
+    {
+      "list": "T12",
+      "heading": "10. Recommended Stage Transitions › Stage 1 → Stage 2: Resisting To Exploring",
+      "count": 5
+    },
+    {
+      "list": "T23",
+      "heading": "10. Recommended Stage Transitions › Stage 2 → Stage 3: Exploring To Systematizing",
+      "count": 5
+    },
+    {
+      "list": "T34",
+      "heading": "10. Recommended Stage Transitions › Stage 3 → Stage 4: Systematizing To Innovating",
+      "count": 8
+    },
+    {
+      "list": "T45",
+      "heading": "10. Recommended Stage Transitions › Stage 4 → Stage 5: Innovating To Enabling",
+      "count": 8
+    }
+  ],
+  "conditions": [
+    {
+      "id": "S1.def.1",
+      "list": "S1.def",
+      "text": "Deep skepticism or active avoidance of AI tools."
+    },
+    {
+      "id": "S1.def.2",
+      "list": "S1.def",
+      "text": "Concerns about job replacement, ethics, privacy, bias, dignity, or mission authenticity."
+    },
+    {
+      "id": "S1.def.3",
+      "list": "S1.def",
+      "text": "Little direct use inside the organization."
+    },
+    {
+      "id": "S1.def.4",
+      "list": "S1.def",
+      "text": "AI is understood mainly as a threat, distraction, or hype cycle."
+    },
+    {
+      "id": "S2.def.1",
+      "list": "S2.def",
+      "text": "Individuals use general AI tools for writing, research, summarization, reports, administration, analysis, or ideation."
+    },
+    {
+      "id": "S2.def.2",
+      "list": "S2.def",
+      "text": "Usage is fragmented and uneven."
+    },
+    {
+      "id": "S2.def.3",
+      "list": "S2.def",
+      "text": "Early champions share wins informally."
+    },
+    {
+      "id": "S2.def.4",
+      "list": "S2.def",
+      "text": "The organization has no coherent operating model."
+    },
+    {
+      "id": "S2.def.5",
+      "list": "S2.def",
+      "text": "Experiments may occur in real workflows but are not yet repeatable organizational practice."
+    },
+    {
+      "id": "S3.def.1",
+      "list": "S3.def",
+      "text": "AI use becomes expected in selected areas rather than exceptional."
+    },
+    {
+      "id": "S3.def.2",
+      "list": "S3.def",
+      "text": "The organization standardizes tools, licenses, practices, and safe-use norms."
+    },
+    {
+      "id": "S3.def.3",
+      "list": "S3.def",
+      "text": "A named AI owner, champion, or adoption group has time and authority."
+    },
+    {
+      "id": "S3.def.4",
+      "list": "S3.def",
+      "text": "The organization prioritizes workflows deliberately."
+    },
+    {
+      "id": "S3.def.5",
+      "list": "S3.def",
+      "text": "It can run the Adoption Loop on selected workflows."
+    },
+    {
+      "id": "S3.def.6",
+      "list": "S3.def",
+      "text": "Most adoption remains internal, but pilots may include mission-critical work if risk and ownership are appropriate."
+    },
+    {
+      "id": "S4.def.1",
+      "list": "S4.def",
+      "text": "AI is integral to a workflow that matters to mission delivery or organizational performance."
+    },
+    {
+      "id": "S4.def.2",
+      "list": "S4.def",
+      "text": "The workflow is redesigned rather than merely supplemented with an AI tool."
+    },
+    {
+      "id": "S4.def.3",
+      "list": "S4.def",
+      "text": "Human roles, review, escalation, and exception handling are explicit."
+    },
+    {
+      "id": "S4.def.4",
+      "list": "S4.def",
+      "text": "The workflow operates repeatedly outside a temporary demo environment."
+    },
+    {
+      "id": "S4.def.5",
+      "list": "S4.def",
+      "text": "Evidence is used to improve the workflow."
+    },
+    {
+      "id": "S4.def.6",
+      "list": "S4.def",
+      "text": "Governance, maintenance, dependency, and failure handling are active operating practices."
+    },
+    {
+      "id": "S4.def.7",
+      "list": "S4.def",
+      "text": "Beneficiary-facing deployment may exist, but it is not required."
+    },
+    {
+      "id": "S5.def.1",
+      "list": "S5.def",
+      "text": "AI capacity serves beyond the organization's own boundaries."
+    },
+    {
+      "id": "S5.def.2",
+      "list": "S5.def",
+      "text": "The organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems."
+    },
+    {
+      "id": "S5.def.3",
+      "list": "S5.def",
+      "text": "Other organizations obtain demonstrated value from the capability."
+    },
+    {
+      "id": "S5.def.4",
+      "list": "S5.def",
+      "text": "Success is measured partly by how others adopt, improve, or move faster."
+    },
+    {
+      "id": "S5.def.5",
+      "list": "S5.def",
+      "text": "The organization has legitimacy and credibility to support others."
+    },
+    {
+      "id": "S5.def.6",
+      "list": "S5.def",
+      "text": "AI capability is distributed across leadership, product/program, operations, adoption, and technical functions."
+    },
+    {
+      "id": "S3.signal.1",
+      "list": "S3.signal",
+      "text": "AI adoption owner with time and authority."
+    },
+    {
+      "id": "S3.signal.2",
+      "list": "S3.signal",
+      "text": "Shared licenses or approved tool stack."
+    },
+    {
+      "id": "S3.signal.3",
+      "list": "S3.signal",
+      "text": "Team education and learning rhythm."
+    },
+    {
+      "id": "S3.signal.4",
+      "list": "S3.signal",
+      "text": "Safe-use and data-handling norms."
+    },
+    {
+      "id": "S3.signal.5",
+      "list": "S3.signal",
+      "text": "Workflow and use-case prioritization."
+    },
+    {
+      "id": "S3.signal.6",
+      "list": "S3.signal",
+      "text": "Baseline and intended outcome for priority workflows."
+    },
+    {
+      "id": "S3.signal.7",
+      "list": "S3.signal",
+      "text": "Data/context inventory and maintenance responsibility."
+    },
+    {
+      "id": "S3.signal.8",
+      "list": "S3.signal",
+      "text": "Explicit map of changing tasks, roles, review, and exceptions."
+    },
+    {
+      "id": "S3.signal.9",
+      "list": "S3.signal",
+      "text": "Technical support model."
+    },
+    {
+      "id": "S3.signal.10",
+      "list": "S3.signal",
+      "text": "Vendor and partner dependency view."
+    },
+    {
+      "id": "S3.signal.11",
+      "list": "S3.signal",
+      "text": "Budget, credits, and protected implementation time."
+    },
+    {
+      "id": "S3.signal.12",
+      "list": "S3.signal",
+      "text": "Regular implementation cadence."
+    },
+    {
+      "id": "S3.signal.13",
+      "list": "S3.signal",
+      "text": "Criteria for deciding which workflows are ready for operational deployment."
+    },
+    {
+      "id": "S4.gate.1",
+      "list": "S4.gate",
+      "text": "a defined user need and intended outcome;"
+    },
+    {
+      "id": "S4.gate.2",
+      "list": "S4.gate",
+      "text": "a baseline and evaluation plan;"
+    },
+    {
+      "id": "S4.gate.3",
+      "list": "S4.gate",
+      "text": "accountable AI adoption and technical ownership;"
+    },
+    {
+      "id": "S4.gate.4",
+      "list": "S4.gate",
+      "text": "a redesigned workflow and role model;"
+    },
+    {
+      "id": "S4.gate.5",
+      "list": "S4.gate",
+      "text": "data/context ownership and quality controls;"
+    },
+    {
+      "id": "S4.gate.6",
+      "list": "S4.gate",
+      "text": "a risk and consequence assessment;"
+    },
+    {
+      "id": "S4.gate.7",
+      "list": "S4.gate",
+      "text": "human review, escalation, exception, and appeal rules where relevant;"
+    },
+    {
+      "id": "S4.gate.8",
+      "list": "S4.gate",
+      "text": "security and privacy stance;"
+    },
+    {
+      "id": "S4.gate.9",
+      "list": "S4.gate",
+      "text": "monitoring after deployment;"
+    },
+    {
+      "id": "S4.gate.10",
+      "list": "S4.gate",
+      "text": "staff or user acceptability checks;"
+    },
+    {
+      "id": "S4.gate.11",
+      "list": "S4.gate",
+      "text": "maintenance and incident ownership;"
+    },
+    {
+      "id": "S4.gate.12",
+      "list": "S4.gate",
+      "text": "cost and consumption controls;"
+    },
+    {
+      "id": "S4.gate.13",
+      "list": "S4.gate",
+      "text": "vendor, model, data, and partner dependency review;"
+    },
+    {
+      "id": "S4.gate.14",
+      "list": "S4.gate",
+      "text": "portability, rollback, or migration path;"
+    },
+    {
+      "id": "S4.gate.15",
+      "list": "S4.gate",
+      "text": "a decision process for continuation, expansion, constraint, or retirement."
+    },
+    {
+      "id": "S4.exposure.1",
+      "list": "S4.exposure",
+      "text": "participation by affected users or credible representatives;"
+    },
+    {
+      "id": "S4.exposure.2",
+      "list": "S4.exposure",
+      "text": "documented limits on automated decisions;"
+    },
+    {
+      "id": "S4.exposure.3",
+      "list": "S4.exposure",
+      "text": "qualified and accountable human review;"
+    },
+    {
+      "id": "S4.exposure.4",
+      "list": "S4.exposure",
+      "text": "a clear method to question, correct, or appeal outcomes where relevant;"
+    },
+    {
+      "id": "S4.exposure.5",
+      "list": "S4.exposure",
+      "text": "testing for exclusion, bias, and differential harm;"
+    },
+    {
+      "id": "S4.exposure.6",
+      "list": "S4.exposure",
+      "text": "communication that makes the role of AI understandable;"
+    },
+    {
+      "id": "S4.exposure.7",
+      "list": "S4.exposure",
+      "text": "safeguards appropriate to the political and surveillance environment."
+    },
+    {
+      "id": "S5.guardrail.1",
+      "list": "S5.guardrail",
+      "text": "demonstrated demand from other organizations;"
+    },
+    {
+      "id": "S5.guardrail.2",
+      "list": "S5.guardrail",
+      "text": "mission-control guardrails;"
+    },
+    {
+      "id": "S5.guardrail.3",
+      "list": "S5.guardrail",
+      "text": "sustainable funding;"
+    },
+    {
+      "id": "S5.guardrail.4",
+      "list": "S5.guardrail",
+      "text": "standards and governance;"
+    },
+    {
+      "id": "S5.guardrail.5",
+      "list": "S5.guardrail",
+      "text": "maintenance and incident capacity;"
+    },
+    {
+      "id": "S5.guardrail.6",
+      "list": "S5.guardrail",
+      "text": "distribution and implementation partnerships;"
+    },
+    {
+      "id": "S5.guardrail.7",
+      "list": "S5.guardrail",
+      "text": "clear ownership and accountability;"
+    },
+    {
+      "id": "S5.guardrail.8",
+      "list": "S5.guardrail",
+      "text": "partner and corporate influence boundaries;"
+    },
+    {
+      "id": "S5.guardrail.9",
+      "list": "S5.guardrail",
+      "text": "support model for adopters;"
+    },
+    {
+      "id": "S5.guardrail.10",
+      "list": "S5.guardrail",
+      "text": "interoperability and portability strategy;"
+    },
+    {
+      "id": "S5.guardrail.11",
+      "list": "S5.guardrail",
+      "text": "evidence that the infrastructure improves adoption or outcomes;"
+    },
+    {
+      "id": "S5.guardrail.12",
+      "list": "S5.guardrail",
+      "text": "credibility with the communities and organizations affected."
+    },
+    {
+      "id": "flag.leadership_ownership.1",
+      "list": "flag.leadership_ownership",
+      "text": "no AI adoption owner or executive sponsor;"
+    },
+    {
+      "id": "flag.leadership_ownership.2",
+      "list": "flag.leadership_ownership",
+      "text": "owner lacks authority or protected time;"
+    },
+    {
+      "id": "flag.leadership_ownership.3",
+      "list": "flag.leadership_ownership",
+      "text": "project manager or champion left without succession."
+    },
+    {
+      "id": "flag.people_workflows_change.1",
+      "list": "flag.people_workflows_change",
+      "text": "weak staff, user, or beneficiary participation;"
+    },
+    {
+      "id": "flag.people_workflows_change.2",
+      "list": "flag.people_workflows_change",
+      "text": "AI is added to tasks without workflow or role redesign;"
+    },
+    {
+      "id": "flag.people_workflows_change.3",
+      "list": "flag.people_workflows_change",
+      "text": "no training, adoption, or change-support plan."
+    },
+    {
+      "id": "flag.data_context.1",
+      "list": "flag.data_context",
+      "text": "unorganized, inaccessible, or unowned data and context;"
+    },
+    {
+      "id": "flag.data_context.2",
+      "list": "flag.data_context",
+      "text": "no maintenance responsibility or provenance;"
+    },
+    {
+      "id": "flag.data_context.3",
+      "list": "flag.data_context",
+      "text": "critical context exists only in individual files or vendor platforms."
+    },
+    {
+      "id": "flag.technology_resilience.1",
+      "list": "flag.technology_resilience",
+      "text": "no technical owner or reliable senior partner;"
+    },
+    {
+      "id": "flag.technology_resilience.2",
+      "list": "flag.technology_resilience",
+      "text": "pro-bono dependency without quality assurance or handoff;"
+    },
+    {
+      "id": "flag.technology_resilience.3",
+      "list": "flag.technology_resilience",
+      "text": "single-vendor, single-model, single-person, or single-partner dependency;"
+    },
+    {
+      "id": "flag.technology_resilience.4",
+      "list": "flag.technology_resilience",
+      "text": "unknown consumption-cost exposure;"
+    },
+    {
+      "id": "flag.technology_resilience.5",
+      "list": "flag.technology_resilience",
+      "text": "no migration, rollback, fallback, maintenance, or continuity path."
+    },
+    {
+      "id": "flag.governance_risk.1",
+      "list": "flag.governance_risk",
+      "text": "sensitive or beneficiary-facing exposure without proportional governance;"
+    },
+    {
+      "id": "flag.governance_risk.2",
+      "list": "flag.governance_risk",
+      "text": "no explicit human accountability, escalation, appeal, or incident owner;"
+    },
+    {
+      "id": "flag.governance_risk.3",
+      "list": "flag.governance_risk",
+      "text": "security, privacy, safeguarding, or consequence risks have not been assessed."
+    },
+    {
+      "id": "flag.evidence_learning.1",
+      "list": "flag.evidence_learning",
+      "text": "no baseline, intended outcome, or adoption measure;"
+    },
+    {
+      "id": "flag.evidence_learning.2",
+      "list": "flag.evidence_learning",
+      "text": "output volume is treated as impact;"
+    },
+    {
+      "id": "flag.evidence_learning.3",
+      "list": "flag.evidence_learning",
+      "text": "no failure review or learning cadence after deployment."
+    },
+    {
+      "id": "flag.resources_sustainability.1",
+      "list": "flag.resources_sustainability",
+      "text": "no protected implementation time;"
+    },
+    {
+      "id": "flag.resources_sustainability.2",
+      "list": "flag.resources_sustainability",
+      "text": "no tool, credit, operating, or maintenance budget;"
+    },
+    {
+      "id": "flag.resources_sustainability.3",
+      "list": "flag.resources_sustainability",
+      "text": "deployment depends on temporary funding with no continuation plan."
+    },
+    {
+      "id": "T12.1",
+      "list": "T12",
+      "text": "trusted peers demonstrate responsible use;"
+    },
+    {
+      "id": "T12.2",
+      "list": "T12",
+      "text": "staff see AI improve a real pain point;"
+    },
+    {
+      "id": "T12.3",
+      "list": "T12",
+      "text": "leadership gives permission to try safely;"
+    },
+    {
+      "id": "T12.4",
+      "list": "T12",
+      "text": "AI is framed as mission support rather than human replacement;"
+    },
+    {
+      "id": "T12.5",
+      "list": "T12",
+      "text": "initial privacy and values concerns receive practical answers."
+    },
+    {
+      "id": "T23.1",
+      "list": "T23",
+      "text": "fragmented use becomes visible;"
+    },
+    {
+      "id": "T23.2",
+      "list": "T23",
+      "text": "champions can demonstrate wins and failures;"
+    },
+    {
+      "id": "T23.3",
+      "list": "T23",
+      "text": "leadership recognizes the need for shared guidance and ownership;"
+    },
+    {
+      "id": "T23.4",
+      "list": "T23",
+      "text": "several workflows show enough value to justify coordinated adoption;"
+    },
+    {
+      "id": "T23.5",
+      "list": "T23",
+      "text": "a program or funder creates protected time and a forcing function."
+    },
+    {
+      "id": "T34.1",
+      "list": "T34",
+      "text": "they identify a mission-critical workflow worth redesigning;"
+    },
+    {
+      "id": "T34.2",
+      "list": "T34",
+      "text": "they can run the full Adoption Loop;"
+    },
+    {
+      "id": "T34.3",
+      "list": "T34",
+      "text": "accountable adoption and technical ownership exist;"
+    },
+    {
+      "id": "T34.4",
+      "list": "T34",
+      "text": "workflow roles and human judgment are redesigned;"
+    },
+    {
+      "id": "T34.5",
+      "list": "T34",
+      "text": "context is maintained and governed;"
+    },
+    {
+      "id": "T34.6",
+      "list": "T34",
+      "text": "risk and dependency are understood;"
+    },
+    {
+      "id": "T34.7",
+      "list": "T34",
+      "text": "evidence shows operational value;"
+    },
+    {
+      "id": "T34.8",
+      "list": "T34",
+      "text": "monitoring, maintenance, and funding are credible."
+    },
+    {
+      "id": "T45.1",
+      "list": "T45",
+      "text": "their capability works reliably for their own users;"
+    },
+    {
+      "id": "T45.2",
+      "list": "T45",
+      "text": "other organizations demonstrate demand;"
+    },
+    {
+      "id": "T45.3",
+      "list": "T45",
+      "text": "reuse fits the mission;"
+    },
+    {
+      "id": "T45.4",
+      "list": "T45",
+      "text": "the organization has legitimacy to support others;"
+    },
+    {
+      "id": "T45.5",
+      "list": "T45",
+      "text": "it can distribute, maintain, govern, and support the capability;"
+    },
+    {
+      "id": "T45.6",
+      "list": "T45",
+      "text": "interoperability and exit paths are credible;"
+    },
+    {
+      "id": "T45.7",
+      "list": "T45",
+      "text": "cross-organization evidence and learning are possible;"
+    },
+    {
+      "id": "T45.8",
+      "list": "T45",
+      "text": "sustainable funding exists."
+    }
+  ]
+}

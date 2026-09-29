@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it as below."
+title: "AI Adoption Framework"
+version: "6.0.0"
+date-released: "2026-09-29"
+license: CC-BY-4.0
+repository-code: "https://github.com/techtotherescue/ai-adoption-framework"
+authors:
+  - given-names: Jacek
+    family-names: Siadkowski
+    affiliation: Tech To The Rescue
+  - given-names: Radosław
+    family-names: Taraszka
+    affiliation: Tech To The Rescue

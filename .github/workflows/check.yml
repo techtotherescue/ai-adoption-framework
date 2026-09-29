@@ -1,0 +1,20 @@
+# Runs `node scripts/check.mjs` on every pull request and every push to
+# main, so a branch-protection ruleset can require the `check` job.
+#
+# MIT, see LICENSE-CODE
+name: check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check.mjs

@@ -7,6 +7,17 @@ Rescue), write it. A change starts as a proposal to them, not an edit to the
 text: see RELEASING.md. Each release records the authors' approval here. A
 patch needs one author's approval; a minor or major release needs both.
 
+## 6.0.1 — 2026-09-30
+
+Changes: the `v6.md` header no longer calls the text the source of truth for
+product work or names the files it was transcribed from, and `source` in
+`v6.json` is now `v6.md`. Both pointed into a private repository. The
+framework text and the identifiers are unchanged.
+
+SHA-256: b8484c88ad451583eb35348c9f1fffc84c4bbc761eda8d6b1613c55ce2bec4f6
+
+Approved: Radosław Taraszka (PR #2)
+
 ## 6.0.0 — 2026-09-29
 
 v6, as its authors released it on 2026-07-31, transcribed from their document

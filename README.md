@@ -10,7 +10,7 @@ leadership and ownership to resources and sustainability.
 
 ## Current release
 
-**6.0.0**, released 2026-09-29.
+**6.0.1**, released 2026-09-30.
 
 - [`v6.md`](v6.md): the framework text.
 - [`v6.json`](v6.json): the 124 conditions from v6's enumerated lists, each

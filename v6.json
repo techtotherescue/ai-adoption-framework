@@ -1,7 +1,7 @@
 {
   "framework": "AI Adoption Framework",
   "version": "v6",
-  "source": "docs/framework/v6.md",
+  "source": "v6.md",
   "licence": "CC BY 4.0",
   "citation": "Cite an identifier with its version, e.g. v6:S4.gate.7. Identifiers are never reused.",
   "lists": [

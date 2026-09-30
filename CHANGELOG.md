@@ -16,7 +16,7 @@ framework text and the identifiers are unchanged.
 
 SHA-256: b8484c88ad451583eb35348c9f1fffc84c4bbc761eda8d6b1613c55ce2bec4f6
 
-Approved: TODO
+Approved: Radosław Taraszka (PR #2)
 
 ## 6.0.0 — 2026-09-29
 

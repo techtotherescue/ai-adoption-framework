@@ -1,10 +1,9 @@
 # AI Adoption Framework for Social Impact Organizations
 ## Version 7 — Five Stages, Adoption Loop, and Supportable Capacity Domains
 
-*Updated: 2026-07-31*
+*Draft: 2026-10-05. Not in force: the released version is v6 (6.0.1).*
 
-> Transcribed on 2026-08-03 from the authors' document of 2026-07-31.
-> Supersedes v3, which is not published here.
+> A proposed revision of v6. On release it will supersede v6.
 
 ---
 

@@ -39,13 +39,15 @@ Version 7 preserves the three dimensions that v5 separated.
 
 The adoption stage describes how deeply and reliably the organization can integrate AI into its work.
 
-| Stage | Name | Core capability |
-| --- | --- | --- |
-| 1 | Resisting | Building trust that AI can fit the mission without harming the human work. |
-| 2 | Exploring | Learning through fragmented individual and team experimentation. |
-| 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. |
-| 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. |
-| 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. |
+| Stage | Name | Core capability | Reached when | Required |
+| --- | --- | --- | --- | --- |
+| 1 | Resisting | Building trust that AI can fit the mission without harming the human work. | The organization does not use AI in its work, and nobody owns its adoption. | Nothing. |
+| 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly. | Nothing more. |
+| 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. | The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | A named AI owner, champion, or adoption group with time and authority; people share what works and what fails. |
+| 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance. | The rest of what defines Stage 4; accountable AI adoption and technical ownership; data/context ownership and quality controls. |
+| 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | Other organizations depend on the organization's AI capability and obtain demonstrated value from it. | Sustainable funding; maintenance and incident capacity. |
+
+An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage. Each stage profile in §5 opens with its placement.
 
 ### Dimension 2: Deployment Scope
 
@@ -196,6 +198,12 @@ Organizations may run the loop many times while remaining at the same stage. Sta
 
 Organizations are holding back from AI because they do not yet trust its fit with their mission, people, data, or values.
 
+### Placement
+
+- **Reached when:** the organization does not use AI in its work. AI has at most been discussed, and nobody owns its adoption.
+- **Required:** nothing. Every organization starts here.
+- **Readiness checklist:** none. The rest of What Defines This Stage describes how a typical Stage 1 organization sees AI. It is not a condition.
+
 ### What Defines This Stage
 
 - Deep skepticism or active avoidance of AI tools.
@@ -247,6 +255,12 @@ There is no trusted view of what organizational data, knowledge, values, or live
 ## Stage 2: Exploring
 
 Individuals and teams are trying AI and discovering useful gains without shared direction.
+
+### Placement
+
+- **Reached when:** people use AI in their own work, however unevenly.
+- **Required:** nothing more.
+- **Readiness checklist:** none. The rest of What Defines This Stage describes a typical Stage 2 organization. It is not a condition. Sharing what works and what fails, which Stage 3 requires, usually starts here.
 
 ### What Defines This Stage
 
@@ -308,6 +322,12 @@ At Stage 2, pro-bono support should focus on exploration, training, workflow map
 
 Organizations are turning scattered AI use into a shared AI adoption operating system.
 
+### Placement
+
+- **Reached when:** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once.
+- **Required:** a named AI owner, champion, or adoption group with time and authority, and people who share what works and what fails across the organization. Without either, the organization is at Stage 2.
+- **Readiness checklist:** the Stage 3 Completion Signals. An unmet signal is a gap to close (§6) and does not lower the stage.
+
 ### What Defines This Stage
 
 - AI use becomes expected in selected areas rather than exceptional.
@@ -342,7 +362,7 @@ Context includes:
 
 ### Stage 3 Completion Signals
 
-A solid Stage 3 organization should have most of the following. It must have a named AI owner, champion, or adoption group with time and authority. Without one, it cannot be placed above Stage 2.
+A solid Stage 3 organization should have most of the following:
 
 - AI adoption owner with time and authority.
 - Shared licenses or approved tool stack.
@@ -424,6 +444,12 @@ Organizations have redesigned and reliably operate one or more mission-critical 
 
 The workflows may be internal or external. Stage 4 is defined by operational transformation, evidence, reliability, ownership, and accountability — not by beneficiary exposure alone.
 
+### Placement
+
+- **Reached when:** AI is integral to a workflow that matters to mission delivery or organizational performance. A workflow matters when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
+- **Required:** the rest of What Defines This Stage, except beneficiary-facing deployment, which stays optional; accountable AI adoption and technical ownership; and data/context ownership and quality controls. Without any of them, the organization is at Stage 3. "Governance, maintenance, dependency, and failure handling are active operating practices" describes the organization's practice. It is not met or failed by whether every workflow meets every gate.
+- **Readiness checklist:** the other Stage 4 Operating Gates. An unmet gate is a gap to close (§6) and does not lower the stage. The Additional Gates For Beneficiary Or External Exposure never lower the stage either.
+
 ### What Defines This Stage
 
 - AI is integral to a workflow that matters to mission delivery or organizational performance.
@@ -483,12 +509,6 @@ Before a mission-critical AI workflow is considered operationally ready, the org
 - vendor, model, data, and partner dependency review;
 - portability, rollback, or migration path;
 - a decision process for continuation, expansion, constraint, or retirement.
-
-Stage 4 requires what defines this stage (beneficiary-facing deployment remains optional), accountable AI adoption and technical ownership, and data/context ownership and quality controls. The other gates are a readiness checklist. An unmet gate is a gap to close (§6) and does not lower the stage.
-
-"Governance, maintenance, dependency, and failure handling are active operating practices" describes the organization's practice. It is not met or failed by whether every workflow meets every gate.
-
-A workflow matters to mission delivery or organizational performance when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
 
 ### Additional Gates For Beneficiary Or External Exposure
 
@@ -571,6 +591,12 @@ For high-risk AI, a few volunteers building something is not enough.
 
 Organizations provide shared tools, infrastructure, standards, context, evidence, or implementation capacity that other organizations can depend on.
 
+### Placement
+
+- **Reached when:** the organization's AI capability serves beyond its own boundaries, and other organizations depend on it and obtain demonstrated value from it.
+- **Required:** everything Stage 4 requires, sustainable funding, and maintenance and incident capacity. Without any of them, the organization is at Stage 4.
+- **Readiness checklist:** the other Stage 5 Guardrails. An unmet guardrail is a gap to close (§6) and does not lower the stage.
+
 ### What Defines This Stage
 
 - AI capacity serves beyond the organization's own boundaries.
@@ -604,7 +630,7 @@ The organization provides reusable or interoperable context, datasets, knowledge
 
 ### Stage 5 Guardrails
 
-Stage 5 is not just scale ambition. It requires:
+Stage 5 is not just scale ambition. A Stage 5 organization should also have:
 
 - demonstrated demand from other organizations;
 - mission-control guardrails;

@@ -343,7 +343,7 @@ Context includes:
 
 ### Stage 3 Completion Signals
 
-A solid Stage 3 organization should have most of the following:
+A solid Stage 3 organization should have most of the following. It must have a named AI owner, champion, or adoption group with time and authority. Without one, it cannot be placed above Stage 2.
 
 - AI adoption owner with time and authority.
 - Shared licenses or approved tool stack.

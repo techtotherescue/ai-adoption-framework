@@ -1,5 +1,5 @@
 # AI Adoption Framework for Social Impact Organizations
-## Version 6 — Five Stages, Adoption Loop, and Supportable Capacity Domains
+## Version 7 — Five Stages, Adoption Loop, and Supportable Capacity Domains
 
 *Updated: 2026-07-31*
 
@@ -34,7 +34,7 @@ The framework helps determine which one is happening, what should happen next, a
 
 ## 2. How To Read The Framework
 
-Version 6 preserves the three dimensions that v5 separated.
+Version 7 preserves the three dimensions that v5 separated.
 
 ### Dimension 1: Adoption Stage
 
@@ -891,7 +891,7 @@ Stage 5 should be chosen, not assumed.
 
 ## 11. Assessment Output
 
-A practical v6 assessment should return:
+A practical v7 assessment should return:
 
 1. Current adoption stage.
 2. Healthy aspiration profile.
@@ -907,13 +907,13 @@ Example:
 
 > Stage 3 Hybrid organization. Healthy aspiration: Stage 4 for two mission-critical internal workflows. Current scope: shared internal with one mission-critical pilot. Moderate risk. Leadership and context are green. People and workflows, technology resilience, and evidence are red. Binding constraints: no technical owner, no workflow baseline, and dependence on one pro-bono partner. Recommended support: a service-design partner, senior technical QA with a portability and handoff plan, and a 90-day measurement-and-learning cycle before operational deployment. Next Adoption Loop: redesign and validate one priority workflow, then reassess deployment readiness.
 
-## 12. Core v6 Message
+## 12. Core v7 Message
 
-The compressed v6 thesis:
+The compressed v7 thesis:
 
 > AI adoption in social impact organizations is an operating-model transition, not a tool rollout.
 
-The practical v6 line:
+The practical v7 line:
 
 > Stage 3 builds the AI adoption operating system. Stage 4 turns selected mission-critical workflows into reliable, governed, evidence-producing capabilities. Stage 5 turns proven capabilities into mission-protected infrastructure others can depend on.
 

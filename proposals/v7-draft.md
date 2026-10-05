@@ -485,6 +485,12 @@ Before a mission-critical AI workflow is considered operationally ready, the org
 - portability, rollback, or migration path;
 - a decision process for continuation, expansion, constraint, or retirement.
 
+Stage 4 requires what defines this stage (beneficiary-facing deployment remains optional), accountable AI adoption and technical ownership, and data/context ownership and quality controls. The other gates are a readiness checklist. An unmet gate is a gap to close (§6) and does not lower the stage.
+
+"Governance, maintenance, dependency, and failure handling are active operating practices" describes the organization's practice. It is not met or failed by whether every workflow meets every gate.
+
+A workflow matters to mission delivery or organizational performance when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
+
 ### Additional Gates For Beneficiary Or External Exposure
 
 When AI affects beneficiaries, users, applicants, public information, or vulnerable groups, the organization should also have:
@@ -496,6 +502,8 @@ When AI affects beneficiaries, users, applicants, public information, or vulnera
 - testing for exclusion, bias, and differential harm;
 - communication that makes the role of AI understandable;
 - safeguards appropriate to the political and surveillance environment.
+
+These gates never lower the stage. When AI affects the people the organization serves, a missing gate makes its domain red (§6). An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
 ### Agentic Systems At Stage 4
 

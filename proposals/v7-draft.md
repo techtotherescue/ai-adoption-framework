@@ -688,6 +688,15 @@ The framework should use a simple green / yellow / red judgment for each domain:
 - **Yellow:** usable but likely to constrain the next Adoption Loop or make deployment fragile.
 - **Red:** a binding constraint that should be addressed before the intended next step.
 
+A domain is red when it is missing a condition that the organization's next step requires. The required conditions are:
+
+- the Stage 3 completion signals, for an organization at Stage 2 or Stage 3;
+- the Stage 4 operating gates, for each workflow the organization is putting into operation or already operates;
+- the additional gates for beneficiary or external exposure, whenever AI affects the people the organization serves, at any stage;
+- the absence of every fragility flag: a flag that is present counts as a missing condition.
+
+Each condition belongs to one domain. A red domain does not lower the organization's stage. Each missing condition is a binding constraint. The assessment names at most three, and gaps in the additional gates for beneficiary or external exposure come first. The line between yellow and green remains the assessor's judgment.
+
 This is not a universal scorecard. A low-risk internal workflow and a high-risk beneficiary-facing service require different levels of capacity. The assessment should identify the two or three binding constraints rather than average weaknesses into one composite score.
 
 Three important concepts remain outside the domain model:

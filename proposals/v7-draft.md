@@ -889,111 +889,7 @@ Organizations move toward ecosystem enablement when:
 
 Stage 5 should be chosen, not assumed.
 
-## 11. TTTR Program Implications
-
-### Readiness / Pre-Lab
-
-Best fit:
-
-- Stage 1 and early Stage 2 organizations;
-- organizations without owner, time, workflow, or context clarity;
-- organizations whose problem may be better solved through training, process redesign, CRM improvement, automation, or no technology intervention.
-
-Expected outcomes:
-
-- values-based AI exposure;
-- literacy and psychological safety;
-- current-use and workflow map;
-- basic safe-use norms;
-- initial context inventory;
-- owner decision;
-- initial risk screen;
-- "AI or simpler intervention?" decision;
-- one safe next experiment where appropriate.
-
-### Impact Lab
-
-Best fit:
-
-- Stage 2 organizations ready to systematize;
-- Stage 3 organizations with a meaningful workflow and leadership commitment.
-
-Expected outcomes:
-
-- AI adoption operating system;
-- named owner and sponsorship;
-- shared tool and safe-use decisions;
-- workflow and job redesign;
-- context inventory and maintenance responsibility;
-- one or more complete Adoption Loops;
-- baseline, intended outcome, and evidence rhythm;
-- dependency and exit-readiness view;
-- pilot or operational-deployment readiness decision;
-- 90-day roadmap.
-
-Impact Lab should not be judged mainly by the number of prototypes produced. Its central outcome is repeatable adoption capacity.
-
-### Scaling Program
-
-Best fit:
-
-- Stage 3 organizations ready to operationalize a mission-critical workflow;
-- Stage 4 organizations improving or expanding responsible deployment.
-
-Expected outcomes:
-
-- operational or deployment-ready mission-critical workflow;
-- validated user need and redesigned workflow;
-- explicit human roles, review, escalation, and exception handling;
-- maintained context asset;
-- proportional governance and risk controls;
-- testing, baseline, and outcome-evaluation plan;
-- staff or user adoption strategy;
-- technical ownership and senior quality assurance;
-- monitoring, maintenance, incident, and financial model;
-- dependency, portability, fallback, and exit plan;
-- documented learning loop.
-
-Scaling Program should be a Stage 4 workflow-transformation and deployment scaffold, not merely a matching or construction program.
-
-### Stage 5 / Infrastructure Track
-
-Best fit:
-
-- organizations with working capabilities and demonstrated demand from peers;
-- organizations with a credible mission-aligned reason to enable others.
-
-Expected outcomes:
-
-- infrastructure and service strategy;
-- demand validation;
-- productization and adoption support;
-- interoperability and protocol decisions;
-- standards, consent, and governance;
-- open-source, openly specified, managed, or shared-access decision;
-- distribution and implementation partnerships;
-- cross-organization evidence and learning;
-- sustainable funding and maintenance;
-- mission protection and influence boundaries;
-- advanced builder and adopter network.
-
-### Shared TTTR Curriculum
-
-Across these programs, TTTR's adoption curriculum should cover the new scarce capabilities:
-
-- Problem selection and product judgment.
-- User research and workflow validation.
-- Data and organizational context.
-- Workflow and job redesign.
-- Secure deployment and architecture.
-- Proportional governance and human accountability.
-- Technical, vendor, and partner dependency management.
-- Maintenance, incident handling, and financial sustainability.
-- Outcome evaluation and learning loops.
-
-TTTR does not need to deliver every capability internally. It does need to ensure that the full implementation system exists.
-
-## 12. Assessment Output
+## 11. Assessment Output
 
 A practical v6 assessment should return:
 
@@ -1011,7 +907,7 @@ Example:
 
 > Stage 3 Hybrid organization. Healthy aspiration: Stage 4 for two mission-critical internal workflows. Current scope: shared internal with one mission-critical pilot. Moderate risk. Leadership and context are green. People and workflows, technology resilience, and evidence are red. Binding constraints: no technical owner, no workflow baseline, and dependence on one pro-bono partner. Recommended support: a service-design partner, senior technical QA with a portability and handoff plan, and a 90-day measurement-and-learning cycle before operational deployment. Next Adoption Loop: redesign and validate one priority workflow, then reassess deployment readiness.
 
-## 13. Core v6 Message
+## 12. Core v6 Message
 
 The compressed v6 thesis:
 

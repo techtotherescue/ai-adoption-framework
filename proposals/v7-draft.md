@@ -200,59 +200,35 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 ### Placement
 
-#### Reached When
+**Reached when:** the organization does not use AI in its work. AI has at most been discussed, and nobody owns its adoption.
 
-The organization does not use AI in its work. AI has at most been discussed, and nobody owns its adoption.
+**Required:** nothing. Every organization starts here.
 
-#### Required
+### What it looks like
 
-Nothing. Every organization starts here.
-
-#### Readiness Checklist
-
-None. The rest of What Defines This Stage describes how a typical Stage 1 organization sees AI. It is not a condition.
-
-### What It Looks Like
-
-#### Typical Traits
+**Typical traits** (they describe the stage; they are not conditions):
 
 - Deep skepticism or active avoidance of AI tools.
 - Concerns about job replacement, ethics, privacy, bias, dignity, or mission authenticity.
 - Little direct use inside the organization.
 - AI is understood mainly as a threat, distraction, or hype cycle.
 
-#### Key Bottleneck
+**Key bottleneck: trust and worldview.** The organization does not yet believe AI can support its mission without damaging what makes the work valuable.
 
-**Trust and worldview.**
+**Adoption Loop focus:** Primarily Step 1: literacy, trust, and permission.
 
-The organization does not yet believe AI can support its mission without damaging what makes the work valuable.
+**Context maturity:** There is no trusted view of what organizational data, knowledge, values, or lived experience could be used safely as AI context.
 
-#### Adoption Loop Focus
+### What helps
 
-Primarily Step 1: literacy, trust, and permission.
-
-#### Context Maturity
-
-There is no trusted view of what organizational data, knowledge, values, or lived experience could be used safely as AI context.
-
-### What Helps
-
-#### What They Need
-
-- Safe exposure to peers using AI responsibly.
-- Values-based examples from their sector.
-- Permission to experiment without shame or pressure.
-- Evidence that AI can enhance rather than replace human judgment.
-- Lightweight, reversible use cases before strategy pressure.
-- Practical answers to privacy and mission concerns.
-
-#### What Backfires
-
-- AI inevitability narratives.
-- Technical-only training.
-- Forced adoption mandates.
-- Treating concerns as ignorance.
-- Pushing beneficiary-facing AI before trust exists.
+| What they need | What backfires |
+| --- | --- |
+| Safe exposure to peers using AI responsibly. | AI inevitability narratives. |
+| Values-based examples from their sector. | Technical-only training. |
+| Permission to experiment without shame or pressure. | Forced adoption mandates. |
+| Evidence that AI can enhance rather than replace human judgment. | Treating concerns as ignorance. |
+| Lightweight, reversible use cases before strategy pressure. | Pushing beneficiary-facing AI before trust exists. |
+| Practical answers to privacy and mission concerns. |  |
 
 ## Stage 2: Exploring
 
@@ -260,21 +236,15 @@ Individuals and teams are trying AI and discovering useful gains without shared 
 
 ### Placement
 
-#### Reached When
+**Reached when:** people use AI in their own work, however unevenly.
 
-People use AI in their own work, however unevenly.
+**Required:** nothing more.
 
-#### Required
+Sharing what works and what fails, which Stage 3 requires, usually starts here.
 
-Nothing more.
+### What it looks like
 
-#### Readiness Checklist
-
-None. The rest of What Defines This Stage describes a typical Stage 2 organization. It is not a condition. Sharing what works and what fails, which Stage 3 requires, usually starts here.
-
-### What It Looks Like
-
-#### Typical Traits
+**Typical traits** (they describe the stage; they are not conditions):
 
 - Individuals use general AI tools for writing, research, summarization, reports, administration, analysis, or ideation.
 - Usage is fragmented and uneven.
@@ -282,45 +252,26 @@ None. The rest of What Defines This Stage describes a typical Stage 2 organizati
 - The organization has no coherent operating model.
 - Experiments may occur in real workflows but are not yet repeatable organizational practice.
 
-#### Key Bottleneck
+**Key bottleneck: coordination and coherence.** The organization has enough curiosity to experiment but not enough structure to know what is safe, useful, repeatable, or worth scaling.
 
-**Coordination and coherence.**
+**Adoption Loop focus:** Steps 1–4: build confidence, select workflows, experiment safely, and learn where quality, risk, cost, and context break.
 
-The organization has enough curiosity to experiment but not enough structure to know what is safe, useful, repeatable, or worth scaling.
+**Context maturity:** Context is mostly personal: individual prompts, files, notes, and informal prompt libraries. It is rarely maintained or governed as an organizational asset.
 
-#### Adoption Loop Focus
+### What helps
 
-Steps 1–4: build confidence, select workflows, experiment safely, and learn where quality, risk, cost, and context break.
+| What they need | What backfires |
+| --- | --- |
+| Internal showcasing of practical use cases and failures. | Heavy strategy documents. |
+| Basic safe-use and data-handling norms. | Expensive enterprise tools before use cases are clear. |
+| A map of current use. | Custom builds before workflow and context readiness. |
+| Lightweight workflow discovery. | Beneficiary-facing experiments without safeguards. |
+| Simple tool guidance. | Pro-bono projects that skip internal ownership. |
+| An initial consequence and risk screen. | Treating experimentation volume as adoption maturity. |
+| A learning rhythm. |  |
+| A path toward a named owner if use keeps spreading. |  |
 
-#### Context Maturity
-
-Context is mostly personal: individual prompts, files, notes, and informal prompt libraries. It is rarely maintained or governed as an organizational asset.
-
-### What Helps
-
-#### What They Need
-
-- Internal showcasing of practical use cases and failures.
-- Basic safe-use and data-handling norms.
-- A map of current use.
-- Lightweight workflow discovery.
-- Simple tool guidance.
-- An initial consequence and risk screen.
-- A learning rhythm.
-- A path toward a named owner if use keeps spreading.
-
-#### What Backfires
-
-- Heavy strategy documents.
-- Expensive enterprise tools before use cases are clear.
-- Custom builds before workflow and context readiness.
-- Beneficiary-facing experiments without safeguards.
-- Pro-bono projects that skip internal ownership.
-- Treating experimentation volume as adoption maturity.
-
-#### Pro-Bono Rule Of Thumb
-
-At Stage 2, pro-bono support should focus on exploration, training, workflow mapping, discovery, and readiness. It should not build mission-critical systems.
+**Pro-bono rule of thumb:** At Stage 2, pro-bono support should focus on exploration, training, workflow mapping, discovery, and readiness. It should not build mission-critical systems.
 
 ## Stage 3: Systematizing
 
@@ -328,20 +279,14 @@ Organizations are turning scattered AI use into a shared AI adoption operating s
 
 ### Placement
 
-#### Reached When
+**Reached when:** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once.
 
-The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once.
-
-#### Required
+**Required.** Without either of these, the organization is at Stage 2:
 
 - A named AI owner, champion, or adoption group has time and authority.
 - People share what works and what fails across the organization.
 
-Without either, the organization is at Stage 2.
-
-#### Readiness Checklist
-
-A solid Stage 3 organization should have most of the following:
+**Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. A solid Stage 3 organization should have most of the following:
 
 - AI adoption owner with time and authority.
 - Shared licenses or approved tool stack.
@@ -357,11 +302,9 @@ A solid Stage 3 organization should have most of the following:
 - Regular implementation cadence.
 - Criteria for deciding which workflows are ready for operational deployment.
 
-An unmet item is a gap to close (§6) and does not lower the stage.
+### What it looks like
 
-### What It Looks Like
-
-#### Typical Traits
+**Typical traits** (they describe the stage; they are not conditions):
 
 - AI use becomes expected in selected areas rather than exceptional.
 - The organization standardizes tools, licenses, practices, and safe-use norms.
@@ -369,21 +312,11 @@ An unmet item is a gap to close (§6) and does not lower the stage.
 - It can run the Adoption Loop on selected workflows.
 - Most adoption remains internal, but pilots may include mission-critical work if risk and ownership are appropriate.
 
-#### Key Bottleneck
+**Key bottleneck: aI adoption operating system.** The organization needs ownership, rhythm, shared tools, context, workflow redesign capability, evidence practices, technical support, and a practical roadmap.
 
-**AI adoption operating system.**
+**Adoption Loop focus:** The organization can complete all seven steps on selected internal workflows, although evidence, maintenance, or repeatability may still be immature.
 
-The organization needs ownership, rhythm, shared tools, context, workflow redesign capability, evidence practices, technical support, and a practical roadmap.
-
-#### Adoption Loop Focus
-
-The organization can complete all seven steps on selected internal workflows, although evidence, maintenance, or repeatability may still be immature.
-
-#### Context Maturity
-
-The organization has shared, organized context: approved knowledge sources, reusable prompts or assistants, basic access norms, a data/context inventory, and an emerging maintenance owner.
-
-Context includes:
+**Context maturity.** The organization has shared, organized context: approved knowledge sources, reusable prompts or assistants, basic access norms, a data/context inventory, and an emerging maintenance owner. Context includes:
 
 - structured and unstructured data;
 - policies and procedures;
@@ -392,34 +325,23 @@ Context includes:
 - mission constraints and organizational values;
 - domain expertise and lived experience.
 
-### What Helps
+### What helps
 
-#### What They Need
+| What they need | What backfires |
+| --- | --- |
+| A 90-day AI adoption sprint or equivalent. | One-off training without ownership or implementation cadence. |
+| AI adoption owner with decision-maker sponsorship. | Treating AI as only an IT project. |
+| Shared tool decisions. | Moving directly from scattered experiments to a flagship build. |
+| Internal learning and evidence rhythm. | Automating a broken workflow without redesigning roles. |
+| Workflow and job redesign support. | Relying on a pro-bono partner while internal ownership is weak. |
+| Data/context organization. | Buying a shared tool without addressing context, behavior, and learning. |
+| Basic acceptable-use and data-handling guidance. |  |
+| Dependency and exit-readiness review. |  |
+| Pilot-readiness criteria. |  |
+| Change-management support. |  |
+| A decision about where agents or agentic interfaces are justified, if anywhere. |  |
 
-- A 90-day AI adoption sprint or equivalent.
-- AI adoption owner with decision-maker sponsorship.
-- Shared tool decisions.
-- Internal learning and evidence rhythm.
-- Workflow and job redesign support.
-- Data/context organization.
-- Basic acceptable-use and data-handling guidance.
-- Dependency and exit-readiness review.
-- Pilot-readiness criteria.
-- Change-management support.
-- A decision about where agents or agentic interfaces are justified, if anywhere.
-
-#### What Backfires
-
-- One-off training without ownership or implementation cadence.
-- Treating AI as only an IT project.
-- Moving directly from scattered experiments to a flagship build.
-- Automating a broken workflow without redesigning roles.
-- Relying on a pro-bono partner while internal ownership is weak.
-- Buying a shared tool without addressing context, behavior, and learning.
-
-#### Pro-Bono Rule Of Thumb
-
-At Stage 3, pro-bono support can help run pilots only if the organization has:
+**Pro-bono rule of thumb.** At Stage 3, pro-bono support can help run pilots only if the organization has:
 
 - an internal owner;
 - decision-maker commitment;
@@ -432,9 +354,7 @@ At Stage 3, pro-bono support can help run pilots only if the organization has:
 
 Without those conditions, pro-bono support often creates an artifact the organization cannot adopt.
 
-#### Agents
-
-Stage 3 organizations may assess:
+**Agents.** Stage 3 organizations may assess:
 
 - whether the workflow is stable enough for agentic operation;
 - what permissions an agent would need;
@@ -452,13 +372,11 @@ The workflows may be internal or external. Stage 4 is defined by operational tra
 
 ### Placement
 
-#### Reached When
-
-- AI is integral to a workflow that matters to mission delivery or organizational performance.
+**Reached when:** AI is integral to a workflow that matters to mission delivery or organizational performance.
 
 A workflow matters when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
 
-#### Required
+**Required.** Without any of these, the organization is at Stage 3:
 
 - The workflow is redesigned rather than merely supplemented with an AI tool.
 - Human roles, review, escalation, and exception handling are explicit.
@@ -468,15 +386,11 @@ A workflow matters when it passes this test: if it failed or went wrong for a we
 - accountable AI adoption and technical ownership;
 - data/context ownership and quality controls;
 
-Without any of them, the organization is at Stage 3.
-
 "Governance, maintenance, dependency, and failure handling are active operating practices" describes the organization's practice. It is not met or failed by whether every workflow meets every gate.
 
 Beneficiary-facing deployment may exist, but it is not required.
 
-#### Readiness Checklist
-
-Before a mission-critical AI workflow is considered operationally ready, the organization should have:
+**Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. Before a mission-critical AI workflow is considered operationally ready, the organization should have:
 
 - a defined user need and intended outcome;
 - a baseline and evaluation plan;
@@ -492,11 +406,7 @@ Before a mission-critical AI workflow is considered operationally ready, the org
 - portability, rollback, or migration path;
 - a decision process for continuation, expansion, constraint, or retirement.
 
-An unmet item is a gap to close (§6) and does not lower the stage.
-
-#### When AI Affects The People The Organization Serves
-
-When AI affects beneficiaries, users, applicants, public information, or vulnerable groups, the organization should also have:
+**When AI affects the people the organization serves.** When AI affects beneficiaries, users, applicants, public information, or vulnerable groups, the organization should also have:
 
 - participation by affected users or credible representatives;
 - documented limits on automated decisions;
@@ -508,7 +418,7 @@ When AI affects beneficiaries, users, applicants, public information, or vulnera
 
 These gates never lower the stage. When AI affects the people the organization serves, a missing gate makes its domain red (§6). An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
-#### What Does Not Qualify
+**Does not qualify.**
 
 - A prototype nobody uses.
 - A beneficiary-facing chatbot with no evidence, maintenance, or owner.
@@ -516,21 +426,13 @@ These gates never lower the stage. When AI affects the people the organization s
 - A vendor product that is available but has not changed the workflow.
 - A high-risk deployment without accountable human review and failure handling.
 
-### What It Looks Like
+### What it looks like
 
-#### Key Bottleneck
+**Key bottleneck: reliable and responsible workflow transformation.** The challenge is turning demonstrated value into a maintained operating capability that improves outcomes without creating unacceptable harm or dependency.
 
-**Reliable and responsible workflow transformation.**
+**Adoption Loop focus:** The organization runs full Adoption Loops continuously: monitoring real operation, learning from outcomes and failures, and improving or retiring workflows.
 
-The challenge is turning demonstrated value into a maintained operating capability that improves outcomes without creating unacceptable harm or dependency.
-
-#### Adoption Loop Focus
-
-The organization runs full Adoption Loops continuously: monitoring real operation, learning from outcomes and failures, and improving or retiring workflows.
-
-#### Context Maturity
-
-Context is a maintained and governed organizational asset integrated into mission-critical workflows. It has:
+**Context maturity.** Context is a maintained and governed organizational asset integrated into mission-critical workflows. It has:
 
 - authoritative sources;
 - ownership and update cadence;
@@ -540,34 +442,22 @@ Context is a maintained and governed organizational asset integrated into missio
 - mission and values constraints;
 - evaluation data.
 
-### What Helps
+### What helps
 
-#### What They Need
+| What they need | What backfires |
+| --- | --- |
+| Deployment and workflow-integration support. | Generic boot camps. |
+| User research and workflow validation. | Junior developers as the main support for high-risk systems. |
+| Responsible-AI and human-accountability design. | Isolated demos disconnected from real workflows. |
+| Maintained data/context assets. | Deploying to users before safety, privacy, evaluation, and maintenance are clear. |
+| Testing and outcome evaluation. | Measuring output volume instead of workflow or mission outcomes. |
+| Staff and user adoption strategy. | Treating pro-bono delivery as a substitute for ownership. |
+| Change-management and job-transition support. | Assuming open source or self-hosting automatically solves trust and control. |
+| Senior technical mentorship and quality assurance. |  |
+| Maintenance, incident, and financial model. |  |
+| Dependency management and exit readiness. |  |
 
-- Deployment and workflow-integration support.
-- User research and workflow validation.
-- Responsible-AI and human-accountability design.
-- Maintained data/context assets.
-- Testing and outcome evaluation.
-- Staff and user adoption strategy.
-- Change-management and job-transition support.
-- Senior technical mentorship and quality assurance.
-- Maintenance, incident, and financial model.
-- Dependency management and exit readiness.
-
-#### What Backfires
-
-- Generic boot camps.
-- Junior developers as the main support for high-risk systems.
-- Isolated demos disconnected from real workflows.
-- Deploying to users before safety, privacy, evaluation, and maintenance are clear.
-- Measuring output volume instead of workflow or mission outcomes.
-- Treating pro-bono delivery as a substitute for ownership.
-- Assuming open source or self-hosting automatically solves trust and control.
-
-#### Pro-Bono Rule Of Thumb
-
-At Stage 4, pro-bono support is acceptable only with strong quality assurance:
+**Pro-bono rule of thumb.** At Stage 4, pro-bono support is acceptable only with strong quality assurance:
 
 - senior technical quality;
 - clear scope and accountability;
@@ -581,9 +471,7 @@ At Stage 4, pro-bono support is acceptable only with strong quality assurance:
 
 For high-risk AI, a few volunteers building something is not enough.
 
-#### Agents
-
-Agents or agent-facing services should be deployed only when the use case justifies the added complexity and the organization has:
+**Agents.** Agents or agent-facing services should be deployed only when the use case justifies the added complexity and the organization has:
 
 - tightly scoped permissions;
 - human confirmation for consequential actions;
@@ -601,23 +489,19 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 ### Placement
 
-#### Reached When
+**Reached when.**
 
 - AI capacity serves beyond the organization's own boundaries.
 - Other organizations obtain demonstrated value from the capability.
 - demonstrated demand from other organizations;
 
-#### Required
+**Required.** Without any of these, the organization is at Stage 4:
 
 - everything Stage 4 requires;
 - sustainable funding;
 - maintenance and incident capacity;
 
-Without any of them, the organization is at Stage 4.
-
-#### Readiness Checklist
-
-Stage 5 is not just scale ambition. A Stage 5 organization should also have:
+**Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. Stage 5 is not just scale ambition. A Stage 5 organization should also have:
 
 - mission-control guardrails;
 - standards and governance;
@@ -629,30 +513,20 @@ Stage 5 is not just scale ambition. A Stage 5 organization should also have:
 - evidence that the infrastructure improves adoption or outcomes;
 - credibility with the communities and organizations affected.
 
-An unmet item is a gap to close (§6) and does not lower the stage.
+### What it looks like
 
-### What It Looks Like
-
-#### Typical Traits
+**Typical traits** (they describe the stage; they are not conditions):
 
 - The organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems.
 - Success is measured partly by how others adopt, improve, or move faster.
 - The organization has legitimacy and credibility to support others.
 - AI capability is distributed across leadership, product/program, operations, adoption, and technical functions.
 
-#### Key Bottleneck
+**Key bottleneck: infrastructure, interoperability, legitimacy, and sustainability.** The organization can create value beyond itself but must ensure that others can safely rely on it without mission drift or harmful lock-in.
 
-**Infrastructure, interoperability, legitimacy, and sustainability.**
+**Adoption Loop focus:** The learning loop expands across organizational boundaries. Evidence from adopters improves the infrastructure, standards, support model, and field knowledge.
 
-The organization can create value beyond itself but must ensure that others can safely rely on it without mission drift or harmful lock-in.
-
-#### Adoption Loop Focus
-
-The learning loop expands across organizational boundaries. Evidence from adopters improves the infrastructure, standards, support model, and field knowledge.
-
-#### Context Maturity
-
-The organization provides reusable or interoperable context, datasets, knowledge assets, benchmarks, standards, or protocols with:
+**Context maturity.** The organization provides reusable or interoperable context, datasets, knowledge assets, benchmarks, standards, or protocols with:
 
 - consent and governance;
 - clear ownership;
@@ -662,40 +536,24 @@ The organization provides reusable or interoperable context, datasets, knowledge
 - immediate valuable use cases;
 - meaningful choice and exit paths.
 
-### What Helps
+### What helps
 
-#### What They Need
+| What they need | What backfires |
+| --- | --- |
+| Infrastructure and maintenance funding. | Assuming every mature organization should become Stage 5. |
+| Productization support. | Building infrastructure without demonstrated demand. |
+| Interoperability and protocol design. | Treating funding as the only missing ingredient. |
+| Open-source, openly specified, managed, or shared-access strategy as appropriate. | Building without a maintenance and support model. |
+| Standards and governance support. | Centralizing data or power unnecessarily. |
+| Distribution and implementation partnerships. | Forcing standardization where interoperability would be sufficient. |
+| Adoption support for participating organizations. | Closed approaches that create harmful dependency. |
+| Cross-organization evidence and learning system. | Corporate partnership drift. |
+| Mission protection and influence boundaries. | Trying to replace last-mile organizations instead of enabling them. |
+| Sustainable technical and service ownership. |  |
 
-- Infrastructure and maintenance funding.
-- Productization support.
-- Interoperability and protocol design.
-- Open-source, openly specified, managed, or shared-access strategy as appropriate.
-- Standards and governance support.
-- Distribution and implementation partnerships.
-- Adoption support for participating organizations.
-- Cross-organization evidence and learning system.
-- Mission protection and influence boundaries.
-- Sustainable technical and service ownership.
+**Pro-bono rule of thumb:** At Stage 5, pro-bono alone is not a sufficient basis for shared infrastructure. Long-term ownership, maintenance funding, governance, and adopter support must exist.
 
-#### What Backfires
-
-- Assuming every mature organization should become Stage 5.
-- Building infrastructure without demonstrated demand.
-- Treating funding as the only missing ingredient.
-- Building without a maintenance and support model.
-- Centralizing data or power unnecessarily.
-- Forcing standardization where interoperability would be sufficient.
-- Closed approaches that create harmful dependency.
-- Corporate partnership drift.
-- Trying to replace last-mile organizations instead of enabling them.
-
-#### Pro-Bono Rule Of Thumb
-
-At Stage 5, pro-bono alone is not a sufficient basis for shared infrastructure. Long-term ownership, maintenance funding, governance, and adopter support must exist.
-
-#### Agents
-
-Stage 5 organizations may expose APIs, protocols, or services for software agents as well as people when:
+**Agents.** Stage 5 organizations may expose APIs, protocols, or services for software agents as well as people when:
 
 - real ecosystem use cases exist;
 - permissions and identity are manageable;

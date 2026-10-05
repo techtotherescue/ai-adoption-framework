@@ -1,4 +1,4 @@
-# AI Adoption Framework for Nonprofits
+# AI Adoption Framework for Social Impact Organizations
 ## Version 6 — Five Stages, Adoption Loop, and Supportable Capacity Domains
 
 *Updated: 2026-07-31*
@@ -10,9 +10,9 @@
 
 ## 1. The Core Thesis
 
-Nonprofit AI adoption is not primarily a tool-selection or software-construction problem.
+AI adoption in social impact organizations is not primarily a tool-selection or software-construction problem. Social impact organizations are nonprofits, social enterprises, and impact ventures.
 
-**Nonprofit AI adoption is an operating-model transition.**
+**AI adoption in social impact organizations is an operating-model transition.**
 
 AI tools and prototypes are becoming easier and cheaper to produce. The scarce capabilities are increasingly:
 
@@ -686,7 +686,7 @@ Each domain is intentionally supportable. An organization should be able to resp
 | Technology, implementation, and resilience | Can the organization select, integrate, test, secure, maintain, and replace the technology while managing vendor, model, partner, cost, and continuity risk? | Vendor selection, solution architecture, technical implementation, senior QA, security review, maintenance, interoperability, migration, and handoff planning. |
 | Governance, risk, and accountability | Are consequences, affected people, human accountability, safeguards, escalation, appeals, and incident response appropriate to the workflow's scope and risk? | Responsible-AI advisory, privacy and legal review, safeguarding, risk assessment, governance design, incident planning. |
 | Evidence and learning | Are there baselines, intended outcomes, adoption measures, evaluations, failure reviews, and a cadence for improvement? | Measurement design, monitoring and evaluation, AI evaluations, research, learning-system design. |
-| Resources and sustainability | Are funding, protected time, procurement, operating costs, maintenance capacity, and a credible long-term model available? | Grants, budgeting, procurement support, business-model design, implementation-capacity funding, operating-cost planning. |
+| Resources and sustainability | Are funding, protected time, procurement, operating costs, maintenance capacity, and a credible long-term model available? For an organization that earns revenue, this includes whether that revenue covers the costs it is meant to cover. | Grants, budgeting, procurement support, business-model design, implementation-capacity funding, operating-cost planning. |
 
 ### How To Read The Domains
 
@@ -819,7 +819,7 @@ Product credits do not create implementation capacity. Pro-bono construction doe
 
 ## 9. Optional Project Readiness Note
 
-The framework does not add project maturity as a second core stage system. Many nonprofits will deploy AI across several workflows rather than pursue one flagship project.
+The framework does not add project maturity as a second core stage system. Many social impact organizations will deploy AI across several workflows rather than pursue one flagship project.
 
 When an organization is pursuing a major AI project, the assessment should still ask:
 
@@ -1015,7 +1015,7 @@ Example:
 
 The compressed v6 thesis:
 
-> Nonprofit AI adoption is an operating-model transition, not a tool rollout.
+> AI adoption in social impact organizations is an operating-model transition, not a tool rollout.
 
 The practical v6 line:
 

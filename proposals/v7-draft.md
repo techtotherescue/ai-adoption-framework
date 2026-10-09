@@ -799,61 +799,7 @@ Lightweight guidance:
 
 A project can be technically advanced while the organization remains adoption-fragile.
 
-## 10. Recommended Stage Transitions
-
-### Stage 1 → Stage 2: Resisting To Exploring
-
-Organizations begin experimenting when:
-
-- trusted peers demonstrate responsible use;
-- staff see AI improve a real pain point;
-- leadership gives permission to try safely;
-- AI is framed as mission support rather than human replacement;
-- initial privacy and values concerns receive practical answers.
-
-### Stage 2 → Stage 3: Exploring To Systematizing
-
-Organizations begin systematizing when:
-
-- fragmented use becomes visible;
-- champions can demonstrate wins and failures;
-- leadership recognizes the need for shared guidance and ownership;
-- several workflows show enough value to justify coordinated adoption;
-- a program or funder creates protected time and a forcing function.
-
-Stage 2 organizations usually need readiness and adoption support, not a heavy build program.
-
-### Stage 3 → Stage 4: Systematizing To Innovating
-
-Organizations move into Stage 4 when:
-
-- they identify a mission-critical workflow worth redesigning;
-- they can run the full Adoption Loop;
-- accountable adoption and technical ownership exist;
-- workflow roles and human judgment are redesigned;
-- context is maintained and governed;
-- risk and dependency are understood;
-- evidence shows operational value;
-- monitoring, maintenance, and funding are credible.
-
-Beneficiary-facing deployment is not required. If it exists, the additional exposure gates apply.
-
-### Stage 4 → Stage 5: Innovating To Enabling
-
-Organizations move toward ecosystem enablement when:
-
-- their capability works reliably for their own users;
-- other organizations demonstrate demand;
-- reuse fits the mission;
-- the organization has legitimacy to support others;
-- it can distribute, maintain, govern, and support the capability;
-- interoperability and exit paths are credible;
-- cross-organization evidence and learning are possible;
-- sustainable funding exists.
-
-Stage 5 should be chosen, not assumed.
-
-## 11. Assessment Output
+## 10. Assessment Output
 
 A practical v7 assessment should return:
 
@@ -871,7 +817,7 @@ Example:
 
 > Stage 3 Hybrid organization. Healthy aspiration: Stage 4 for two mission-critical internal workflows. Current scope: shared internal with one mission-critical pilot. Moderate risk. Leadership and context are green. People and workflows, technology resilience, and evidence are red. Binding constraints: no technical owner, no workflow baseline, and dependence on one pro-bono partner. Recommended support: a service-design partner, senior technical QA with a portability and handoff plan, and a 90-day measurement-and-learning cycle before operational deployment. Next Adoption Loop: redesign and validate one priority workflow, then reassess deployment readiness.
 
-## 12. Core v7 Message
+## 11. Core v7 Message
 
 The compressed v7 thesis:
 

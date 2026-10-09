@@ -2,7 +2,7 @@
 
 A draft for change 1 of the [v7 proposal](v7.md), 30 September 2026. Nothing here is in force yet.
 
-Under change 1, a missing required condition makes one domain red. The fragility flags already sit under their domains in v6 §7. The 35 conditions below do not, so v7 assigns each to exactly one domain and records it in `v7.json`.
+Under change 1, a missing required condition makes one domain red. The fragility flags already sit under their domains in v6 §7. The 33 conditions below do not, so v7 assigns each to exactly one domain and records it in `v7.json`.
 
 **The rule for assigning:** a condition belongs to the domain whose diagnostic question or typical support pathways in the §6 table name it. When two domains name it, or none does, the assignment is disputed and the authors choose; the table proposes one domain and gives the alternative.
 
@@ -14,7 +14,6 @@ Domains: **Leadership** (Leadership and ownership), **People** (People, workflow
 
 | ID           | Condition                                                                   | Proposed domain | Alternative                        |
 | ------------ | --------------------------------------------------------------------------- | --------------- | ---------------------------------- |
-| S3.signal.1  | AI adoption owner with time and authority.                                  | Leadership      |                                    |
 | S3.signal.2  | Shared licenses or approved tool stack.                                     | Technology      | Resources (procurement)            |
 | S3.signal.3  | Team education and learning rhythm.                                         | People          | Evidence (learning-system design)  |
 | S3.signal.4  | Safe-use and data-handling norms.                                           | Governance      | Data (governed data)               |
@@ -35,7 +34,6 @@ Domains: **Leadership** (Leadership and ownership), **People** (People, workflow
 | S4.gate.1  | a defined user need and intended outcome                                  | Evidence        | People (users)                    |
 | S4.gate.2  | a baseline and evaluation plan                                            | Evidence        |                                   |
 | S4.gate.3  | accountable AI adoption and technical ownership                           | Leadership      | Governance (human accountability) |
-| S4.gate.4  | a redesigned workflow and role model                                      | People          |                                   |
 | S4.gate.5  | data/context ownership and quality controls                               | Data            |                                   |
 | S4.gate.6  | a risk and consequence assessment                                         | Governance      |                                   |
 | S4.gate.7  | human review, escalation, exception, and appeal rules where relevant      | Governance      | People (review, exceptions)       |
@@ -60,12 +58,14 @@ Domains: **Leadership** (Leadership and ownership), **People** (People, workflow
 | S4.exposure.6 | communication that makes the role of AI understandable                 | Governance      | People (staff and users) |
 | S4.exposure.7 | safeguards appropriate to the political and surveillance environment   | Governance      |                          |
 
+S3.signal.1 and S4.gate.4 are retired in the revision of 9 October: each repeats a requirement (`v7-feedback.md`, D7).
+
 ## What the proposal produces
 
 | Domain     | Conditions | Disputed |
 | ---------- | ---------- | -------- |
-| Leadership | 5          | 3        |
-| People     | 4          | 1        |
+| Leadership | 4          | 3        |
+| People     | 3          | 1        |
 | Data       | 2          | 0        |
 | Technology | 7          | 3        |
 | Governance | 11         | 7        |

@@ -794,8 +794,8 @@ Lightweight guidance:
 - Stage 1 organizations should not be pushed into a build project.
 - Stage 2 organizations may use low-risk prototypes as learning devices.
 - Stage 3 organizations can run pilots when ownership, time, context, workflow understanding, basic governance, and evidence plans exist.
-- Stage 4 organizations can operate mission-critical AI only with the full operating gates appropriate to risk and scope.
-- Stage 5 organizations can provide infrastructure others depend on only with demand, legitimacy, governance, evidence, maintenance, funding, support, and mission protection.
+- Stage 4 organizations can take on further mission-critical AI. Before each workflow goes into operation, they should close its readiness checklist gaps and meet the safeguards appropriate to its risk and scope.
+- Stage 5 organizations can provide infrastructure others depend on. Demand, demonstrated value, maintenance, and funding are required (§5); legitimacy, governance, evidence, adopter support, and mission protection should be in place before others come to rely on it.
 
 A project can be technically advanced while the organization remains adoption-fragile.
 

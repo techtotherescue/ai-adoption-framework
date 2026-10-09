@@ -42,12 +42,14 @@ The adoption stage describes how deeply and reliably the organization can integr
 | Stage | Name | Core capability | Reached when | Required |
 | --- | --- | --- | --- | --- |
 | 1 | Resisting | Building trust that AI can fit the mission without harming the human work. | The organization does not use AI in its work, and nobody owns its adoption. | Nothing. |
-| 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly. | Nothing more. |
+| 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly, or someone owns its adoption. | Nothing more. |
 | 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. | The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | A named AI owner, champion, or adoption group with time and authority; people share what works and what fails. |
 | 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance. | The rest of what defines Stage 4; accountable AI adoption and technical ownership; data/context ownership and quality controls. |
 | 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | Other organizations depend on the organization's AI capability and obtain demonstrated value from it. | Sustainable funding; maintenance and incident capacity. |
 
-An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage. Each stage profile in §5 opens with its placement.
+An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage.
+
+Each stage profile in §5 opens with a placement table. Its first row says what places an organization at the stage. Each further row is a requirement: if any one is missing, the organization is at the stage below. The v6 column gives the identifier of each condition the row keeps word for word, or says that the row is new. The last column is the question that checks the row; an assessment tool may word it its own way.
 
 ### Dimension 2: Deployment Scope
 
@@ -200,9 +202,10 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 ### Placement
 
-**Reached when:** the organization does not use AI in its work. AI has at most been discussed, and nobody owns its adoption.
-
-**Required:** nothing. Every organization starts here.
+| Placement | v6 | How to check |
+| --- | --- | --- |
+| **Reached when** the organization does not use AI in its work, and nobody owns its adoption. AI has at most been discussed. | New | Does anyone in the organization use AI in their work? Does anyone own AI adoption? |
+| **Required:** nothing. Every organization starts here. | | |
 
 ### What it looks like
 
@@ -236,9 +239,10 @@ Individuals and teams are trying AI and discovering useful gains without shared 
 
 ### Placement
 
-**Reached when:** people use AI in their own work, however unevenly.
-
-**Required:** nothing more.
+| Placement | v6 | How to check |
+| --- | --- | --- |
+| **Reached when** people use AI in their own work, however unevenly, or someone owns its adoption. | New, from S2.def.1 and S2.def.2 | Does anyone use AI in their work, even occasionally? Does anyone own AI adoption? |
+| **Required:** nothing more. | | |
 
 Sharing what works and what fails, which Stage 3 requires, usually starts here.
 

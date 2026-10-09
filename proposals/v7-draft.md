@@ -44,7 +44,7 @@ The adoption stage describes how deeply and reliably the organization can integr
 | 1 | Resisting | Building trust that AI can fit the mission without harming the human work. | The organization does not use AI in its work, and nobody owns its adoption. | Nothing. |
 | 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly, or someone owns its adoption. | Nothing more. |
 | 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. | The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | A named AI owner, champion, or adoption group with time and authority; people share what works and what fails; AI use is expected in selected areas. |
-| 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance. | The rest of what defines Stage 4; accountable AI adoption and technical ownership; data/context ownership and quality controls. |
+| 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance: if it failed for a week, the people served would be harmed, or a core operation would stop. | The workflow runs in normal operations; it is redesigned, with explicit roles; it has accountable, technical, and data owners; evidence improves it; governance, maintenance, dependency, and failure handling are active practices. |
 | 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | Other organizations depend on the organization's AI capability and obtain demonstrated value from it. | Sustainable funding; maintenance and incident capacity. |
 
 An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage.
@@ -377,23 +377,22 @@ The workflows may be internal or external. Stage 4 is defined by operational tra
 
 ### Placement
 
-**Reached when:** AI is integral to a workflow that matters to mission delivery or organizational performance.
+In short: AI is deployed and governed in a crucial internal or important beneficiary-facing workflow. The test below the table says what makes a workflow crucial or important; the table says what deployed and governed mean.
+
+| Placement | v6 | How to check |
+| --- | --- | --- |
+| **Reached when** AI is integral to a workflow that matters to mission delivery or organizational performance. | S4.def.1 | Name the workflow. If it stopped or went wrong for a week, would the people you serve be harmed, or would a core operation stop? |
+| **Required:** the workflow operates repeatedly outside a temporary demo environment. | S4.def.4 | Does it run as part of normal operations, rather than as a pilot limited in time or scale? |
+| **Required:** the workflow is redesigned rather than merely supplemented with an AI tool. Human roles, review, escalation, and exception handling are explicit. | S4.def.2, S4.def.3 | Is it written down what the AI does, what people decide, who reviews its output, and what happens with exceptions? |
+| **Required:** accountable AI adoption and technical ownership; data/context ownership and quality controls. | S4.gate.3, S4.gate.5 | Who is accountable for this workflow, including its technical side? Who owns the data it uses, and who checks its quality? |
+| **Required:** evidence is used to improve the workflow. | S4.def.5 | Name one change made to this workflow because of what its results or failures showed. |
+| **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Does the organization monitor its AI workflows, manage their dependencies, and have a plan for when one fails? |
 
 A workflow matters when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
 
-**Required.** Without any of these, the organization is at Stage 3:
+Every requirement but the last concerns the named workflow. S4.def.6 describes the organization's practice: it is not met or failed by whether every workflow meets every gate.
 
-- The workflow is redesigned rather than merely supplemented with an AI tool.
-- Human roles, review, escalation, and exception handling are explicit.
-- The workflow operates repeatedly outside a temporary demo environment.
-- Evidence is used to improve the workflow.
-- Governance, maintenance, dependency, and failure handling are active operating practices.
-- accountable AI adoption and technical ownership;
-- data/context ownership and quality controls;
-
-"Governance, maintenance, dependency, and failure handling are active operating practices" describes the organization's practice. It is not met or failed by whether every workflow meets every gate.
-
-Beneficiary-facing deployment may exist, but it is not required.
+Beneficiary-facing deployment may exist, but it is not required. "Governed" in the summary does not include the safeguards for the people the organization serves, listed below: a missing safeguard makes a domain red (§6) and never lowers the stage.
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. Before a mission-critical AI workflow is considered operationally ready, the organization should have:
 
@@ -423,7 +422,7 @@ Beneficiary-facing deployment may exist, but it is not required.
 
 These gates never lower the stage. When AI affects the people the organization serves, a missing gate makes its domain red (§6). An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
-**Does not qualify.**
+**Examples that do not reach Stage 4.** Each misses a requirement in the table.
 
 - A prototype nobody uses.
 - A beneficiary-facing chatbot with no evidence, maintenance, or owner.

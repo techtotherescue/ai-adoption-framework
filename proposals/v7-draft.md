@@ -294,7 +294,6 @@ One team or function where AI is part of how the work is normally done is enough
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. A solid Stage 3 organization should have most of the following:
 
-- AI adoption owner with time and authority.
 - Shared licenses or approved tool stack.
 - Team education and learning rhythm.
 - Safe-use and data-handling norms.
@@ -398,7 +397,6 @@ Beneficiary-facing deployment may exist, but it is not required. "Governed" in t
 
 - a defined user need and intended outcome;
 - a baseline and evaluation plan;
-- a redesigned workflow and role model;
 - a risk and consequence assessment;
 - human review, escalation, exception, and appeal rules where relevant;
 - security and privacy stance;

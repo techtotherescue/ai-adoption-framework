@@ -45,7 +45,7 @@ The adoption stage describes how deeply and reliably the organization can integr
 | 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly, or someone owns its adoption. | Nothing more. |
 | 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. | The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | A named AI owner, champion, or adoption group with time and authority; people share what works and what fails; AI use is expected in selected areas. |
 | 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance: if it failed for a week, the people served would be harmed, or a core operation would stop. | The workflow runs in normal operations; it is redesigned, with explicit roles; it has accountable, technical, and data owners; evidence improves it; governance, maintenance, dependency, and failure handling are active practices. |
-| 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | Other organizations depend on the organization's AI capability and obtain demonstrated value from it. | Sustainable funding; maintenance and incident capacity. |
+| 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | At least two independent organizations use, in their own work, a tool, dataset, standard, playbook, or service the organization created. | Other organizations obtain demonstrated value from it; sustainable funding; maintenance and incident capacity. |
 
 An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage.
 
@@ -493,17 +493,13 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 ### Placement
 
-**Reached when.**
+| Placement | v6 | How to check |
+| --- | --- | --- |
+| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.2, S5.guardrail.1 | Name what you created, and the organizations outside yours that use it in their own work today. |
+| **Required:** other organizations obtain demonstrated value from the capability. | S5.def.3 | What would each of them lose if it stopped tomorrow, in their own words? |
+| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5 | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
 
-- AI capacity serves beyond the organization's own boundaries.
-- Other organizations obtain demonstrated value from the capability.
-- demonstrated demand from other organizations;
-
-**Required.** Without any of these, the organization is at Stage 4:
-
-- everything Stage 4 requires;
-- sustainable funding;
-- maintenance and incident capacity;
+An independent organization is not a partner in delivering the capability, not its funder, and not a branch of the same network. The capability others use can itself be the workflow that places the organization at Stage 4. The assessment accepts the organization's own answer, provided it names the organizations.
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. Stage 5 is not just scale ambition. A Stage 5 organization should also have:
 
@@ -521,7 +517,7 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 **Typical traits** (they describe the stage; they are not conditions):
 
-- The organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems.
+- AI capacity serves beyond the organization's own boundaries.
 - Success is measured partly by how others adopt, improve, or move faster.
 - The organization has legitimacy and credibility to support others.
 - AI capability is distributed across leadership, product/program, operations, adoption, and technical functions.

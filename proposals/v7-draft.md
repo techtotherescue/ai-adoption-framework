@@ -601,10 +601,14 @@ Three important concepts remain outside the domain model:
 | 1 Resisting | no shared view of what data, knowledge, values, or policies AI could use safely. |
 | 2 Exploring | personal prompts and files; no maintained shared context. |
 | 3 Systematizing | shared prompts, knowledge sources, inventory, access norms, and maintenance responsibility are emerging. |
-| 4 Innovating | a maintained and governed context asset, integrated into mission-critical workflows, has authoritative sources, ownership and an update cadence, access and consent rules, quality criteria and controls, traceability where relevant, mission and values constraints, and evaluation data. |
-| 5 Enabling | reusable or interoperable context, datasets, knowledge assets, APIs, standards, benchmarks, or protocols have clear stewardship: consent and governance, quality and provenance, maintenance and versioning, machine-readable access where useful, immediate valuable use cases, and meaningful choice and exit paths. |
+| 4 Innovating | a maintained context asset has clear ownership, governance, quality controls, and evaluation data. |
+| 5 Enabling | reusable or interoperable assets, APIs, standards, benchmarks, or knowledge systems have clear stewardship. |
 
 Context includes structured and unstructured data; policies and procedures; strategy and program knowledge; quality criteria; mission constraints and organizational values; and domain expertise and lived experience.
+
+At Stage 4, context is integrated into mission-critical workflows and has authoritative sources, ownership and an update cadence, access and consent rules, quality criteria, traceability where relevant, mission and values constraints, and evaluation data.
+
+At Stage 5, the context, datasets, knowledge assets, benchmarks, standards, or protocols the organization provides come with consent and governance, clear ownership, machine-readable access where useful, quality and provenance, maintenance and versioning, immediate valuable use cases, and meaningful choice and exit paths.
 
 #### Technology, implementation, and resilience
 

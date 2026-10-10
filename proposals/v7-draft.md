@@ -603,7 +603,7 @@ Three important concepts remain outside the domain model:
 
 - **Adoption depth and repeatability** are evidence used to determine stage.
 - **Deployment scope** remains an independent descriptor because it changes accountability and support needs.
-- **Ecosystem ambition** remains part of the aspiration profile and Stage 5 eligibility test.
+- **Ecosystem ambition** remains part of the aspiration profile (§3).
 
 ### Observable Indicators
 
@@ -612,8 +612,8 @@ Three important concepts remain outside the domain model:
 | Stage | Observable indicators |
 | --- | --- |
 | 1 Resisting | no owner; AI is avoided or treated as someone else's issue. |
-| 2 Exploring | no formal owner; informal champions may exist. |
-| 3 Systematizing | named AI coordinator, owner, or adoption group with emerging authority and rhythm. |
+| 2 Exploring | no owner with time and authority; informal champions may exist. |
+| 3 Systematizing | named AI coordinator, owner, or adoption group with time and authority, and an emerging rhythm. |
 | 4 Innovating | an adoption owner and technical owner or reliable senior partner share clear accountability. |
 | 5 Enabling | accountability is distributed across leadership, adoption, product or program, operations, and technical functions. |
 

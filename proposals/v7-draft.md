@@ -49,7 +49,7 @@ The adoption stage describes how deeply and reliably the organization can integr
 
 An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage.
 
-Each stage profile in §5 opens with a placement table. Its first row says what places an organization at the stage. Each further row is a requirement: if any one is missing, the organization is at the stage below. The v6 column gives the identifier of each condition the row keeps word for word, or says that the row is new. The last column is the question that checks the row; an assessment tool may word it its own way.
+Each stage profile in §5 opens with a placement table. Its first row says what places an organization at the stage. Each further row is a requirement: if any one is missing, the organization is at the stage below. The v6 column gives the identifier of each condition the row keeps word for word, and says what in the row is new. The last column is the question that checks the row; an assessment tool may word it its own way.
 
 ### Dimension 2: Deployment Scope
 
@@ -287,7 +287,7 @@ Organizations are turning scattered AI use into a shared AI adoption operating s
 | --- | --- | --- |
 | **Reached when** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | New, from S3.def.5 | Have you run AI pilots on selected workflows, or gone through the Adoption Loop on them more than once? |
 | **Required:** a named AI owner, champion, or adoption group has time and authority. | S3.def.3 | Who owns AI adoption, and do they have protected time and the authority to decide? |
-| **Required:** people share what works and what fails across the organization. | New, from v6 §10 ("champions can demonstrate wins and failures") | Do people share across teams what worked and what failed with AI? |
+| **Required:** people share what works and what fails across the organization. | New, from v6 §10 ("champions can demonstrate wins and failures") | Do people share what worked and what failed with AI across the organization? |
 | **Required:** AI use becomes expected in selected areas rather than exceptional. | S3.def.1 | In which team or function is AI part of how the work is normally done? |
 
 One team or function where AI is part of how the work is normally done is enough for S3.def.1.
@@ -383,7 +383,7 @@ In short: AI is deployed and governed in a crucial internal or important benefic
 | **Required:** the workflow is redesigned rather than merely supplemented with an AI tool. Human roles, review, escalation, and exception handling are explicit. | S4.def.2, S4.def.3 | Is it written down what the AI does, what people decide, who reviews its output, and what happens with exceptions? |
 | **Required:** accountable AI adoption and technical ownership; data/context ownership and quality controls. | S4.gate.3, S4.gate.5 | Who is accountable for this workflow, including its technical side? Who owns the data it uses, and who checks its quality? |
 | **Required:** evidence is used to improve the workflow. | S4.def.5 | Name one change made to this workflow because of what its results or failures showed. |
-| **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Does the organization monitor its AI workflows, manage their dependencies, and have a plan for when one fails? |
+| **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Does the organization govern and maintain its AI workflows, manage their dependencies, and have a plan for when one fails? |
 
 A workflow matters when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
 
@@ -495,9 +495,9 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 | Placement | v6 | How to check |
 | --- | --- | --- |
-| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.2, S5.guardrail.1 | Name what you created, and the organizations outside yours that use it in their own work today. |
+| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.2, S5.guardrail.1; new: at least two independent organizations use one of them | Name what you created, and the organizations outside yours that use it in their own work today. |
 | **Required:** other organizations obtain demonstrated value from the capability. | S5.def.3 | What would each of them lose if it stopped tomorrow, in their own words? |
-| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5 | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
+| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5; new: both cover the capability others use | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
 
 An independent organization is not a partner in delivering the capability, not its funder, and not a branch of the same network. The capability others use can itself be the workflow that places the organization at Stage 4. The assessment accepts the organization's own answer, provided it names the organizations.
 

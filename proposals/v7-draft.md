@@ -372,8 +372,6 @@ Building agents is not required for Stage 3 completion.
 
 Organizations have redesigned and reliably operate one or more mission-critical workflows around AI capabilities.
 
-The workflows may be internal or external. Stage 4 is defined by operational transformation, evidence, reliability, ownership, and accountability — not by beneficiary exposure alone.
-
 ### Placement
 
 In short: AI is deployed and governed in a crucial internal or important beneficiary-facing workflow. The test below the table says what makes a workflow crucial or important; the table says what deployed and governed mean.
@@ -391,7 +389,7 @@ A workflow matters when it passes this test: if it failed or went wrong for a we
 
 Every requirement but the last concerns the named workflow. S4.def.6 describes the organization's practice: it is not met or failed by whether every workflow meets every gate.
 
-Beneficiary-facing deployment may exist, but it is not required. "Governed" in the summary does not include the safeguards for the people the organization serves, listed below: a missing safeguard makes a domain red (§6) and never lowers the stage.
+"Governed" in the summary does not include the gates for the people the organization serves, listed below.
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. Before a mission-critical AI workflow is considered operationally ready, the organization should have:
 
@@ -429,6 +427,10 @@ These gates never lower the stage. When AI affects the people the organization s
 - A high-risk deployment without accountable human review and failure handling.
 
 ### What it looks like
+
+**Typical traits** (they describe the stage; they are not conditions):
+
+- Beneficiary-facing deployment may exist, but it is not required.
 
 **Key bottleneck: reliable and responsible workflow transformation.** The challenge is turning demonstrated value into a maintained operating capability that improves outcomes without creating unacceptable harm or dependency.
 

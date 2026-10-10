@@ -220,8 +220,6 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 **Adoption Loop focus:** Primarily Step 1: literacy, trust, and permission.
 
-**Context maturity:** There is no trusted view of what organizational data, knowledge, values, or lived experience could be used safely as AI context.
-
 ### What helps
 
 | What they need | What backfires |
@@ -259,8 +257,6 @@ Sharing what works and what fails, which Stage 3 requires, usually starts here.
 **Key bottleneck: coordination and coherence.** The organization has enough curiosity to experiment but not enough structure to know what is safe, useful, repeatable, or worth scaling.
 
 **Adoption Loop focus:** Steps 1–4: build confidence, select workflows, experiment safely, and learn where quality, risk, cost, and context break.
-
-**Context maturity:** Context is mostly personal: individual prompts, files, notes, and informal prompt libraries. It is rarely maintained or governed as an organizational asset.
 
 ### What helps
 
@@ -319,15 +315,6 @@ One team or function where AI is part of how the work is normally done is enough
 **Key bottleneck: AI adoption operating system.** The organization needs ownership, rhythm, shared tools, context, workflow redesign capability, evidence practices, technical support, and a practical roadmap.
 
 **Adoption Loop focus:** The organization can complete all seven steps on selected internal workflows, although evidence, maintenance, or repeatability may still be immature.
-
-**Context maturity.** The organization has shared, organized context: approved knowledge sources, reusable prompts or assistants, basic access norms, a data/context inventory, and an emerging maintenance owner. Context includes:
-
-- structured and unstructured data;
-- policies and procedures;
-- strategy and program knowledge;
-- quality criteria;
-- mission constraints and organizational values;
-- domain expertise and lived experience.
 
 ### What helps
 
@@ -436,16 +423,6 @@ These gates never lower the stage. When AI affects the people the organization s
 
 **Adoption Loop focus:** The organization runs full Adoption Loops continuously: monitoring real operation, learning from outcomes and failures, and improving or retiring workflows.
 
-**Context maturity.** Context is a maintained and governed organizational asset integrated into mission-critical workflows. It has:
-
-- authoritative sources;
-- ownership and update cadence;
-- access and consent rules;
-- quality criteria;
-- traceability where relevant;
-- mission and values constraints;
-- evaluation data.
-
 ### What helps
 
 | What they need | What backfires |
@@ -525,16 +502,6 @@ An independent organization is not a partner in delivering the capability, not i
 **Key bottleneck: infrastructure, interoperability, legitimacy, and sustainability.** The organization can create value beyond itself but must ensure that others can safely rely on it without mission drift or harmful lock-in.
 
 **Adoption Loop focus:** The learning loop expands across organizational boundaries. Evidence from adopters improves the infrastructure, standards, support model, and field knowledge.
-
-**Context maturity.** The organization provides reusable or interoperable context, datasets, knowledge assets, benchmarks, standards, or protocols with:
-
-- consent and governance;
-- clear ownership;
-- machine-readable access where useful;
-- quality and provenance;
-- maintenance and versioning;
-- immediate valuable use cases;
-- meaningful choice and exit paths.
 
 ### What helps
 
@@ -634,8 +601,10 @@ Three important concepts remain outside the domain model:
 | 1 Resisting | no shared view of what data, knowledge, values, or policies AI could use safely. |
 | 2 Exploring | personal prompts and files; no maintained shared context. |
 | 3 Systematizing | shared prompts, knowledge sources, inventory, access norms, and maintenance responsibility are emerging. |
-| 4 Innovating | a maintained context asset has clear ownership, governance, quality controls, and evaluation data. |
-| 5 Enabling | reusable or interoperable assets, APIs, standards, benchmarks, or knowledge systems have clear stewardship. |
+| 4 Innovating | a maintained and governed context asset, integrated into mission-critical workflows, has authoritative sources, ownership and an update cadence, access and consent rules, quality criteria and controls, traceability where relevant, mission and values constraints, and evaluation data. |
+| 5 Enabling | reusable or interoperable context, datasets, knowledge assets, APIs, standards, benchmarks, or protocols have clear stewardship: consent and governance, quality and provenance, maintenance and versioning, machine-readable access where useful, immediate valuable use cases, and meaningful choice and exit paths. |
+
+Context includes structured and unstructured data; policies and procedures; strategy and program knowledge; quality criteria; mission constraints and organizational values; and domain expertise and lived experience.
 
 #### Technology, implementation, and resilience
 
@@ -661,11 +630,11 @@ Three important concepts remain outside the domain model:
 
 | Stage | Observable indicators |
 | --- | --- |
-| 1 Resisting | no direct organizational evidence; beliefs come mainly from headlines or fear. |
+| 1 Resisting | no direct organizational evidence; beliefs come mainly from headlines, fear, or peer examples. |
 | 2 Exploring | anecdotal usefulness, time savings, and documented failures; no baseline. |
 | 3 Systematizing | baselines and intended outcomes exist for priority workflows; regular learning reviews begin. |
 | 4 Innovating | operational baselines, adoption data, outcome evidence, failure reviews, and a regular improvement cadence. |
-| 5 Enabling | cross-organization adoption and outcome evidence improve the shared capability and support model. |
+| 5 Enabling | cross-organization adoption and outcome evidence, comparative evidence, and infrastructure reliability improve the shared capability and support model. |
 
 #### Resources and sustainability
 
@@ -692,18 +661,6 @@ Within the technology, implementation, and resilience domain, the assessment sho
 - whether open-source or self-hosted alternatives are operationally realistic.
 
 The goal is not independence at any cost. It is managed dependency with meaningful choice and exit paths.
-
-### Evidence Maturity
-
-Evidence should mature with adoption:
-
-| Stage | Typical evidence maturity |
-| --- | --- |
-| 1 | Beliefs, concerns, and peer examples. |
-| 2 | Anecdotes, observed usefulness, and documented failures. |
-| 3 | Workflow baselines, intended outcomes, adoption measures, and regular learning reviews. |
-| 4 | Operational performance, user behavior, outcome evidence, failure monitoring, and improvement decisions. |
-| 5 | Cross-organization adoption, comparative evidence, infrastructure reliability, and shared learning. |
 
 ## 7. Fragility Flags
 
@@ -752,10 +709,6 @@ Fragility flags are cross-domain warnings, not separate maturity layers. They sh
 - no protected implementation time;
 - no tool, credit, operating, or maintenance budget;
 - deployment depends on temporary funding with no continuation plan.
-
-Example:
-
-> Stage 3 Hybrid organization. Mission-critical internal pilot. Moderate risk. Leadership and context are green. People and workflows, technology resilience, and evidence are red. The pilot is fragile due to no technical owner, no workflow baseline, and dependence on a single pro-bono partner.
 
 ## 8. Support Pathways
 

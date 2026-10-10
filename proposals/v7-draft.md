@@ -316,7 +316,7 @@ One team or function where AI is part of how the work is normally done is enough
 - It can run the Adoption Loop on selected workflows.
 - Most adoption remains internal, but pilots may include mission-critical work if risk and ownership are appropriate.
 
-**Key bottleneck: aI adoption operating system.** The organization needs ownership, rhythm, shared tools, context, workflow redesign capability, evidence practices, technical support, and a practical roadmap.
+**Key bottleneck: AI adoption operating system.** The organization needs ownership, rhythm, shared tools, context, workflow redesign capability, evidence practices, technical support, and a practical roadmap.
 
 **Adoption Loop focus:** The organization can complete all seven steps on selected internal workflows, although evidence, maintenance, or repeatability may still be immature.
 

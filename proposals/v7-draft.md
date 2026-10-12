@@ -1,7 +1,7 @@
 # AI Adoption Framework for Social Impact Organizations
 ## Version 7 — Five Stages, Adoption Loop, and Supportable Capacity Domains
 
-*Draft: 2026-10-10. Not in force: the released version is v6 (6.0.1).*
+*Draft: 2026-10-12. Not in force: the released version is v6 (6.0.1).*
 
 > A proposed revision of v6. On release it will supersede v6.
 
@@ -43,9 +43,9 @@ The adoption stage describes how deeply and reliably the organization can integr
 | --- | --- | --- | --- | --- |
 | 1 | Resisting | Building trust that AI can fit the mission without harming the human work. | The organization does not use AI in its work, and nobody owns its adoption. | Nothing. |
 | 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly, or someone owns its adoption. | Nothing more. |
-| 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. | The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | A named AI owner, champion, or adoption group with time and authority; people share what works and what fails; AI use is expected in selected areas. |
-| 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance: if it failed or went wrong for a week, the people served would be harmed, or a core operation would stop. | The workflow runs in normal operations; it is redesigned, with explicit roles; it has accountable, technical, and data owners; evidence improves it; governance, maintenance, dependency, and failure handling are active practices. |
-| 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | At least two independent organizations use, in their own work, a tool, dataset, standard, playbook, or service the organization created. | Other organizations obtain demonstrated value from it; sustainable funding; maintenance and incident capacity. |
+| 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. | The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | • A named AI owner, champion, or adoption group with time and authority.<br>• People share what works and what fails.<br>• AI use is expected in selected areas. |
+| 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance: if it failed or went wrong for a week, the people served would be harmed, or a core operation would stop. | • The workflow runs in normal operations.<br>• It is redesigned, with explicit roles.<br>• It has accountable, technical, and data owners.<br>• Evidence improves it.<br>• Governance, maintenance, dependency, and failure handling are active practices. |
+| 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | At least two independent organizations use, in their own work, a tool, dataset, standard, playbook, or service the organization created. | • Other organizations obtain demonstrated value from it.<br>• Sustainable funding.<br>• Maintenance and incident capacity. |
 
 An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage.
 

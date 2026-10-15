@@ -7,6 +7,47 @@ Rescue), write it. A change starts as a proposal to them, not an edit to the
 text: see RELEASING.md. Each release records the authors' approval here. A
 patch needs one author's approval; a minor or major release needs both.
 
+## 7.0.0 — 2026-10-15
+
+Changes: v7, a major release; an organization's stage or colours can
+differ from v6.
+
+- **Placement.** Every stage in §5 opens with a placement table: what
+  places an organization at the stage, what it requires (without it, the
+  stage below), and the question that checks each row. §2 summarizes the
+  five stages. Everything else in a stage profile is a readiness checklist
+  or a typical trait and never lowers the stage.
+- **Stage rules.** Stage 1 and 2 are placed by use of AI, not attitude.
+  Stage 3 requires a named owner, champion or adoption group with time and
+  authority (S3.def.3), sharing what works and what fails (S3.def.8), and
+  AI use expected in selected areas (S3.def.1). Stage 4 is reached by
+  S4.def.1, with a failure test for "matters to mission delivery", and
+  requires S4.def.2–6, S4.gate.3 and S4.gate.5. Stage 5 requires at least
+  two independent organizations that use and value a capability the
+  organization created, with funding and maintenance that cover it; the
+  other nine guardrails become a readiness checklist.
+- **Red.** A domain is red when it misses a condition the next step
+  requires (§6); each such condition has one domain, recorded in
+  `v7.json`. The assessment names at most three binding constraints, gaps
+  in the gates for the people the organization serves first. Those gates
+  never lower the stage. How to tell yellow from green stays the
+  assessor's judgment; v8 is to settle it.
+- **Scope and text.** "Social impact organizations", not only nonprofits.
+  §10 Recommended Stage Transitions and §11 TTTR Program Implications of v6
+  are removed; observable indicators move to §6, one table per domain.
+- **Identifiers.** Each condition in `v7.json` has a `where` and a `role`;
+  the Stage 3 and Stage 4 checklists, the gates for the people the
+  organization serves, and the fragility flags also have a `domain`. Six conditions are
+  new (S1.def.5, S2.def.6, S3.def.7, S3.def.8, S5.def.7, S5.def.8). 29 v6
+  identifiers are retired: the 26 of §10, S1.def.3, S3.signal.1 and
+  S4.gate.4. The crosswalk in `v7.json` maps every v6 identifier.
+
+v6 stays published unchanged as `v6.md` and `v6.json`.
+
+SHA-256: 9b2bd25ecb996d4752b550f8753dac43331ac711fd3e211e2367d82c59e693de
+
+Approved: TODO
+
 ## 6.0.1 — 2026-09-30
 
 Changes: the `v6.md` header no longer calls the text the source of truth for

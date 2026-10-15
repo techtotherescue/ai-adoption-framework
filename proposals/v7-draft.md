@@ -33,7 +33,7 @@ The framework helps determine which one is happening, what should happen next, a
 
 ## 2. How To Read The Framework
 
-Version 7 preserves the three dimensions that v5 separated.
+The framework separates three dimensions, as it has since v5.
 
 ### Dimension 1: Adoption Stage
 

@@ -564,7 +564,7 @@ A domain is red when it is missing a condition that the organization's next step
 
 Each condition belongs to one domain. A red domain does not lower the organization's stage. Each missing condition is a binding constraint. The assessment names at most three, and gaps in the additional gates for beneficiary or external exposure come first. The line between yellow and green remains the assessor's judgment.
 
-This is not a universal scorecard. A low-risk internal workflow and a high-risk beneficiary-facing service require different levels of capacity. The assessment should identify the two or three binding constraints rather than average weaknesses into one composite score.
+This is not a universal scorecard. A low-risk internal workflow and a high-risk beneficiary-facing service require different levels of capacity. The assessment should name the binding constraints rather than average weaknesses into one composite score.
 
 Three important concepts remain outside the domain model:
 
@@ -765,7 +765,7 @@ A practical v7 assessment should return:
 3. Deployment scope.
 4. Risk exposure.
 5. Seven-domain capacity profile using green, yellow, and red judgments appropriate to the intended scope and risk.
-6. Two or three binding constraints and relevant fragility flags.
+6. At most three binding constraints and relevant fragility flags.
 7. Recommended support pathway for each binding constraint, including the expected capacity outcome and evidence of progress.
 8. Recommended next Adoption Loop intervention.
 9. Optional project-readiness note.

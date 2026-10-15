@@ -353,7 +353,7 @@ Without those conditions, pro-bono support often creates an artifact the organiz
 - how activity would be observed and audited;
 - whether agentic complexity produces enough value to justify it.
 
-Building agents is not required for Stage 3 completion.
+Building agents is not required for Stage 3.
 
 ## Stage 4: Innovating
 
@@ -557,12 +557,12 @@ The framework should use a simple green / yellow / red judgment for each domain:
 
 A domain is red when it is missing a condition that the organization's next step requires. The required conditions are:
 
-- the Stage 3 completion signals, for an organization at Stage 2 or Stage 3;
-- the Stage 4 operating gates, for each workflow the organization is putting into operation or already operates;
-- the additional gates for beneficiary or external exposure, whenever AI affects the people the organization serves, at any stage;
+- the Stage 3 readiness checklist, for an organization at Stage 2 or Stage 3;
+- the Stage 4 readiness checklist and the two gates Stage 4 requires (S4.gate.3, S4.gate.5), for each workflow the organization is putting into operation or already operates;
+- the gates for the people the organization serves (§5, Stage 4), whenever AI affects them, at any stage;
 - the absence of every fragility flag: a flag that is present counts as a missing condition.
 
-Each condition belongs to one domain. A red domain does not lower the organization's stage. Each missing condition is a binding constraint. The assessment names at most three, and gaps in the additional gates for beneficiary or external exposure come first. The line between yellow and green remains the assessor's judgment.
+Each condition belongs to one domain. A red domain does not lower the organization's stage. Each missing condition is a binding constraint. The assessment names at most three, and gaps in the gates for the people the organization serves come first. The line between yellow and green remains the assessor's judgment.
 
 This is not a universal scorecard. A low-risk internal workflow and a high-risk beneficiary-facing service require different levels of capacity. The assessment should name the binding constraints rather than average weaknesses into one composite score.
 

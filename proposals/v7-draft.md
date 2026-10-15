@@ -367,7 +367,7 @@ In short: AI is deployed and governed in a crucial internal or important benefic
 
 A workflow matters when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
 
-Every requirement but the last concerns the named workflow. S4.def.6 describes the organization's practice: it is not met or failed by whether every workflow meets every gate.
+Every requirement but the last concerns the named workflow. S4.def.6 is judged by the organization's practice, not by whether every workflow meets every gate.
 
 "Governed" in the summary does not include the gates for the people the organization serves, listed below.
 
@@ -398,7 +398,7 @@ Every requirement but the last concerns the named workflow. S4.def.6 describes t
 
 These gates never lower the stage. When AI affects the people the organization serves, a missing gate makes its domain red (§6). An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
-**Examples that do not reach Stage 4.** Each misses the requirement in brackets.
+**Examples that do not reach Stage 4.** Each misses the requirement in parentheses.
 
 - A prototype nobody uses (S4.def.4).
 - A beneficiary-facing chatbot with no evidence, maintenance, or owner (S4.def.5, S4.def.6, S4.gate.3).

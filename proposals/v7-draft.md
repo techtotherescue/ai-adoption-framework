@@ -218,8 +218,6 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 **Key bottleneck: trust and worldview.** The organization does not yet believe AI can support its mission without damaging what makes the work valuable.
 
-**Adoption Loop focus:** Primarily Step 1: literacy, trust, and permission.
-
 ### What helps
 
 | What they need | What backfires |
@@ -255,8 +253,6 @@ Sharing what works and what fails, which Stage 3 requires, usually starts here.
 - Experiments may occur in real workflows but are not yet repeatable organizational practice.
 
 **Key bottleneck: coordination and coherence.** The organization has enough curiosity to experiment but not enough structure to know what is safe, useful, repeatable, or worth scaling.
-
-**Adoption Loop focus:** Steps 1–4: build confidence, select workflows, experiment safely, and learn where quality, risk, cost, and context break.
 
 ### What helps
 
@@ -313,8 +309,6 @@ One team or function where AI is part of how the work is normally done is enough
 - Most adoption remains internal, but pilots may include mission-critical work if risk and ownership are appropriate.
 
 **Key bottleneck: AI adoption operating system.** The organization needs ownership, rhythm, shared tools, context, workflow redesign capability, evidence practices, technical support, and a practical roadmap.
-
-**Adoption Loop focus:** The organization can complete all seven steps on selected internal workflows, although evidence, maintenance, or repeatability may still be immature.
 
 ### What helps
 
@@ -421,8 +415,6 @@ These gates never lower the stage. When AI affects the people the organization s
 
 **Key bottleneck: reliable and responsible workflow transformation.** The challenge is turning demonstrated value into a maintained operating capability that improves outcomes without creating unacceptable harm or dependency.
 
-**Adoption Loop focus:** The organization runs full Adoption Loops continuously: monitoring real operation, learning from outcomes and failures, and improving or retiring workflows.
-
 ### What helps
 
 | What they need | What backfires |
@@ -500,8 +492,6 @@ An independent organization is not a partner in delivering the capability, not i
 - AI capability is distributed across leadership, product/program, operations, adoption, and technical functions.
 
 **Key bottleneck: infrastructure, interoperability, legitimacy, and sustainability.** The organization can create value beyond itself but must ensure that others can safely rely on it without mission drift or harmful lock-in.
-
-**Adoption Loop focus:** The learning loop expands across organizational boundaries. Evidence from adopters improves the infrastructure, standards, support model, and field knowledge.
 
 ### What helps
 

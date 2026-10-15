@@ -716,7 +716,7 @@ Fragility flags are cross-domain warnings, not separate maturity layers. They sh
 
 ## 8. Support Pathways
 
-The assessment should translate every red or yellow capacity domain into a concrete support recommendation. The provider may be TTTR, another nonprofit intermediary, a consultant, a funder, a technology company, a research partner, a pro-bono team, or a hired staff member.
+The assessment should translate every red or yellow capacity domain into a concrete support recommendation. The provider may be a nonprofit intermediary, a consultant, a funder, a technology company, a research partner, a pro-bono team, or a hired staff member.
 
 A useful recommendation specifies:
 

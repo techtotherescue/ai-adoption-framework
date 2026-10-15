@@ -213,7 +213,6 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 - Deep skepticism or active avoidance of AI tools.
 - Concerns about job replacement, ethics, privacy, bias, dignity, or mission authenticity.
-- Little direct use inside the organization.
 - AI is understood mainly as a threat, distraction, or hype cycle.
 
 **Key bottleneck: trust and worldview.** The organization does not yet believe AI can support its mission without damaging what makes the work valuable.

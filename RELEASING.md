@@ -15,7 +15,7 @@ Taraszka (Tech To The Rescue), write it. This is how a release is made.
    sufficed.
 3. **Number and changelog.** The release gets its number (major, minor, or
    patch) and a CHANGELOG.md entry. A major release also gets a crosswalk
-   from the previous identifiers.
+   from the previous identifiers, in `v<N>.json` under `crosswalk`.
 4. **Publish.** The release is published. Each tool that reads the framework
    reviews it on its own side.
 

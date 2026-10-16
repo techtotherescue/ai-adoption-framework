@@ -1,0 +1,1645 @@
+{
+  "framework": "AI Adoption Framework",
+  "version": "v7",
+  "source": "v7.md",
+  "licence": "CC BY 4.0",
+  "citation": "Cite an identifier with its version, e.g. v7:S4.gate.7. Identifiers are never reused.",
+  "roles": {
+    "placement": "What places an organization at the stage.",
+    "required": "Required for the stage: if any one is missing, the organization is at the stage below.",
+    "checklist": "Readiness checklist: an unmet item is a gap to close and never lowers the stage.",
+    "exposure": "Required whenever AI affects the people the organization serves; never lowers the stage.",
+    "trait": "Describes the stage; not a condition.",
+    "flag": "Fragility flag: a flag that is present counts as a missing condition."
+  },
+  "lists": [
+    {
+      "list": "S1.def",
+      "name": "Stage 1: what places an organization there, and its typical traits",
+      "count": 4
+    },
+    {
+      "list": "S2.def",
+      "name": "Stage 2: what places an organization there, and its typical traits",
+      "count": 6
+    },
+    {
+      "list": "S3.def",
+      "name": "Stage 3: placement, requirements, and typical traits",
+      "count": 8
+    },
+    {
+      "list": "S4.def",
+      "name": "Stage 4: placement, requirements, and typical traits",
+      "count": 7
+    },
+    {
+      "list": "S5.def",
+      "name": "Stage 5: placement, requirements, and typical traits",
+      "count": 8
+    },
+    {
+      "list": "S3.signal",
+      "name": "Stage 3 readiness checklist (v6: Stage 3 completion signals)",
+      "count": 12,
+      "domains": true
+    },
+    {
+      "list": "S4.gate",
+      "name": "Stage 4 operating gates: two requirements and the Stage 4 readiness checklist",
+      "count": 14,
+      "domains": true
+    },
+    {
+      "list": "S4.exposure",
+      "name": "Stage 4 gates for the people the organization serves (v6: additional gates for beneficiary or external exposure)",
+      "count": 7,
+      "domains": true
+    },
+    {
+      "list": "S5.guardrail",
+      "name": "Stage 5 guardrails: placement, requirements, and the Stage 5 readiness checklist",
+      "count": 12
+    },
+    {
+      "list": "flag.leadership_ownership",
+      "name": "Fragility flags: Leadership And Ownership",
+      "count": 3,
+      "domains": true
+    },
+    {
+      "list": "flag.people_workflows_change",
+      "name": "Fragility flags: People, Workflows, And Change",
+      "count": 3,
+      "domains": true
+    },
+    {
+      "list": "flag.data_context",
+      "name": "Fragility flags: Data And Organizational Context",
+      "count": 3,
+      "domains": true
+    },
+    {
+      "list": "flag.technology_resilience",
+      "name": "Fragility flags: Technology, Implementation, And Resilience",
+      "count": 5,
+      "domains": true
+    },
+    {
+      "list": "flag.governance_risk",
+      "name": "Fragility flags: Governance, Risk, And Accountability",
+      "count": 3,
+      "domains": true
+    },
+    {
+      "list": "flag.evidence_learning",
+      "name": "Fragility flags: Evidence And Learning",
+      "count": 3,
+      "domains": true
+    },
+    {
+      "list": "flag.resources_sustainability",
+      "name": "Fragility flags: Resources And Sustainability",
+      "count": 3,
+      "domains": true
+    }
+  ],
+  "conditions": [
+    {
+      "id": "S1.def.1",
+      "list": "S1.def",
+      "text": "Deep skepticism or active avoidance of AI tools.",
+      "where": "Stage 1: Resisting › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S1.def.2",
+      "list": "S1.def",
+      "text": "Concerns about job replacement, ethics, privacy, bias, dignity, or mission authenticity.",
+      "where": "Stage 1: Resisting › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S1.def.4",
+      "list": "S1.def",
+      "text": "AI is understood mainly as a threat, distraction, or hype cycle.",
+      "where": "Stage 1: Resisting › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S1.def.5",
+      "list": "S1.def",
+      "text": "The organization does not use AI in its work, and nobody owns its adoption.",
+      "where": "Stage 1: Resisting › Placement",
+      "role": "placement"
+    },
+    {
+      "id": "S2.def.1",
+      "list": "S2.def",
+      "text": "Individuals use general AI tools for writing, research, summarization, reports, administration, analysis, or ideation.",
+      "where": "Stage 2: Exploring › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S2.def.2",
+      "list": "S2.def",
+      "text": "Usage is fragmented and uneven.",
+      "where": "Stage 2: Exploring › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S2.def.3",
+      "list": "S2.def",
+      "text": "Early champions share wins informally.",
+      "where": "Stage 2: Exploring › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S2.def.4",
+      "list": "S2.def",
+      "text": "The organization has no coherent operating model.",
+      "where": "Stage 2: Exploring › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S2.def.5",
+      "list": "S2.def",
+      "text": "Experiments may occur in real workflows but are not yet repeatable organizational practice.",
+      "where": "Stage 2: Exploring › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S2.def.6",
+      "list": "S2.def",
+      "text": "People use AI in their own work, however unevenly, or someone owns its adoption.",
+      "where": "Stage 2: Exploring › Placement",
+      "role": "placement"
+    },
+    {
+      "id": "S3.def.1",
+      "list": "S3.def",
+      "text": "AI use becomes expected in selected areas rather than exceptional.",
+      "where": "Stage 3: Systematizing › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S3.def.2",
+      "list": "S3.def",
+      "text": "The organization standardizes tools, licenses, practices, and safe-use norms.",
+      "where": "Stage 3: Systematizing › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S3.def.3",
+      "list": "S3.def",
+      "text": "A named AI owner, champion, or adoption group has time and authority.",
+      "where": "Stage 3: Systematizing › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S3.def.4",
+      "list": "S3.def",
+      "text": "The organization prioritizes workflows deliberately.",
+      "where": "Stage 3: Systematizing › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S3.def.5",
+      "list": "S3.def",
+      "text": "It can run the Adoption Loop on selected workflows.",
+      "where": "Stage 3: Systematizing › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S3.def.6",
+      "list": "S3.def",
+      "text": "Most adoption remains internal, but pilots may include mission-critical work if risk and ownership are appropriate.",
+      "where": "Stage 3: Systematizing › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S3.def.7",
+      "list": "S3.def",
+      "text": "The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once.",
+      "where": "Stage 3: Systematizing › Placement",
+      "role": "placement"
+    },
+    {
+      "id": "S3.def.8",
+      "list": "S3.def",
+      "text": "People share what works and what fails across the organization.",
+      "where": "Stage 3: Systematizing › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S4.def.1",
+      "list": "S4.def",
+      "text": "AI is integral to a workflow that matters to mission delivery or organizational performance.",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "placement"
+    },
+    {
+      "id": "S4.def.2",
+      "list": "S4.def",
+      "text": "The workflow is redesigned rather than merely supplemented with an AI tool.",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S4.def.3",
+      "list": "S4.def",
+      "text": "Human roles, review, escalation, and exception handling are explicit.",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S4.def.4",
+      "list": "S4.def",
+      "text": "The workflow operates repeatedly outside a temporary demo environment.",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S4.def.5",
+      "list": "S4.def",
+      "text": "Evidence is used to improve the workflow.",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S4.def.6",
+      "list": "S4.def",
+      "text": "Governance, maintenance, dependency, and failure handling are active operating practices.",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S4.def.7",
+      "list": "S4.def",
+      "text": "Beneficiary-facing deployment may exist, but it is not required.",
+      "where": "Stage 4: Innovating › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S5.def.1",
+      "list": "S5.def",
+      "text": "AI capacity serves beyond the organization's own boundaries.",
+      "where": "Stage 5: Enabling › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S5.def.2",
+      "list": "S5.def",
+      "text": "The organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems.",
+      "where": "Stage 5: Enabling › Placement",
+      "role": "placement"
+    },
+    {
+      "id": "S5.def.3",
+      "list": "S5.def",
+      "text": "Other organizations obtain demonstrated value from the capability.",
+      "where": "Stage 5: Enabling › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S5.def.4",
+      "list": "S5.def",
+      "text": "Success is measured partly by how others adopt, improve, or move faster.",
+      "where": "Stage 5: Enabling › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S5.def.5",
+      "list": "S5.def",
+      "text": "The organization has legitimacy and credibility to support others.",
+      "where": "Stage 5: Enabling › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S5.def.6",
+      "list": "S5.def",
+      "text": "AI capability is distributed across leadership, product/program, operations, adoption, and technical functions.",
+      "where": "Stage 5: Enabling › What it looks like › Typical traits",
+      "role": "trait"
+    },
+    {
+      "id": "S5.def.7",
+      "list": "S5.def",
+      "text": "At least two independent organizations use one of them in their own work today.",
+      "where": "Stage 5: Enabling › Placement",
+      "role": "placement"
+    },
+    {
+      "id": "S5.def.8",
+      "list": "S5.def",
+      "text": "Both cover the capability others use.",
+      "where": "Stage 5: Enabling › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S3.signal.2",
+      "list": "S3.signal",
+      "text": "Shared licenses or approved tool stack.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "S3.signal.3",
+      "list": "S3.signal",
+      "text": "Team education and learning rhythm.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "people_workflows_change"
+    },
+    {
+      "id": "S3.signal.4",
+      "list": "S3.signal",
+      "text": "Safe-use and data-handling norms.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S3.signal.5",
+      "list": "S3.signal",
+      "text": "Workflow and use-case prioritization.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "leadership_ownership"
+    },
+    {
+      "id": "S3.signal.6",
+      "list": "S3.signal",
+      "text": "Baseline and intended outcome for priority workflows.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "evidence_learning"
+    },
+    {
+      "id": "S3.signal.7",
+      "list": "S3.signal",
+      "text": "Data/context inventory and maintenance responsibility.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "data_context"
+    },
+    {
+      "id": "S3.signal.8",
+      "list": "S3.signal",
+      "text": "Explicit map of changing tasks, roles, review, and exceptions.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "people_workflows_change"
+    },
+    {
+      "id": "S3.signal.9",
+      "list": "S3.signal",
+      "text": "Technical support model.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "S3.signal.10",
+      "list": "S3.signal",
+      "text": "Vendor and partner dependency view.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "S3.signal.11",
+      "list": "S3.signal",
+      "text": "Budget, credits, and protected implementation time.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "resources_sustainability"
+    },
+    {
+      "id": "S3.signal.12",
+      "list": "S3.signal",
+      "text": "Regular implementation cadence.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "leadership_ownership"
+    },
+    {
+      "id": "S3.signal.13",
+      "list": "S3.signal",
+      "text": "Criteria for deciding which workflows are ready for operational deployment.",
+      "where": "Stage 3: Systematizing › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.gate.1",
+      "list": "S4.gate",
+      "text": "a defined user need and intended outcome;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "evidence_learning"
+    },
+    {
+      "id": "S4.gate.2",
+      "list": "S4.gate",
+      "text": "a baseline and evaluation plan;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "evidence_learning"
+    },
+    {
+      "id": "S4.gate.3",
+      "list": "S4.gate",
+      "text": "accountable AI adoption and technical ownership;",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "required",
+      "domain": "leadership_ownership"
+    },
+    {
+      "id": "S4.gate.5",
+      "list": "S4.gate",
+      "text": "data/context ownership and quality controls;",
+      "where": "Stage 4: Innovating › Placement",
+      "role": "required",
+      "domain": "data_context"
+    },
+    {
+      "id": "S4.gate.6",
+      "list": "S4.gate",
+      "text": "a risk and consequence assessment;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.gate.7",
+      "list": "S4.gate",
+      "text": "human review, escalation, exception, and appeal rules where relevant;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.gate.8",
+      "list": "S4.gate",
+      "text": "security and privacy stance;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "S4.gate.9",
+      "list": "S4.gate",
+      "text": "monitoring after deployment;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "evidence_learning"
+    },
+    {
+      "id": "S4.gate.10",
+      "list": "S4.gate",
+      "text": "staff or user acceptability checks;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "people_workflows_change"
+    },
+    {
+      "id": "S4.gate.11",
+      "list": "S4.gate",
+      "text": "maintenance and incident ownership;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "S4.gate.12",
+      "list": "S4.gate",
+      "text": "cost and consumption controls;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "resources_sustainability"
+    },
+    {
+      "id": "S4.gate.13",
+      "list": "S4.gate",
+      "text": "vendor, model, data, and partner dependency review;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "S4.gate.14",
+      "list": "S4.gate",
+      "text": "portability, rollback, or migration path;",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "S4.gate.15",
+      "list": "S4.gate",
+      "text": "a decision process for continuation, expansion, constraint, or retirement.",
+      "where": "Stage 4: Innovating › Placement › Readiness checklist",
+      "role": "checklist",
+      "domain": "leadership_ownership"
+    },
+    {
+      "id": "S4.exposure.1",
+      "list": "S4.exposure",
+      "text": "participation by affected users or credible representatives;",
+      "where": "Stage 4: Innovating › Placement › When AI affects the people the organization serves",
+      "role": "exposure",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.exposure.2",
+      "list": "S4.exposure",
+      "text": "documented limits on automated decisions;",
+      "where": "Stage 4: Innovating › Placement › When AI affects the people the organization serves",
+      "role": "exposure",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.exposure.3",
+      "list": "S4.exposure",
+      "text": "qualified and accountable human review;",
+      "where": "Stage 4: Innovating › Placement › When AI affects the people the organization serves",
+      "role": "exposure",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.exposure.4",
+      "list": "S4.exposure",
+      "text": "a clear method to question, correct, or appeal outcomes where relevant;",
+      "where": "Stage 4: Innovating › Placement › When AI affects the people the organization serves",
+      "role": "exposure",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.exposure.5",
+      "list": "S4.exposure",
+      "text": "testing for exclusion, bias, and differential harm;",
+      "where": "Stage 4: Innovating › Placement › When AI affects the people the organization serves",
+      "role": "exposure",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.exposure.6",
+      "list": "S4.exposure",
+      "text": "communication that makes the role of AI understandable;",
+      "where": "Stage 4: Innovating › Placement › When AI affects the people the organization serves",
+      "role": "exposure",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S4.exposure.7",
+      "list": "S4.exposure",
+      "text": "safeguards appropriate to the political and surveillance environment.",
+      "where": "Stage 4: Innovating › Placement › When AI affects the people the organization serves",
+      "role": "exposure",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "S5.guardrail.1",
+      "list": "S5.guardrail",
+      "text": "demonstrated demand from other organizations;",
+      "where": "Stage 5: Enabling › Placement",
+      "role": "placement"
+    },
+    {
+      "id": "S5.guardrail.2",
+      "list": "S5.guardrail",
+      "text": "mission-control guardrails;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.3",
+      "list": "S5.guardrail",
+      "text": "sustainable funding;",
+      "where": "Stage 5: Enabling › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S5.guardrail.4",
+      "list": "S5.guardrail",
+      "text": "standards and governance;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.5",
+      "list": "S5.guardrail",
+      "text": "maintenance and incident capacity;",
+      "where": "Stage 5: Enabling › Placement",
+      "role": "required"
+    },
+    {
+      "id": "S5.guardrail.6",
+      "list": "S5.guardrail",
+      "text": "distribution and implementation partnerships;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.7",
+      "list": "S5.guardrail",
+      "text": "clear ownership and accountability;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.8",
+      "list": "S5.guardrail",
+      "text": "partner and corporate influence boundaries;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.9",
+      "list": "S5.guardrail",
+      "text": "support model for adopters;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.10",
+      "list": "S5.guardrail",
+      "text": "interoperability and portability strategy;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.11",
+      "list": "S5.guardrail",
+      "text": "evidence that the infrastructure improves adoption or outcomes;",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "S5.guardrail.12",
+      "list": "S5.guardrail",
+      "text": "credibility with the communities and organizations affected.",
+      "where": "Stage 5: Enabling › Placement › Readiness checklist",
+      "role": "checklist"
+    },
+    {
+      "id": "flag.leadership_ownership.1",
+      "list": "flag.leadership_ownership",
+      "text": "no AI adoption owner or executive sponsor;",
+      "where": "7. Fragility Flags › Leadership And Ownership",
+      "role": "flag",
+      "domain": "leadership_ownership"
+    },
+    {
+      "id": "flag.leadership_ownership.2",
+      "list": "flag.leadership_ownership",
+      "text": "owner lacks authority or protected time;",
+      "where": "7. Fragility Flags › Leadership And Ownership",
+      "role": "flag",
+      "domain": "leadership_ownership"
+    },
+    {
+      "id": "flag.leadership_ownership.3",
+      "list": "flag.leadership_ownership",
+      "text": "project manager or champion left without succession.",
+      "where": "7. Fragility Flags › Leadership And Ownership",
+      "role": "flag",
+      "domain": "leadership_ownership"
+    },
+    {
+      "id": "flag.people_workflows_change.1",
+      "list": "flag.people_workflows_change",
+      "text": "weak staff, user, or beneficiary participation;",
+      "where": "7. Fragility Flags › People, Workflows, And Change",
+      "role": "flag",
+      "domain": "people_workflows_change"
+    },
+    {
+      "id": "flag.people_workflows_change.2",
+      "list": "flag.people_workflows_change",
+      "text": "AI is added to tasks without workflow or role redesign;",
+      "where": "7. Fragility Flags › People, Workflows, And Change",
+      "role": "flag",
+      "domain": "people_workflows_change"
+    },
+    {
+      "id": "flag.people_workflows_change.3",
+      "list": "flag.people_workflows_change",
+      "text": "no training, adoption, or change-support plan.",
+      "where": "7. Fragility Flags › People, Workflows, And Change",
+      "role": "flag",
+      "domain": "people_workflows_change"
+    },
+    {
+      "id": "flag.data_context.1",
+      "list": "flag.data_context",
+      "text": "unorganized, inaccessible, or unowned data and context;",
+      "where": "7. Fragility Flags › Data And Organizational Context",
+      "role": "flag",
+      "domain": "data_context"
+    },
+    {
+      "id": "flag.data_context.2",
+      "list": "flag.data_context",
+      "text": "no maintenance responsibility or provenance;",
+      "where": "7. Fragility Flags › Data And Organizational Context",
+      "role": "flag",
+      "domain": "data_context"
+    },
+    {
+      "id": "flag.data_context.3",
+      "list": "flag.data_context",
+      "text": "critical context exists only in individual files or vendor platforms.",
+      "where": "7. Fragility Flags › Data And Organizational Context",
+      "role": "flag",
+      "domain": "data_context"
+    },
+    {
+      "id": "flag.technology_resilience.1",
+      "list": "flag.technology_resilience",
+      "text": "no technical owner or reliable senior partner;",
+      "where": "7. Fragility Flags › Technology, Implementation, And Resilience",
+      "role": "flag",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "flag.technology_resilience.2",
+      "list": "flag.technology_resilience",
+      "text": "pro-bono dependency without quality assurance or handoff;",
+      "where": "7. Fragility Flags › Technology, Implementation, And Resilience",
+      "role": "flag",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "flag.technology_resilience.3",
+      "list": "flag.technology_resilience",
+      "text": "single-vendor, single-model, single-person, or single-partner dependency;",
+      "where": "7. Fragility Flags › Technology, Implementation, And Resilience",
+      "role": "flag",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "flag.technology_resilience.4",
+      "list": "flag.technology_resilience",
+      "text": "unknown consumption-cost exposure;",
+      "where": "7. Fragility Flags › Technology, Implementation, And Resilience",
+      "role": "flag",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "flag.technology_resilience.5",
+      "list": "flag.technology_resilience",
+      "text": "no migration, rollback, fallback, maintenance, or continuity path.",
+      "where": "7. Fragility Flags › Technology, Implementation, And Resilience",
+      "role": "flag",
+      "domain": "technology_resilience"
+    },
+    {
+      "id": "flag.governance_risk.1",
+      "list": "flag.governance_risk",
+      "text": "sensitive or beneficiary-facing exposure without proportional governance;",
+      "where": "7. Fragility Flags › Governance, Risk, And Accountability",
+      "role": "flag",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "flag.governance_risk.2",
+      "list": "flag.governance_risk",
+      "text": "no explicit human accountability, escalation, appeal, or incident owner;",
+      "where": "7. Fragility Flags › Governance, Risk, And Accountability",
+      "role": "flag",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "flag.governance_risk.3",
+      "list": "flag.governance_risk",
+      "text": "security, privacy, safeguarding, or consequence risks have not been assessed.",
+      "where": "7. Fragility Flags › Governance, Risk, And Accountability",
+      "role": "flag",
+      "domain": "governance_risk"
+    },
+    {
+      "id": "flag.evidence_learning.1",
+      "list": "flag.evidence_learning",
+      "text": "no baseline, intended outcome, or adoption measure;",
+      "where": "7. Fragility Flags › Evidence And Learning",
+      "role": "flag",
+      "domain": "evidence_learning"
+    },
+    {
+      "id": "flag.evidence_learning.2",
+      "list": "flag.evidence_learning",
+      "text": "output volume is treated as impact;",
+      "where": "7. Fragility Flags › Evidence And Learning",
+      "role": "flag",
+      "domain": "evidence_learning"
+    },
+    {
+      "id": "flag.evidence_learning.3",
+      "list": "flag.evidence_learning",
+      "text": "no failure review or learning cadence after deployment.",
+      "where": "7. Fragility Flags › Evidence And Learning",
+      "role": "flag",
+      "domain": "evidence_learning"
+    },
+    {
+      "id": "flag.resources_sustainability.1",
+      "list": "flag.resources_sustainability",
+      "text": "no protected implementation time;",
+      "where": "7. Fragility Flags › Resources And Sustainability",
+      "role": "flag",
+      "domain": "resources_sustainability"
+    },
+    {
+      "id": "flag.resources_sustainability.2",
+      "list": "flag.resources_sustainability",
+      "text": "no tool, credit, operating, or maintenance budget;",
+      "where": "7. Fragility Flags › Resources And Sustainability",
+      "role": "flag",
+      "domain": "resources_sustainability"
+    },
+    {
+      "id": "flag.resources_sustainability.3",
+      "list": "flag.resources_sustainability",
+      "text": "deployment depends on temporary funding with no continuation plan.",
+      "where": "7. Fragility Flags › Resources And Sustainability",
+      "role": "flag",
+      "domain": "resources_sustainability"
+    }
+  ],
+  "crosswalk": {
+    "from": "v6",
+    "entries": [
+      {
+        "id": "S1.def.1",
+        "to": [
+          "S1.def.1"
+        ]
+      },
+      {
+        "id": "S1.def.2",
+        "to": [
+          "S1.def.2"
+        ]
+      },
+      {
+        "id": "S1.def.3",
+        "to": [
+          "S1.def.5"
+        ],
+        "note": "Stage 1, reached when: the organization does not use AI in its work."
+      },
+      {
+        "id": "S1.def.4",
+        "to": [
+          "S1.def.4"
+        ]
+      },
+      {
+        "id": "S2.def.1",
+        "to": [
+          "S2.def.1"
+        ]
+      },
+      {
+        "id": "S2.def.2",
+        "to": [
+          "S2.def.2"
+        ]
+      },
+      {
+        "id": "S2.def.3",
+        "to": [
+          "S2.def.3"
+        ]
+      },
+      {
+        "id": "S2.def.4",
+        "to": [
+          "S2.def.4"
+        ]
+      },
+      {
+        "id": "S2.def.5",
+        "to": [
+          "S2.def.5"
+        ]
+      },
+      {
+        "id": "S3.def.1",
+        "to": [
+          "S3.def.1"
+        ]
+      },
+      {
+        "id": "S3.def.2",
+        "to": [
+          "S3.def.2"
+        ]
+      },
+      {
+        "id": "S3.def.3",
+        "to": [
+          "S3.def.3"
+        ]
+      },
+      {
+        "id": "S3.def.4",
+        "to": [
+          "S3.def.4"
+        ]
+      },
+      {
+        "id": "S3.def.5",
+        "to": [
+          "S3.def.5"
+        ]
+      },
+      {
+        "id": "S3.def.6",
+        "to": [
+          "S3.def.6"
+        ]
+      },
+      {
+        "id": "S4.def.1",
+        "to": [
+          "S4.def.1"
+        ]
+      },
+      {
+        "id": "S4.def.2",
+        "to": [
+          "S4.def.2"
+        ]
+      },
+      {
+        "id": "S4.def.3",
+        "to": [
+          "S4.def.3"
+        ]
+      },
+      {
+        "id": "S4.def.4",
+        "to": [
+          "S4.def.4"
+        ]
+      },
+      {
+        "id": "S4.def.5",
+        "to": [
+          "S4.def.5"
+        ]
+      },
+      {
+        "id": "S4.def.6",
+        "to": [
+          "S4.def.6"
+        ]
+      },
+      {
+        "id": "S4.def.7",
+        "to": [
+          "S4.def.7"
+        ]
+      },
+      {
+        "id": "S5.def.1",
+        "to": [
+          "S5.def.1"
+        ]
+      },
+      {
+        "id": "S5.def.2",
+        "to": [
+          "S5.def.2"
+        ]
+      },
+      {
+        "id": "S5.def.3",
+        "to": [
+          "S5.def.3"
+        ]
+      },
+      {
+        "id": "S5.def.4",
+        "to": [
+          "S5.def.4"
+        ]
+      },
+      {
+        "id": "S5.def.5",
+        "to": [
+          "S5.def.5"
+        ]
+      },
+      {
+        "id": "S5.def.6",
+        "to": [
+          "S5.def.6"
+        ]
+      },
+      {
+        "id": "S3.signal.1",
+        "to": [
+          "S3.def.3"
+        ],
+        "note": "Stage 3, required: S3.def.3."
+      },
+      {
+        "id": "S3.signal.2",
+        "to": [
+          "S3.signal.2"
+        ]
+      },
+      {
+        "id": "S3.signal.3",
+        "to": [
+          "S3.signal.3"
+        ]
+      },
+      {
+        "id": "S3.signal.4",
+        "to": [
+          "S3.signal.4"
+        ]
+      },
+      {
+        "id": "S3.signal.5",
+        "to": [
+          "S3.signal.5"
+        ]
+      },
+      {
+        "id": "S3.signal.6",
+        "to": [
+          "S3.signal.6"
+        ]
+      },
+      {
+        "id": "S3.signal.7",
+        "to": [
+          "S3.signal.7"
+        ]
+      },
+      {
+        "id": "S3.signal.8",
+        "to": [
+          "S3.signal.8"
+        ]
+      },
+      {
+        "id": "S3.signal.9",
+        "to": [
+          "S3.signal.9"
+        ]
+      },
+      {
+        "id": "S3.signal.10",
+        "to": [
+          "S3.signal.10"
+        ]
+      },
+      {
+        "id": "S3.signal.11",
+        "to": [
+          "S3.signal.11"
+        ]
+      },
+      {
+        "id": "S3.signal.12",
+        "to": [
+          "S3.signal.12"
+        ]
+      },
+      {
+        "id": "S3.signal.13",
+        "to": [
+          "S3.signal.13"
+        ]
+      },
+      {
+        "id": "S4.gate.1",
+        "to": [
+          "S4.gate.1"
+        ]
+      },
+      {
+        "id": "S4.gate.2",
+        "to": [
+          "S4.gate.2"
+        ]
+      },
+      {
+        "id": "S4.gate.3",
+        "to": [
+          "S4.gate.3"
+        ]
+      },
+      {
+        "id": "S4.gate.4",
+        "to": [
+          "S4.def.2",
+          "S4.def.3"
+        ],
+        "note": "Stage 4, required: S4.def.2, S4.def.3."
+      },
+      {
+        "id": "S4.gate.5",
+        "to": [
+          "S4.gate.5"
+        ]
+      },
+      {
+        "id": "S4.gate.6",
+        "to": [
+          "S4.gate.6"
+        ]
+      },
+      {
+        "id": "S4.gate.7",
+        "to": [
+          "S4.gate.7"
+        ]
+      },
+      {
+        "id": "S4.gate.8",
+        "to": [
+          "S4.gate.8"
+        ]
+      },
+      {
+        "id": "S4.gate.9",
+        "to": [
+          "S4.gate.9"
+        ]
+      },
+      {
+        "id": "S4.gate.10",
+        "to": [
+          "S4.gate.10"
+        ]
+      },
+      {
+        "id": "S4.gate.11",
+        "to": [
+          "S4.gate.11"
+        ]
+      },
+      {
+        "id": "S4.gate.12",
+        "to": [
+          "S4.gate.12"
+        ]
+      },
+      {
+        "id": "S4.gate.13",
+        "to": [
+          "S4.gate.13"
+        ]
+      },
+      {
+        "id": "S4.gate.14",
+        "to": [
+          "S4.gate.14"
+        ]
+      },
+      {
+        "id": "S4.gate.15",
+        "to": [
+          "S4.gate.15"
+        ]
+      },
+      {
+        "id": "S4.exposure.1",
+        "to": [
+          "S4.exposure.1"
+        ]
+      },
+      {
+        "id": "S4.exposure.2",
+        "to": [
+          "S4.exposure.2"
+        ]
+      },
+      {
+        "id": "S4.exposure.3",
+        "to": [
+          "S4.exposure.3"
+        ]
+      },
+      {
+        "id": "S4.exposure.4",
+        "to": [
+          "S4.exposure.4"
+        ]
+      },
+      {
+        "id": "S4.exposure.5",
+        "to": [
+          "S4.exposure.5"
+        ]
+      },
+      {
+        "id": "S4.exposure.6",
+        "to": [
+          "S4.exposure.6"
+        ]
+      },
+      {
+        "id": "S4.exposure.7",
+        "to": [
+          "S4.exposure.7"
+        ]
+      },
+      {
+        "id": "S5.guardrail.1",
+        "to": [
+          "S5.guardrail.1"
+        ]
+      },
+      {
+        "id": "S5.guardrail.2",
+        "to": [
+          "S5.guardrail.2"
+        ]
+      },
+      {
+        "id": "S5.guardrail.3",
+        "to": [
+          "S5.guardrail.3"
+        ]
+      },
+      {
+        "id": "S5.guardrail.4",
+        "to": [
+          "S5.guardrail.4"
+        ]
+      },
+      {
+        "id": "S5.guardrail.5",
+        "to": [
+          "S5.guardrail.5"
+        ]
+      },
+      {
+        "id": "S5.guardrail.6",
+        "to": [
+          "S5.guardrail.6"
+        ]
+      },
+      {
+        "id": "S5.guardrail.7",
+        "to": [
+          "S5.guardrail.7"
+        ]
+      },
+      {
+        "id": "S5.guardrail.8",
+        "to": [
+          "S5.guardrail.8"
+        ]
+      },
+      {
+        "id": "S5.guardrail.9",
+        "to": [
+          "S5.guardrail.9"
+        ]
+      },
+      {
+        "id": "S5.guardrail.10",
+        "to": [
+          "S5.guardrail.10"
+        ]
+      },
+      {
+        "id": "S5.guardrail.11",
+        "to": [
+          "S5.guardrail.11"
+        ]
+      },
+      {
+        "id": "S5.guardrail.12",
+        "to": [
+          "S5.guardrail.12"
+        ]
+      },
+      {
+        "id": "flag.leadership_ownership.1",
+        "to": [
+          "flag.leadership_ownership.1"
+        ]
+      },
+      {
+        "id": "flag.leadership_ownership.2",
+        "to": [
+          "flag.leadership_ownership.2"
+        ]
+      },
+      {
+        "id": "flag.leadership_ownership.3",
+        "to": [
+          "flag.leadership_ownership.3"
+        ]
+      },
+      {
+        "id": "flag.people_workflows_change.1",
+        "to": [
+          "flag.people_workflows_change.1"
+        ]
+      },
+      {
+        "id": "flag.people_workflows_change.2",
+        "to": [
+          "flag.people_workflows_change.2"
+        ]
+      },
+      {
+        "id": "flag.people_workflows_change.3",
+        "to": [
+          "flag.people_workflows_change.3"
+        ]
+      },
+      {
+        "id": "flag.data_context.1",
+        "to": [
+          "flag.data_context.1"
+        ]
+      },
+      {
+        "id": "flag.data_context.2",
+        "to": [
+          "flag.data_context.2"
+        ]
+      },
+      {
+        "id": "flag.data_context.3",
+        "to": [
+          "flag.data_context.3"
+        ]
+      },
+      {
+        "id": "flag.technology_resilience.1",
+        "to": [
+          "flag.technology_resilience.1"
+        ]
+      },
+      {
+        "id": "flag.technology_resilience.2",
+        "to": [
+          "flag.technology_resilience.2"
+        ]
+      },
+      {
+        "id": "flag.technology_resilience.3",
+        "to": [
+          "flag.technology_resilience.3"
+        ]
+      },
+      {
+        "id": "flag.technology_resilience.4",
+        "to": [
+          "flag.technology_resilience.4"
+        ]
+      },
+      {
+        "id": "flag.technology_resilience.5",
+        "to": [
+          "flag.technology_resilience.5"
+        ]
+      },
+      {
+        "id": "flag.governance_risk.1",
+        "to": [
+          "flag.governance_risk.1"
+        ]
+      },
+      {
+        "id": "flag.governance_risk.2",
+        "to": [
+          "flag.governance_risk.2"
+        ]
+      },
+      {
+        "id": "flag.governance_risk.3",
+        "to": [
+          "flag.governance_risk.3"
+        ]
+      },
+      {
+        "id": "flag.evidence_learning.1",
+        "to": [
+          "flag.evidence_learning.1"
+        ]
+      },
+      {
+        "id": "flag.evidence_learning.2",
+        "to": [
+          "flag.evidence_learning.2"
+        ]
+      },
+      {
+        "id": "flag.evidence_learning.3",
+        "to": [
+          "flag.evidence_learning.3"
+        ]
+      },
+      {
+        "id": "flag.resources_sustainability.1",
+        "to": [
+          "flag.resources_sustainability.1"
+        ]
+      },
+      {
+        "id": "flag.resources_sustainability.2",
+        "to": [
+          "flag.resources_sustainability.2"
+        ]
+      },
+      {
+        "id": "flag.resources_sustainability.3",
+        "to": [
+          "flag.resources_sustainability.3"
+        ]
+      },
+      {
+        "id": "T12.1",
+        "to": [],
+        "note": "Stage 1, What helps: safe exposure to peers using AI responsibly."
+      },
+      {
+        "id": "T12.2",
+        "to": [],
+        "note": "Stage 1, What helps: lightweight, reversible use cases."
+      },
+      {
+        "id": "T12.3",
+        "to": [],
+        "note": "Stage 1, What helps: permission to experiment without shame or pressure."
+      },
+      {
+        "id": "T12.4",
+        "to": [],
+        "note": "Stage 1, What helps: evidence that AI can enhance rather than replace human judgment."
+      },
+      {
+        "id": "T12.5",
+        "to": [],
+        "note": "Stage 1, What helps: practical answers to privacy and mission concerns."
+      },
+      {
+        "id": "T23.1",
+        "to": [],
+        "note": "Stage 2, What helps: a map of current use."
+      },
+      {
+        "id": "T23.2",
+        "to": [
+          "S3.def.8"
+        ],
+        "note": "Stage 3, required: people share what works and what fails."
+      },
+      {
+        "id": "T23.3",
+        "to": [
+          "S3.def.3"
+        ],
+        "note": "Stage 3, required: S3.def.3."
+      },
+      {
+        "id": "T23.4",
+        "to": [
+          "S3.def.7"
+        ],
+        "note": "Stage 3, reached when: pilots on selected workflows."
+      },
+      {
+        "id": "T23.5",
+        "to": [
+          "S3.signal.11"
+        ],
+        "note": "Stage 3 readiness checklist: S3.signal.11."
+      },
+      {
+        "id": "T34.1",
+        "to": [
+          "S4.def.1"
+        ],
+        "note": "Stage 4, reached when: S4.def.1."
+      },
+      {
+        "id": "T34.2",
+        "to": [
+          "S3.def.5"
+        ],
+        "note": "Stage 3 typical trait: S3.def.5; §4."
+      },
+      {
+        "id": "T34.3",
+        "to": [
+          "S4.gate.3"
+        ],
+        "note": "Stage 4, required: S4.gate.3."
+      },
+      {
+        "id": "T34.4",
+        "to": [
+          "S4.def.2",
+          "S4.def.3"
+        ],
+        "note": "Stage 4, required: S4.def.2, S4.def.3."
+      },
+      {
+        "id": "T34.5",
+        "to": [
+          "S4.gate.5"
+        ],
+        "note": "Stage 4, required: S4.gate.5."
+      },
+      {
+        "id": "T34.6",
+        "to": [
+          "S4.gate.6",
+          "S4.gate.13"
+        ],
+        "note": "Stage 4 readiness checklist: S4.gate.6, S4.gate.13."
+      },
+      {
+        "id": "T34.7",
+        "to": [
+          "S4.def.5"
+        ],
+        "note": "Stage 4, required: S4.def.5."
+      },
+      {
+        "id": "T34.8",
+        "to": [
+          "S4.def.6",
+          "S4.gate.9",
+          "S4.gate.12"
+        ],
+        "note": "Stage 4, required: S4.def.6; readiness checklist: S4.gate.9, S4.gate.12."
+      },
+      {
+        "id": "T45.1",
+        "to": [],
+        "note": "Stage 5 includes everything Stage 4 requires."
+      },
+      {
+        "id": "T45.2",
+        "to": [
+          "S5.guardrail.1"
+        ],
+        "note": "Stage 5, reached when: S5.guardrail.1."
+      },
+      {
+        "id": "T45.3",
+        "to": [
+          "S5.guardrail.2"
+        ],
+        "note": "Stage 5 readiness checklist: S5.guardrail.2."
+      },
+      {
+        "id": "T45.4",
+        "to": [
+          "S5.def.5",
+          "S5.guardrail.12"
+        ],
+        "note": "Stage 5 typical trait: S5.def.5; readiness checklist: S5.guardrail.12."
+      },
+      {
+        "id": "T45.5",
+        "to": [
+          "S5.guardrail.5",
+          "S5.guardrail.4",
+          "S5.guardrail.6",
+          "S5.guardrail.9"
+        ],
+        "note": "Stage 5, required: S5.guardrail.5; readiness checklist: S5.guardrail.4, .6, .9."
+      },
+      {
+        "id": "T45.6",
+        "to": [
+          "S5.guardrail.10"
+        ],
+        "note": "Stage 5 readiness checklist: S5.guardrail.10."
+      },
+      {
+        "id": "T45.7",
+        "to": [
+          "S5.guardrail.11"
+        ],
+        "note": "Stage 5 readiness checklist: S5.guardrail.11."
+      },
+      {
+        "id": "T45.8",
+        "to": [
+          "S5.guardrail.3"
+        ],
+        "note": "Stage 5, required: S5.guardrail.3."
+      }
+    ]
+  }
+}

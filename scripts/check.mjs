@@ -16,6 +16,24 @@
  *   - the domain named by each "flag.<slug>" list's own heading matches the
  *     domain table in v<N>.md §6 "Adoption Capacity Domains".
  *
+ * v6.json files each list under one heading. From v7 on, a list's conditions
+ * can sit in several places (a placement table, a readiness checklist,
+ * typical traits), so each condition carries its own `where` ("<H2> › <H3>"
+ * or "<H2> › <H3> › <bold label>"), a `role`, and, in lists declaring
+ * `domains: true`, a `domain`. For such a file:
+ *   - a condition whose role is "placement" or "required" appears in a
+ *     table row under its `where`; every other condition is a "- " bullet,
+ *     and the bullets under each `where` are exactly its conditions, in
+ *     list and id order;
+ *   - every `role` is one the file's `roles` declares; every `domain` is one
+ *     of the major's domains, and a flag's domain is its list's slug;
+ *   - ids may skip a number only where the crosswalk retires that id;
+ *   - the `crosswalk` from the previous major names every one of its ids
+ *     exactly once: kept (its `to` includes itself, the condition exists
+ *     with the same text) or retired (it does not, and the id is not used);
+ *     every `to` id exists. A major whose predecessor's v<N-1>.json is in
+ *     the repo must have a crosswalk.
+ *
  * Then the CHANGELOG.md release record:
  *   - release headings read "## X.Y.Z — YYYY-MM-DD" (em dash) and every
  *     released entry appears in descending version order;
@@ -129,6 +147,7 @@ const DOMAIN_NAMES_BY_MAJOR = {
     resources_sustainability: "Resources and sustainability",
   },
 };
+DOMAIN_NAMES_BY_MAJOR[7] = DOMAIN_NAMES_BY_MAJOR[6];
 
 function discoverMajors(root) {
   const entries = readdirSync(root);
@@ -166,6 +185,12 @@ function checkMajor(root, major) {
     readFileSync(path.join(root, `v${major}.json`), "utf8"),
   );
   const { lists, conditions } = data;
+  const located = conditions.some((c) => "where" in c);
+  const retired = new Set(
+    (data.crosswalk?.entries ?? [])
+      .filter((e) => !e.to?.includes(e.id))
+      .map((e) => e.id),
+  );
 
   // 1. every condition's text appears verbatim (same normalization as above)
   //    somewhere in v<major>.md.
@@ -218,9 +243,12 @@ function checkMajor(root, major) {
       .map((c) => Number(c.id.match(idRe)?.[1]))
       .filter((n) => !Number.isNaN(n))
       .sort((a, b) => a - b);
-    const want = Array.from({ length: entries.length }, (_, i) => i + 1);
+    const max = numbers.length ? numbers[numbers.length - 1] : 0;
+    const want = Array.from({ length: max }, (_, i) => i + 1).filter(
+      (n) => !retired.has(`${list.list}.${n}`),
+    );
     check(
-      `${list.list}: numbered 1..${entries.length} without gaps`,
+      `${list.list}: numbered 1..${max} without gaps${retired.size ? ", except retired ids" : ""}`,
       numbers.length === want.length && numbers.every((n, i) => n === want[i]),
       `found numbering [${numbers.join(", ")}]`,
     );
@@ -250,9 +278,11 @@ function checkMajor(root, major) {
   //    bullets found there, in order, are exactly this list's conditions —
   //    stronger than checking that a condition's text merely appears
   //    *somewhere* in the document, since it also pins each condition to
-  //    its own declared section.
+  //    its own declared section. A file whose conditions carry `where`
+  //    (v7 on) is checked per condition instead, by checkLocated.
   const h2Headings = [...md.matchAll(/^## (.+)$/gm)];
-  for (const list of lists) {
+  if (located) checkLocated(md, data, major);
+  for (const list of located ? [] : lists) {
     const parts = list.heading.split(" › ");
     if (parts.length !== 2) {
       check(
@@ -355,7 +385,11 @@ function checkMajor(root, major) {
         `slug not in DOMAIN_NAMES_BY_MAJOR[${major}]`,
       );
       if (!name) continue;
-      const h3Text = list.heading.split(" › ")[1] ?? "";
+      const heading =
+        list.heading ??
+        conditions.find((c) => c.list === list.list)?.where ??
+        "";
+      const h3Text = heading.split(" › ")[1] ?? "";
       check(
         `flag.${slug}: heading "${h3Text}" matches domain "${name}"`,
         norm(h3Text) === norm(name),
@@ -368,6 +402,187 @@ function checkMajor(root, major) {
       );
     }
   }
+
+  checkCrosswalk(root, major, data);
+}
+
+/**
+ * The text a `where` path points to: the body of "## <H2>" › "### <H3>",
+ * narrowed, when the path has a third part, to the paragraph that opens
+ * with that bold label and what follows it up to the next bold label. With
+ * no label, the body stops at the first bold label, so a placement table is
+ * read without the checklists below it.
+ */
+function resolveWhere(md, where) {
+  const [h2Text, h3Text, label] = where.split(" › ");
+  const h2s = [...md.matchAll(/^## (.+)$/gm)];
+  const h2i = h2s.findIndex((m) => m[1].trim() === h2Text);
+  if (h2i < 0 || !h3Text) return null;
+  const h2Body = md.slice(h2s[h2i].index, h2s[h2i + 1]?.index ?? md.length);
+  const h3s = [...h2Body.matchAll(/^### (.+)$/gm)];
+  const h3i = h3s.findIndex((m) => m[1].trim() === h3Text);
+  if (h3i < 0) return null;
+  const lines = h2Body
+    .slice(h3s[h3i].index, h3s[h3i + 1]?.index ?? h2Body.length)
+    .split("\n")
+    .slice(1);
+  const labelAt = (l) => l.match(/^\*\*([^*]+?)\.?\*\*/)?.[1];
+  const start = label ? lines.findIndex((l) => labelAt(l) === label) : 0;
+  if (start < 0) return null;
+  const end = lines.findIndex((l, i) => i > start && labelAt(l) !== undefined);
+  return lines.slice(start, end < 0 ? undefined : end);
+}
+
+function checkLocated(md, data, major) {
+  const { conditions, lists, roles = {} } = data;
+  const TABLE_ROLES = new Set(["placement", "required"]);
+  const domainNames = DOMAIN_NAMES_BY_MAJOR[major] ?? {};
+  const listOrder = (c) => lists.findIndex((l) => l.list === c.list);
+  const num = (c) => Number(c.id.slice(c.id.lastIndexOf(".") + 1));
+
+  for (const c of conditions) {
+    check(
+      `${c.id}: role "${c.role}" is declared in \`roles\``,
+      Object.hasOwn(roles, c.role ?? ""),
+      `declared: ${Object.keys(roles).join(", ")}`,
+    );
+  }
+
+  const byWhere = new Map();
+  for (const c of conditions) {
+    if (!byWhere.has(c.where)) byWhere.set(c.where, []);
+    byWhere.get(c.where).push(c);
+  }
+  for (const [where, group] of byWhere) {
+    const body = resolveWhere(md, where ?? "");
+    check(`"${where}" exists in v${major}.md`, !!body, "path not found");
+    if (!body) continue;
+
+    for (const c of group.filter((c) => TABLE_ROLES.has(c.role))) {
+      check(
+        `${c.id}: in a table row under "${where}"`,
+        body.some((l) => l.startsWith("|") && norm(l).includes(norm(c.text))),
+        `not found verbatim in a table row:\n            "${c.text}"`,
+      );
+    }
+
+    const listed = group
+      .filter((c) => !TABLE_ROLES.has(c.role))
+      .sort((a, b) => listOrder(a) - listOrder(b) || num(a) - num(b));
+    if (listed.length === 0) continue;
+    const bullets = body
+      .filter((l) => l.startsWith("- "))
+      .map((l) => norm(l.slice(2)));
+    check(
+      `"${where}": ${listed.length} bullet(s), matching v${major}.json in order`,
+      bullets.length === listed.length &&
+        listed.every((c, i) => bullets[i] === norm(c.text)),
+      `v${major}.md: [${bullets.join(" | ")}]\n            v${major}.json: [${listed.map((c) => c.text).join(" | ")}]`,
+    );
+  }
+
+  for (const list of lists) {
+    const own = conditions.filter((c) => c.list === list.list);
+    if (list.domains) {
+      const bad = own.filter(
+        (c) => !Object.hasOwn(domainNames, c.domain ?? ""),
+      );
+      check(
+        `${list.list}: every condition has one of the ${Object.keys(domainNames).length} domains`,
+        bad.length === 0,
+        `missing or unknown: ${bad.map((c) => `${c.id}=${c.domain}`).join(", ")}`,
+      );
+    } else {
+      const stray = own.filter((c) => "domain" in c);
+      check(
+        `${list.list}: no domain (the list does not declare domains)`,
+        stray.length === 0,
+        `has a domain: ${stray.map((c) => c.id).join(", ")}`,
+      );
+    }
+    if (list.list.startsWith("flag.")) {
+      const slug = list.list.slice("flag.".length);
+      const off = own.filter((c) => c.domain !== slug);
+      check(
+        `${list.list}: every flag's domain is "${slug}"`,
+        off.length === 0,
+        `differs: ${off.map((c) => `${c.id}=${c.domain}`).join(", ")}`,
+      );
+    }
+  }
+}
+
+/**
+ * A major release comes with a crosswalk from the previous major's ids
+ * (RELEASING.md). When v<major-1>.json is in the repo, v<major>.json must
+ * carry `crosswalk: { from: "v<major-1>", entries: [{ id, to: [ids], note? }] }`.
+ */
+function checkCrosswalk(root, major, data) {
+  let prev;
+  try {
+    prev = JSON.parse(
+      readFileSync(path.join(root, `v${major - 1}.json`), "utf8"),
+    );
+  } catch {
+    return; // no previous major in the repo: nothing to cross-walk from
+  }
+  console.log(`\n── v${major}: crosswalk from v${major - 1}`);
+  const cw = data.crosswalk;
+  check(
+    `v${major}.json has a crosswalk from v${major - 1}`,
+    cw?.from === `v${major - 1}` && Array.isArray(cw.entries),
+    `expected "crosswalk": { "from": "v${major - 1}", "entries": [...] }`,
+  );
+  if (!Array.isArray(cw?.entries)) return;
+
+  const now = new Map(data.conditions.map((c) => [c.id, c]));
+  const counts = new Map();
+  for (const e of cw.entries) counts.set(e.id, (counts.get(e.id) ?? 0) + 1);
+  const missing = prev.conditions.filter((c) => counts.get(c.id) !== 1);
+  check(
+    `crosswalk names each of the ${prev.conditions.length} v${major - 1} ids exactly once`,
+    missing.length === 0 && cw.entries.length === prev.conditions.length,
+    `missing or repeated: ${missing.map((c) => c.id).join(", ") || "(extra entries)"}`,
+  );
+
+  const before = new Map(prev.conditions.map((c) => [c.id, c]));
+  for (const e of cw.entries) {
+    const to = Array.isArray(e.to) ? e.to : [];
+    const unknown = to.filter((id) => !now.has(id));
+    check(
+      `crosswalk ${e.id}: every target exists in v${major}.json`,
+      unknown.length === 0,
+      `unknown: ${unknown.join(", ")}`,
+    );
+    if (to.includes(e.id)) {
+      check(
+        `crosswalk ${e.id}: kept, with the same text`,
+        now.has(e.id) &&
+          norm(now.get(e.id).text) === norm(before.get(e.id)?.text ?? ""),
+        now.has(e.id)
+          ? `v${major - 1}: "${before.get(e.id)?.text}" vs v${major}: "${now.get(e.id).text}"`
+          : `kept, but ${e.id} is not in v${major}.json`,
+      );
+    } else {
+      check(
+        `crosswalk ${e.id}: retired, and the id is not reused`,
+        !now.has(e.id) && typeof e.note === "string" && e.note.length > 0,
+        now.has(e.id)
+          ? `${e.id} is still in v${major}.json`
+          : "a retired id needs a `note` saying where its content lives",
+      );
+    }
+  }
+  const reused = data.conditions.filter(
+    (c) =>
+      before.has(c.id) &&
+      !cw.entries.some((e) => e.id === c.id && e.to?.includes(c.id)),
+  );
+  check(
+    `v${major}.json reuses no v${major - 1} id outside the crosswalk`,
+    reused.length === 0,
+    `reused: ${reused.map((c) => c.id).join(", ")}`,
+  );
 }
 
 function checkChangelog(root, majors) {

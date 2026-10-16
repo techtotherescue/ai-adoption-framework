@@ -46,7 +46,8 @@ v6 stays published unchanged as `v6.md` and `v6.json`.
 
 SHA-256: 9b2bd25ecb996d4752b550f8753dac43331ac711fd3e211e2367d82c59e693de
 
-Approved: TODO
+Approved:
+Radosław Taraszka (PR #5)
 
 ## 6.0.1 — 2026-09-30
 

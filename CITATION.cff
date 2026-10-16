@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this framework, please cite it as below."
 title: "AI Adoption Framework"
 version: "7.0.0"
-date-released: "2026-10-15"
+date-released: "2026-10-16"
 license: CC-BY-4.0
 repository-code: "https://github.com/techtotherescue/ai-adoption-framework"
 authors:

@@ -7,7 +7,7 @@ Rescue), write it. A change starts as a proposal to them, not an edit to the
 text: see RELEASING.md. Each release records the authors' approval here. A
 patch needs one author's approval; a minor or major release needs both.
 
-## 7.0.0 — 2026-10-15
+## 7.0.0 — 2026-10-16
 
 Changes: v7, a major release; an organization's stage or colours can
 differ from v6.

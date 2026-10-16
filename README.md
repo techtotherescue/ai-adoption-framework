@@ -11,7 +11,7 @@ leadership and ownership to resources and sustainability.
 
 ## Current release
 
-**7.0.0**, released 2026-10-15.
+**7.0.0**, released 2026-10-16.
 
 - [`v7.md`](v7.md): the framework text.
 - [`v7.json`](v7.json): its 101 conditions, each with a stable identifier,

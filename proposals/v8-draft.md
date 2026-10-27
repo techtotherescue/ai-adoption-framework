@@ -689,51 +689,35 @@ The goal is not independence at any cost. It is managed dependency with meaningf
 
 ## 7. Fragility Flags
 
-Fragility flags are cross-domain warnings, not separate maturity layers. They should be grouped by the capacity that can address them.
+v7 lists 23 fragility flags beside the domains, and many repeat a readiness checklist item, so one gap showed twice. v8 has no separate flags. A flag that repeats a condition merges into it; the others become readiness conditions of their own (§5), in the domain v7 gave the flag.
 
-### Leadership And Ownership
+| Fragility flag in v7 | Domain | In v8 |
+| --- | --- | --- |
+| No AI adoption owner or executive sponsor. | Leadership | Stage 3, required: a named AI owner, champion, or adoption group has time and authority. |
+| Owner lacks authority or protected time. | Leadership | Stage 3, required: a named AI owner, champion, or adoption group has time and authority. |
+| Project manager or champion left without succession. | Leadership | Stage 3 readiness: where there is an AI owner, a successor arranged. |
+| Weak staff, user, or beneficiary participation. | People | Stage 3 readiness: the people who do the work take part in shaping how AI is used. For the people served, the gate on participation (§5, Stage 3). |
+| AI is added to tasks without workflow or role redesign. | People | Stage 3 readiness: explicit map of changing tasks, roles, review, and exceptions. |
+| No training, adoption, or change-support plan. | People | Stage 3 readiness: team education and learning rhythm. |
+| Unorganized, inaccessible, or unowned data and context. | Data | Stage 3 readiness: data/context inventory and maintenance responsibility. |
+| No maintenance responsibility or provenance. | Data | Stage 3 readiness: data/context inventory and maintenance responsibility. |
+| Critical context exists only in individual files or vendor platforms. | Data | Stage 3 readiness: data/context inventory and maintenance responsibility. |
+| No technical owner or reliable senior partner. | Technology | Stage 3 readiness: technical support model. |
+| Pro-bono dependency without quality assurance or handoff. | Technology | Stage 3 readiness: where the work is done pro bono, an independent quality check and an agreed handover. |
+| Single-vendor, single-model, single-person, or single-partner dependency. | Technology | Stage 4 readiness: vendor, model, data, and partner dependency review. |
+| Unknown consumption-cost exposure. | Technology | Stage 3 readiness: vendor and partner dependency view. |
+| No migration, rollback, fallback, maintenance, or continuity path. | Technology | Stage 4 readiness: portability, rollback, or migration path. |
+| Sensitive or beneficiary-facing exposure without proportional governance. | Governance | Stage 3 readiness: safe-use and data-handling norms. |
+| No explicit human accountability, escalation, appeal, or incident owner. | Governance | Stage 4 readiness: human review, escalation, exception, and appeal rules where relevant. |
+| Security, privacy, safeguarding, or consequence risks have not been assessed. | Governance | Stage 4 readiness: a risk and consequence assessment. |
+| No baseline, intended outcome, or adoption measure. | Evidence | Stage 3 readiness: baseline and intended outcome for priority workflows. |
+| Output volume is treated as impact. | Evidence | Stage 3 readiness: where the organization measures its AI work, results are judged by outcomes. |
+| No failure review or learning cadence after deployment. | Evidence | Stage 4 readiness: a review of failures and a learning cadence after deployment. |
+| No protected implementation time. | Resources | Stage 3 readiness: budget, credits, and protected implementation time. |
+| No tool, credit, operating, or maintenance budget. | Resources | Stage 3 readiness: budget, credits, and protected implementation time. |
+| Deployment depends on temporary funding with no continuation plan. | Resources | Stage 4 readiness: where the deployment depends on temporary funding, a plan for continuing the work. |
 
-- no AI adoption owner or executive sponsor;
-- owner lacks authority or protected time;
-- project manager or champion left without succession.
-
-### People, Workflows, And Change
-
-- weak staff, user, or beneficiary participation;
-- AI is added to tasks without workflow or role redesign;
-- no training, adoption, or change-support plan.
-
-### Data And Organizational Context
-
-- unorganized, inaccessible, or unowned data and context;
-- no maintenance responsibility or provenance;
-- critical context exists only in individual files or vendor platforms.
-
-### Technology, Implementation, And Resilience
-
-- no technical owner or reliable senior partner;
-- pro-bono dependency without quality assurance or handoff;
-- single-vendor, single-model, single-person, or single-partner dependency;
-- unknown consumption-cost exposure;
-- no migration, rollback, fallback, maintenance, or continuity path.
-
-### Governance, Risk, And Accountability
-
-- sensitive or beneficiary-facing exposure without proportional governance;
-- no explicit human accountability, escalation, appeal, or incident owner;
-- security, privacy, safeguarding, or consequence risks have not been assessed.
-
-### Evidence And Learning
-
-- no baseline, intended outcome, or adoption measure;
-- output volume is treated as impact;
-- no failure review or learning cadence after deployment.
-
-### Resources And Sustainability
-
-- no protected implementation time;
-- no tool, credit, operating, or maintenance budget;
-- deployment depends on temporary funding with no continuation plan.
+v7 names an initial consequence and risk screen among what helps at Stage 2, and basic risk screening among the Governance indicators for Stage 3, without a checklist item for it. v8 keeps it that way: the flag on unassessed risks merges into Stage 4's risk and consequence assessment.
 
 ## 8. Support Pathways
 

@@ -47,7 +47,19 @@ The adoption stage describes how deeply and reliably the organization can integr
 | 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance: if it failed or went wrong for a week, the people served would be harmed, or a core operation would stop. | • The workflow runs in normal operations.<br>• It is redesigned, with explicit roles.<br>• It has accountable, technical, and data owners.<br>• Evidence improves it.<br>• Governance, maintenance, dependency, and failure handling are active practices. |
 | 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | At least two independent organizations use, in their own work, a tool, dataset, standard, playbook, or service the organization created. | • Other organizations obtain demonstrated value from it.<br>• Sustainable funding.<br>• Maintenance and incident capacity. |
 
-An organization is at the highest stage it reaches whose requirements it meets, together with the requirements of every stage below it. Everything else in a stage profile is a readiness checklist: an unmet item is a gap to close (§6) and never lowers the stage.
+Each stage has two kinds of condition. Deciding conditions place the stage: what places an organization there, and what it requires. Readiness conditions confirm it: the items of the stage's readiness checklist in §5. There is no third kind.
+
+Each stage from 3 to 5 has one of three statuses:
+
+- **Confirmed:** every deciding condition and every readiness condition is met, and every stage below is confirmed.
+- **Conditional:** every deciding condition is met, more than half of the readiness conditions that apply are met, and every stage below is confirmed. The stage is reached but does not yet stand firmly.
+- **Not reached:** anything else.
+
+Stage 1 is always confirmed. Stage 2 is confirmed when it is reached; it has no readiness checklist and is never conditional.
+
+Where a condition applies only in some cases, its wording says so. Where it does not apply, it is left out: it counts neither for the stage nor against it. A condition nobody can confirm ("we don't know") is not met.
+
+The organization's stage is its highest confirmed stage, or the stage just above it if that one is conditional. Only one stage can be conditional, and the stage above a conditional stage is not assessed. A conditional stage has no deadline; it is assessed again at the next assessment. Every unmet condition is a gap to close (§6).
 
 Each stage profile in §5 opens with a placement table. Its first row says what places an organization at the stage. Each further row is a requirement: if any one is missing, the organization is at the stage below. The v6 column gives the identifier of each condition the row keeps word for word, and says what in the row is new. The last column is the question that checks the row; an assessment tool may word it its own way.
 
@@ -283,7 +295,7 @@ Organizations are turning scattered AI use into a shared AI adoption operating s
 
 One team or function where AI is part of how the work is normally done is enough for S3.def.1.
 
-**Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. A solid Stage 3 organization should have most of the following:
+**Readiness checklist.** An unmet item is a gap to close (§6). With more than half of the items that apply met, Stage 3 is conditional; with all of them met, it is confirmed (§2).
 
 - Shared licenses or approved tool stack.
 - Team education and learning rhythm.
@@ -371,7 +383,7 @@ Every requirement but the last concerns the named workflow. S4.def.6 is judged b
 
 "Governed" in the summary does not include the gates for the people the organization serves, listed below.
 
-**Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. Before a mission-critical AI workflow is considered operationally ready, the organization should have:
+**Readiness checklist.** An unmet item is a gap to close (§6) and keeps Stage 4 from being confirmed (§2). Before a mission-critical AI workflow is considered operationally ready, the organization should have:
 
 - a defined user need and intended outcome;
 - a baseline and evaluation plan;
@@ -469,7 +481,7 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 An independent organization is not a partner in delivering the capability, not its funder, and not a branch of the same network. The capability others use can itself be the workflow that places the organization at Stage 4. The assessment accepts the organization's own answer, provided it names the organizations.
 
-**Readiness checklist.** An unmet item is a gap to close (§6) and does not lower the stage. Stage 5 is not just scale ambition. A Stage 5 organization should also have:
+**Readiness checklist.** An unmet item is a gap to close (§6) and keeps Stage 5 from being confirmed (§2). Stage 5 is not just scale ambition. A Stage 5 organization should also have:
 
 - mission-control guardrails;
 - standards and governance;

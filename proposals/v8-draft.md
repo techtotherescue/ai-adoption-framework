@@ -49,6 +49,8 @@ The adoption stage describes how deeply and reliably the organization can integr
 
 Each stage has two kinds of condition. Deciding conditions place the stage: what places an organization there, and what it requires. Readiness conditions confirm it: the items of the stage's readiness checklist in §5. There is no third kind.
 
+The deciding conditions that say how far AI goes in the organization's work form the stage line: people use AI in their own work (Stage 2); the organization runs pilots on selected workflows, and AI use is expected in selected areas (Stage 3); AI is integral to a workflow that matters, and that workflow runs in normal operations (Stage 4); at least two independent organizations use something the organization created (Stage 5). The stage line is the stage's own definition and belongs to no domain. Every other condition belongs to one capacity domain (§6), so every gap leads to a domain and from there to support. A deciding condition belongs to a domain when it names a capacity, and to the stage line when it says how far AI goes.
+
 Each stage from 3 to 5 has one of three statuses:
 
 - **Confirmed:** every deciding condition and every readiness condition is met, and every stage below is confirmed.
@@ -569,7 +571,7 @@ This is not a universal scorecard. A low-risk internal workflow and a high-risk 
 
 Three important concepts remain outside the domain model:
 
-- **Adoption depth and repeatability** are evidence used to determine stage.
+- **Adoption depth and repeatability** are the stage line (§2): they determine the stage and belong to no domain.
 - **Deployment scope** remains an independent descriptor because it changes accountability and support needs.
 - **Ecosystem ambition** remains part of the aspiration profile (§3).
 

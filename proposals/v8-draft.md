@@ -771,6 +771,8 @@ When an organization is pursuing a major AI project, the assessment should still
 
 > Is this project ahead of the organization's adoption capacity?
 
+The stage line answers it (§2). When AI goes further than the organization's stage, the result says so in one sentence, naming the workflow: for example, "AI already runs a workflow at Stage 4; the organization holds Stage 3, conditional."
+
 Lightweight guidance:
 
 - Stage 1 organizations should not be pushed into a build project.

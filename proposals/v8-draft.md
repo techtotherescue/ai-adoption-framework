@@ -63,7 +63,7 @@ Where a condition applies only in some cases, its wording says so. Where it does
 
 The organization's stage is its highest confirmed stage, or the stage just above it if that one is conditional. Only one stage can be conditional, and the stage above a conditional stage is not assessed. A conditional stage has no deadline; it is assessed again at the next assessment. Every unmet condition is a gap to close (§6).
 
-Each stage profile in §5 opens with a placement table. Its first row says what places an organization at the stage. Each further row is a requirement: if any one is missing, the organization is at the stage below. The v6 column gives the identifier of each condition the row keeps word for word, and says what in the row is new. The last column is the question that checks the row; an assessment tool may word it its own way.
+Each stage profile in §5 opens with a placement table. Its first row says what places an organization at the stage. Each further row is a requirement: if any one is missing, the organization is at the stage below. The identifier column gives the v7 identifier of each condition in the row. The last column is the question that checks the row; an assessment tool may word it its own way.
 
 ### Dimension 2: Deployment Scope
 
@@ -216,9 +216,9 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 ### Placement
 
-| Placement | v6 | How to check |
+| Placement | Identifier | How to check |
 | --- | --- | --- |
-| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | New | Does anyone in the organization use AI in their work? |
+| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | Does anyone in the organization use AI in their work? |
 | **Required:** nothing. Every organization starts here. | | |
 
 ### What it looks like
@@ -248,9 +248,9 @@ Individuals and teams are trying AI and discovering useful gains without shared 
 
 ### Placement
 
-| Placement | v6 | How to check |
+| Placement | Identifier | How to check |
 | --- | --- | --- |
-| **Reached when** people use AI in their own work, however unevenly. | New, from S2.def.1 and S2.def.2 | Does anyone use AI in their work, even occasionally? |
+| **Reached when** people use AI in their own work, however unevenly. | S2.def.6 | Does anyone use AI in their work, even occasionally? |
 | **Required:** nothing more. | | |
 
 Appointing an AI owner does not reach Stage 2: an organization with an owner where nobody uses AI is at Stage 1. The owner counts in Leadership and ownership, where Stage 3 requires a named owner with time and authority.
@@ -290,11 +290,11 @@ Organizations are turning scattered AI use into a shared AI adoption operating s
 
 ### Placement
 
-| Placement | v6 | How to check |
+| Placement | Identifier | How to check |
 | --- | --- | --- |
-| **Reached when** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | New, from S3.def.5 | Have you run AI pilots on selected workflows, or gone through the Adoption Loop on them more than once? |
+| **Reached when** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | S3.def.7 | Have you run AI pilots on selected workflows, or gone through the Adoption Loop on them more than once? |
 | **Required:** a named AI owner, champion, or adoption group has time and authority. | S3.def.3 | Who owns AI adoption, and do they have protected time and the authority to decide? |
-| **Required:** people share what works and what fails across the organization. | New, from v6 §10 ("champions can demonstrate wins and failures") | Do people share what worked and what failed with AI across the organization? |
+| **Required:** people share what works and what fails across the organization. | S3.def.8 | Do people share what worked and what failed with AI across the organization? |
 | **Required:** AI use becomes expected in selected areas rather than exceptional. | S3.def.1 | In which team or function is AI part of how the work is normally done? |
 
 One team or function where AI is part of how the work is normally done is enough for S3.def.1.
@@ -381,7 +381,7 @@ Organizations have redesigned and reliably operate one or more mission-critical 
 
 In short: AI is deployed and governed in a crucial internal or important beneficiary-facing workflow. The test below the table says what makes a workflow crucial or important; the table says what deployed and governed mean.
 
-| Placement | v6 | How to check |
+| Placement | Identifier | How to check |
 | --- | --- | --- |
 | **Reached when** AI is integral to a workflow that matters to mission delivery or organizational performance. | S4.def.1 | Name the workflow. If it failed or went wrong for a week, would the people you serve be harmed, or would a core operation stop? |
 | **Required:** the workflow operates repeatedly outside a temporary demo environment. | S4.def.4 | Does it run as part of normal operations, rather than as a pilot limited in time or scale? |
@@ -474,11 +474,11 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 ### Placement
 
-| Placement | v6 | How to check |
+| Placement | Identifier | How to check |
 | --- | --- | --- |
-| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.2, S5.guardrail.1; new: at least two independent organizations use one of them | Name what you created, and the organizations outside yours that use it in their own work today. |
+| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.7, S5.def.2, S5.guardrail.1 | Name what you created, and the organizations outside yours that use it in their own work today. |
 | **Required:** other organizations obtain demonstrated value from the capability. | S5.def.3 | What would each of them lose if it stopped tomorrow, in their own words? |
-| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5; new: both cover the capability others use | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
+| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5, S5.def.8 | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
 
 An independent organization is not a partner in delivering the capability, not its funder, and not a branch of the same network. The capability others use can itself be the workflow that places the organization at Stage 4. The assessment accepts the organization's own answer, provided it names the organizations.
 

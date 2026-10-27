@@ -210,16 +210,18 @@ Organizations may run the loop many times while remaining at the same stage. Sta
 
 ## 5. Stage Profiles
 
+Each condition names its capacity domain (§6), by the first word of the domain's name, or the stage line (§2). In this draft, "(proposed)" marks a domain v7 does not give.
+
 ## Stage 1: Resisting
 
 Organizations are holding back from AI because they do not yet trust its fit with their mission, people, data, or values.
 
 ### Placement
 
-| Placement | Identifier | How to check |
-| --- | --- | --- |
-| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | Does anyone in the organization use AI in their work? |
-| **Required:** nothing. Every organization starts here. | | |
+| Placement | Identifier | Domain | How to check |
+| --- | --- | --- | --- |
+| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | Stage line | Does anyone in the organization use AI in their work? |
+| **Required:** nothing. Every organization starts here. | | | |
 
 ### What it looks like
 
@@ -240,7 +242,7 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 | Permission to experiment without shame or pressure. | Forced adoption mandates. |
 | Evidence that AI can enhance rather than replace human judgment. | Treating concerns as ignorance. |
 | Lightweight, reversible use cases before strategy pressure. | Pushing beneficiary-facing AI before trust exists. |
-| Practical answers to privacy and mission concerns. |  |
+| Practical answers to privacy and mission concerns. | |
 
 ## Stage 2: Exploring
 
@@ -248,10 +250,10 @@ Individuals and teams are trying AI and discovering useful gains without shared 
 
 ### Placement
 
-| Placement | Identifier | How to check |
-| --- | --- | --- |
-| **Reached when** people use AI in their own work, however unevenly. | S2.def.6 | Does anyone use AI in their work, even occasionally? |
-| **Required:** nothing more. | | |
+| Placement | Identifier | Domain | How to check |
+| --- | --- | --- | --- |
+| **Reached when** people use AI in their own work, however unevenly. | S2.def.6 | Stage line | Does anyone use AI in their work, even occasionally? |
+| **Required:** nothing more. | | | |
 
 Appointing an AI owner does not reach Stage 2: an organization with an owner where nobody uses AI is at Stage 1. The owner counts in Leadership and ownership, where Stage 3 requires a named owner with time and authority.
 
@@ -279,8 +281,8 @@ Sharing what works and what fails, which Stage 3 requires, usually starts here.
 | Lightweight workflow discovery. | Beneficiary-facing experiments without safeguards. |
 | Simple tool guidance. | Pro-bono projects that skip internal ownership. |
 | An initial consequence and risk screen. | Treating experimentation volume as adoption maturity. |
-| A learning rhythm. |  |
-| A path toward a named owner if use keeps spreading. |  |
+| A learning rhythm. | |
+| A path toward a named owner if use keeps spreading. | |
 
 **Pro-bono rule of thumb:** At Stage 2, pro-bono support should focus on exploration, training, workflow mapping, discovery, and readiness. It should not build mission-critical systems.
 
@@ -290,36 +292,38 @@ Organizations are turning scattered AI use into a shared AI adoption operating s
 
 ### Placement
 
-| Placement | Identifier | How to check |
-| --- | --- | --- |
-| **Reached when** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | S3.def.7 | Have you run AI pilots on selected workflows, or gone through the Adoption Loop on them more than once? |
-| **Required:** a named AI owner, champion, or adoption group has time and authority. | S3.def.3 | Who owns AI adoption, and do they have protected time and the authority to decide? |
-| **Required:** people share what works and what fails across the organization. | S3.def.8 | Do people share what worked and what failed with AI across the organization? |
-| **Required:** AI use becomes expected in selected areas rather than exceptional. | S3.def.1 | In which team or function is AI part of how the work is normally done? |
+| Placement | Identifier | Domain | How to check |
+| --- | --- | --- | --- |
+| **Reached when** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | S3.def.7 | Stage line | Have you run AI pilots on selected workflows, or gone through the Adoption Loop on them more than once? |
+| **Required:** a named AI owner, champion, or adoption group has time and authority. | S3.def.3 | Leadership (proposed) | Who owns AI adoption, and do they have protected time and the authority to decide? |
+| **Required:** people share what works and what fails across the organization. | S3.def.8 | Evidence (proposed) | Do people share what worked and what failed with AI across the organization? |
+| **Required:** AI use becomes expected in selected areas rather than exceptional. | S3.def.1 | Stage line | In which team or function is AI part of how the work is normally done? |
 
 One team or function where AI is part of how the work is normally done is enough for S3.def.1.
 
 **Readiness checklist.** An unmet item is a gap to close (§6). With more than half of the items that apply met, Stage 3 is conditional; with all of them met, it is confirmed (§2).
 
-- Shared licenses or approved tool stack.
-- Team education and learning rhythm.
-- Safe-use and data-handling norms.
-- Workflow and use-case prioritization.
-- Baseline and intended outcome for priority workflows.
-- Data/context inventory and maintenance responsibility.
-- Explicit map of changing tasks, roles, review, and exceptions.
-- Technical support model.
-- Vendor and partner dependency view.
-- Budget, credits, and protected implementation time.
-- Regular implementation cadence.
-- Criteria for deciding which workflows are ready for operational deployment.
-- Where AI affects the people served: participation by affected users or credible representatives.
-- Where AI affects the people served: documented limits on automated decisions.
-- Where AI affects the people served: qualified and accountable human review.
-- Where AI affects the people served: a clear method to question, correct, or appeal outcomes where relevant.
-- Where AI affects the people served: testing for exclusion, bias, and differential harm.
-- Where AI affects the people served: communication that makes the role of AI understandable.
-- Where AI affects the people served: safeguards appropriate to the political and surveillance environment.
+| Readiness condition | Domain |
+| --- | --- |
+| Shared licenses or approved tool stack. | Technology |
+| Team education and learning rhythm. | People |
+| Safe-use and data-handling norms. | Governance |
+| Workflow and use-case prioritization. | Leadership |
+| Baseline and intended outcome for priority workflows. | Evidence |
+| Data/context inventory and maintenance responsibility. | Data |
+| Explicit map of changing tasks, roles, review, and exceptions. | People |
+| Technical support model. | Technology |
+| Vendor and partner dependency view. | Technology |
+| Budget, credits, and protected implementation time. | Resources |
+| Regular implementation cadence. | Leadership |
+| Criteria for deciding which workflows are ready for operational deployment. | Governance |
+| Where AI affects the people served: participation by affected users or credible representatives. | Governance |
+| Where AI affects the people served: documented limits on automated decisions. | Governance |
+| Where AI affects the people served: qualified and accountable human review. | Governance |
+| Where AI affects the people served: a clear method to question, correct, or appeal outcomes where relevant. | Governance |
+| Where AI affects the people served: testing for exclusion, bias, and differential harm. | Governance |
+| Where AI affects the people served: communication that makes the role of AI understandable. | Governance |
+| Where AI affects the people served: safeguards appropriate to the political and surveillance environment. | Governance |
 
 The last seven are the gates for the people the organization serves. AI affects the people the organization serves when those who would feel a mistake first are the people served, directly or indirectly, people deciding on their access to a service, or the wider public; or when a workflow that runs, or is going into, normal operations touches the people served or organizations that depend on it, or decides or helps decide something about a specific person. Where AI does not affect them, the gates are left out. An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
@@ -344,11 +348,11 @@ The last seven are the gates for the people the organization serves. AI affects 
 | Internal learning and evidence rhythm. | Automating a broken workflow without redesigning roles. |
 | Workflow and job redesign support. | Relying on a pro-bono partner while internal ownership is weak. |
 | Data/context organization. | Buying a shared tool without addressing context, behavior, and learning. |
-| Basic acceptable-use and data-handling guidance. |  |
-| Dependency and exit-readiness review. |  |
-| Pilot-readiness criteria. |  |
-| Change-management support. |  |
-| A decision about where agents or agentic interfaces are justified, if anywhere. |  |
+| Basic acceptable-use and data-handling guidance. | |
+| Dependency and exit-readiness review. | |
+| Pilot-readiness criteria. | |
+| Change-management support. | |
+| A decision about where agents or agentic interfaces are justified, if anywhere. | |
 
 **Pro-bono rule of thumb.** At Stage 3, pro-bono support can help run pilots only if the organization has:
 
@@ -381,35 +385,37 @@ Organizations have redesigned and reliably operate one or more mission-critical 
 
 In short: AI is deployed and governed in a crucial internal or important beneficiary-facing workflow. The test below the table says what makes a workflow crucial or important; the table says what deployed and governed mean.
 
-| Placement | Identifier | How to check |
-| --- | --- | --- |
-| **Reached when** AI is integral to a workflow that matters to mission delivery or organizational performance. | S4.def.1 | Name the workflow. If it failed or went wrong for a week, would the people you serve be harmed, or would a core operation stop? |
-| **Required:** the workflow operates repeatedly outside a temporary demo environment. | S4.def.4 | Does it run as part of normal operations, rather than as a pilot limited in time or scale? |
-| **Required:** the workflow is redesigned rather than merely supplemented with an AI tool. Human roles, review, escalation, and exception handling are explicit. | S4.def.2, S4.def.3 | Is it written down what the AI does, what people decide, who reviews its output, and what happens with exceptions? |
-| **Required:** accountable AI adoption and technical ownership; data/context ownership and quality controls. | S4.gate.3, S4.gate.5 | Who is accountable for this workflow, including its technical side? Who owns the data it uses, and who checks its quality? |
-| **Required:** evidence is used to improve the workflow. | S4.def.5 | Name one change made to this workflow because of what its results or failures showed. |
-| **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Does the organization govern and maintain its AI workflows, manage their dependencies, and have a plan for when one fails? |
+| Placement | Identifier | Domain | How to check |
+| --- | --- | --- | --- |
+| **Reached when** AI is integral to a workflow that matters to mission delivery or organizational performance. | S4.def.1 | Stage line | Name the workflow. If it failed or went wrong for a week, would the people you serve be harmed, or would a core operation stop? |
+| **Required:** the workflow operates repeatedly outside a temporary demo environment. | S4.def.4 | Stage line | Does it run as part of normal operations, rather than as a pilot limited in time or scale? |
+| **Required:** the workflow is redesigned rather than merely supplemented with an AI tool. Human roles, review, escalation, and exception handling are explicit. | S4.def.2, S4.def.3 | People (proposed) | Is it written down what the AI does, what people decide, who reviews its output, and what happens with exceptions? |
+| **Required:** accountable AI adoption and technical ownership; data/context ownership and quality controls. | S4.gate.3, S4.gate.5 | Leadership; Data | Who is accountable for this workflow, including its technical side? Who owns the data it uses, and who checks its quality? |
+| **Required:** evidence is used to improve the workflow. | S4.def.5 | Evidence (proposed) | Name one change made to this workflow because of what its results or failures showed. |
+| **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Governance (proposed) | Does the organization govern and maintain its AI workflows, manage their dependencies, and have a plan for when one fails? |
 
 A workflow matters when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
 
-Every requirement but the last concerns the named workflow. S4.def.6 is judged by the organization's practice, not by whether every workflow meets every gate.
+Every requirement but the last concerns the named workflow. S4.def.6 is judged by the organization's practice, not by whether every workflow meets every gate. It stays one condition, in Governance, because one question checks it; its maintenance and dependency side is also on the readiness checklist below, in Technology.
 
 "Governed" in the summary does not include the gates for the people the organization serves, which are Stage 3 readiness conditions.
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and keeps Stage 4 from being confirmed (§2). Before a mission-critical AI workflow is considered operationally ready, the organization should have:
 
-- a defined user need and intended outcome;
-- a baseline and evaluation plan;
-- a risk and consequence assessment;
-- human review, escalation, exception, and appeal rules where relevant;
-- security and privacy stance;
-- monitoring after deployment;
-- staff or user acceptability checks;
-- maintenance and incident ownership;
-- cost and consumption controls;
-- vendor, model, data, and partner dependency review;
-- portability, rollback, or migration path;
-- a decision process for continuation, expansion, constraint, or retirement.
+| Readiness condition | Domain |
+| --- | --- |
+| A defined user need and intended outcome. | Evidence |
+| A baseline and evaluation plan. | Evidence |
+| A risk and consequence assessment. | Governance |
+| Human review, escalation, exception, and appeal rules where relevant. | Governance |
+| Security and privacy stance. | Technology |
+| Monitoring after deployment. | Evidence |
+| Staff or user acceptability checks. | People |
+| Maintenance and incident ownership. | Technology |
+| Cost and consumption controls. | Resources |
+| Vendor, model, data, and partner dependency review. | Technology |
+| Portability, rollback, or migration path. | Technology |
+| A decision process for continuation, expansion, constraint, or retirement. | Leadership |
 
 **Examples that do not reach Stage 4.** Each misses the requirement in parentheses.
 
@@ -438,9 +444,9 @@ Every requirement but the last concerns the named workflow. S4.def.6 is judged b
 | Testing and outcome evaluation. | Measuring output volume instead of workflow or mission outcomes. |
 | Staff and user adoption strategy. | Treating pro-bono delivery as a substitute for ownership. |
 | Change-management and job-transition support. | Assuming open source or self-hosting automatically solves trust and control. |
-| Senior technical mentorship and quality assurance. |  |
-| Maintenance, incident, and financial model. |  |
-| Dependency management and exit readiness. |  |
+| Senior technical mentorship and quality assurance. | |
+| Maintenance, incident, and financial model. | |
+| Dependency management and exit readiness. | |
 
 **Pro-bono rule of thumb.** At Stage 4, pro-bono support is acceptable only with strong quality assurance:
 
@@ -474,25 +480,29 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 ### Placement
 
-| Placement | Identifier | How to check |
-| --- | --- | --- |
-| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.7, S5.def.2, S5.guardrail.1 | Name what you created, and the organizations outside yours that use it in their own work today. |
-| **Required:** other organizations obtain demonstrated value from the capability. | S5.def.3 | What would each of them lose if it stopped tomorrow, in their own words? |
-| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5, S5.def.8 | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
+| Placement | Identifier | Domain | How to check |
+| --- | --- | --- | --- |
+| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.7, S5.def.2, S5.guardrail.1 | Stage line | Name what you created, and the organizations outside yours that use it in their own work today. |
+| **Required:** other organizations obtain demonstrated value from the capability. | S5.def.3 | Evidence (proposed) | What would each of them lose if it stopped tomorrow, in their own words? |
+| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5, S5.def.8 | Resources (proposed) | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
 
 An independent organization is not a partner in delivering the capability, not its funder, and not a branch of the same network. The capability others use can itself be the workflow that places the organization at Stage 4. The assessment accepts the organization's own answer, provided it names the organizations.
 
+Sustainable funding and maintenance capacity stay one condition, in Resources, because one question checks both; Stage 4 already asks for maintenance and incident ownership, in Technology.
+
 **Readiness checklist.** An unmet item is a gap to close (§6) and keeps Stage 5 from being confirmed (§2). Stage 5 is not just scale ambition. A Stage 5 organization should also have:
 
-- mission-control guardrails;
-- standards and governance;
-- distribution and implementation partnerships;
-- clear ownership and accountability;
-- partner and corporate influence boundaries;
-- support model for adopters;
-- interoperability and portability strategy;
-- evidence that the infrastructure improves adoption or outcomes;
-- credibility with the communities and organizations affected.
+| Readiness condition | Domain |
+| --- | --- |
+| Mission-control guardrails. | Governance (proposed) |
+| Standards and governance. | Governance (proposed) |
+| Distribution and implementation partnerships. | Resources (proposed) |
+| Clear ownership and accountability. | Leadership (proposed) |
+| Partner and corporate influence boundaries. | Technology (proposed) |
+| Support model for adopters. | People (proposed) |
+| Interoperability and portability strategy. | Technology (proposed) |
+| Evidence that the infrastructure improves adoption or outcomes. | Evidence (proposed) |
+| Credibility with the communities and organizations affected. | Governance (proposed) |
 
 ### What it looks like
 
@@ -518,7 +528,7 @@ An independent organization is not a partner in delivering the capability, not i
 | Adoption support for participating organizations. | Closed approaches that create harmful dependency. |
 | Cross-organization evidence and learning system. | Corporate partnership drift. |
 | Mission protection and influence boundaries. | Trying to replace last-mile organizations instead of enabling them. |
-| Sustainable technical and service ownership. |  |
+| Sustainable technical and service ownership. | |
 
 **Pro-bono rule of thumb:** At Stage 5, pro-bono alone is not a sufficient basis for shared infrastructure. Long-term ownership, maintenance funding, governance, and adopter support must exist.
 

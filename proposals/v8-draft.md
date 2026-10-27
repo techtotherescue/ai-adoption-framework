@@ -101,6 +101,19 @@ A useful diagnosis should say:
 
 This is more useful than a stage label alone.
 
+### Several Respondents
+
+Several people from the organization may answer an assessment. Their answers combine as follows:
+
+- An answer that claims progress takes the middle answer: the majority on a yes or no; with an even number of people, the more cautious of the two middle answers. A list of items combines item by item the same way. Whether a week's failure of a workflow would harm the people served or stop a core operation claims progress, because it puts the workflow on the Stage 4 stage line.
+- An answer that sets the bar takes the most demanding answer: who would feel a mistake first, the worst consequence of a mistake, and whether a workflow decides something about a specific person.
+- A question where several answers can be chosen, such as which data AI uses, takes every answer anyone chose.
+- "We don't know" does not vote.
+- The list of where the organization uses AI, and how far each use has gone, is shared by everyone and is not voted on.
+- The aspiration answers, the type of organization and how far it wants to take AI, are those of the person who started the assessment.
+- Each readiness checklist from Stage 3 asks that at least two people answered and that they agree on the stage's deciding answers: the answers that feed its stage line and its deciding conditions. While they disagree, or when only one person answered, the stage is at most conditional.
+- Every difference is shown in the part of the result its question belongs to (§10), the aspiration answers included. A difference is marked when another answer given would change whether a condition other than agreement is met.
+
 ## 3. Organizational Aspiration Profiles
 
 The framework should help an organization choose a healthy aspiration, not push everyone up the ladder.

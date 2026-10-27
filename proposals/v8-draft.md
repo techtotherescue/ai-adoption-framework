@@ -583,22 +583,16 @@ Each domain is intentionally supportable. An organization should be able to resp
 
 ### How To Read The Domains
 
-The framework should use a simple green / yellow / red judgment for each domain:
+Each domain shows which of its conditions are in place and which are missing toward the organization's next step:
 
-- **Green:** sufficient for the organization's current stage, intended scope, and risk.
-- **Yellow:** usable but likely to constrain the next Adoption Loop or make deployment fragile.
-- **Red:** a binding constraint that should be addressed before the intended next step.
+- the deciding conditions and the readiness checklist of the stage the organization is working toward; for a conditional stage, that stage itself. From Stage 3, this includes the gates for the people the organization serves (§5, Stage 3) whenever AI affects them;
+- Stage 4's conditions and readiness checklist, for each workflow the organization is putting into operation or already operates.
 
-A domain is red when it is missing a condition that the organization's next step requires. The required conditions are:
+v8 does not use v7's green / yellow / red judgment. A domain lists what is in place and what is missing, so no assessor has to draw the line between yellow and green.
 
-- the Stage 3 readiness checklist, for an organization at Stage 2 or Stage 3;
-- the Stage 4 readiness checklist and the two gates Stage 4 requires (S4.gate.3, S4.gate.5), for each workflow the organization is putting into operation or already operates;
-- the gates for the people the organization serves (§5, Stage 4), whenever AI affects them, at any stage;
-- the absence of every fragility flag: a flag that is present counts as a missing condition.
+Each condition belongs to one domain; the stage line belongs to none (§2). Every missing condition is a gap. A missing deciding condition means the stage is not reached; a missing readiness condition keeps it from being confirmed (§2). The assessment lists every gap and turns at most three into recommended actions (§8), gaps in the gates for the people the organization serves first.
 
-Each condition belongs to one domain. A red domain does not lower the organization's stage. Each missing condition is a binding constraint. The assessment names at most three, and gaps in the gates for the people the organization serves come first. The line between yellow and green remains the assessor's judgment.
-
-This is not a universal scorecard. A low-risk internal workflow and a high-risk beneficiary-facing service require different levels of capacity. The assessment should name the binding constraints rather than average weaknesses into one composite score.
+This is not a universal scorecard. A low-risk internal workflow and a high-risk beneficiary-facing service require different levels of capacity. The assessment should name the gaps rather than average weaknesses into one composite score.
 
 Three important concepts remain outside the domain model:
 

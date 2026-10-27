@@ -797,13 +797,13 @@ Example:
 
 > Hybrid organization. Healthy aspiration: Stage 4 for two mission-critical internal workflows. Current scope: shared internal with one mission-critical pilot. Moderate risk. Stage 3, conditional: the people and workflows, technology, and evidence domains have gaps. Recommended actions: a technical support model, a workflow baseline, and quality assurance with a handover for the one pro-bono partner it depends on; support from a service-design partner, senior technical QA with a portability and handoff plan, and a 90-day measurement-and-learning cycle before operational deployment. Next Adoption Loop step: redesign and validate one priority workflow, then reassess deployment readiness.
 
-## 11. Core v7 Message
+## 11. Core v8 Message
 
-The compressed v7 thesis:
+The compressed v8 thesis:
 
 > AI adoption in social impact organizations is an operating-model transition, not a tool rollout.
 
-The practical v7 line:
+The practical v8 line:
 
 > Stage 3 builds the AI adoption operating system. Stage 4 turns selected mission-critical workflows into reliable, governed, evidence-producing capabilities. Stage 5 turns proven capabilities into mission-protected infrastructure others can depend on.
 

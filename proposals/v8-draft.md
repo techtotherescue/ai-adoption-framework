@@ -111,7 +111,7 @@ Several people from the organization may answer an assessment. Their answers com
 - "We don't know" does not vote.
 - The list of where the organization uses AI, and how far each use has gone, is shared by everyone and is not voted on.
 - The aspiration answers, the type of organization and how far it wants to take AI, are those of the person who started the assessment.
-- Each readiness checklist from Stage 3 asks that at least two people answered and that they agree on the stage's deciding answers: the answers that feed its stage line and its deciding conditions. While they disagree, or when only one person answered, the stage is at most conditional.
+- Each readiness checklist from Stage 3 includes the team's agreement: "Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below." The deciding answers are the answers that feed a stage's stage line and its deciding conditions. The condition applies only at the highest stage whose deciding conditions are met, so certainty is checked once, where the organization stands. While people disagree on a deciding answer up to that stage, or when only one person answered, that stage is at most conditional, and the stages below it are confirmed by their own conditions. One person whose AI runs a Stage 4 workflow, with Stage 4's deciding conditions met, is at Stage 4, conditional.
 - Every difference is shown in the part of the result its question belongs to (§10), the aspiration answers included. A difference is marked when another answer given would change whether a condition other than agreement is met.
 
 ## 3. Organizational Aspiration Profiles
@@ -334,7 +334,7 @@ One team or function where AI is part of how the work is normally done is enough
 | The people who do the work take part in shaping how AI is used. | People |
 | Where the work is done pro bono: someone independent checks its quality, and a handover is agreed. | Technology |
 | Where the organization measures its AI work: results are judged by outcomes, not by the volume of output. | Evidence |
-| At least two people answered, and they agree on this stage's deciding answers. | Leadership (proposed) |
+| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) |
 | Where AI affects the people served: participation by affected users or credible representatives. | Governance |
 | Where AI affects the people served: documented limits on automated decisions. | Governance |
 | Where AI affects the people served: qualified and accountable human review. | Governance |
@@ -436,7 +436,7 @@ Every requirement but the last concerns the named workflow. S4.def.6 is judged b
 | A decision process for continuation, expansion, constraint, or retirement. | Leadership |
 | A review of failures and a learning cadence after deployment. | Evidence |
 | Where the deployment depends on temporary funding: a plan for continuing the work when it ends. | Resources |
-| At least two people answered, and they agree on this stage's deciding answers. | Leadership (proposed) |
+| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) |
 
 **Examples that do not reach Stage 4.** Each misses the requirement in parentheses.
 
@@ -524,7 +524,7 @@ Sustainable funding and maintenance capacity stay one condition, in Resources, b
 | Interoperability and portability strategy. | Technology (proposed) |
 | Evidence that the infrastructure improves adoption or outcomes. | Evidence (proposed) |
 | Credibility with the communities and organizations affected. | Governance (proposed) |
-| At least two people answered, and they agree on this stage's deciding answers. | Leadership (proposed) |
+| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) |
 
 ### What it looks like
 

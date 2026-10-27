@@ -317,6 +317,11 @@ One team or function where AI is part of how the work is normally done is enough
 | Budget, credits, and protected implementation time. | Resources |
 | Regular implementation cadence. | Leadership |
 | Criteria for deciding which workflows are ready for operational deployment. | Governance |
+| Where there is an AI owner: a successor arranged, so the work survives their leaving. | Leadership |
+| The people who do the work take part in shaping how AI is used. | People |
+| Where the work is done pro bono: someone independent checks its quality, and a handover is agreed. | Technology |
+| Where the organization measures its AI work: results are judged by outcomes, not by the volume of output. | Evidence |
+| At least two people answered, and they agree on this stage's deciding answers. | Leadership (proposed) |
 | Where AI affects the people served: participation by affected users or credible representatives. | Governance |
 | Where AI affects the people served: documented limits on automated decisions. | Governance |
 | Where AI affects the people served: qualified and accountable human review. | Governance |
@@ -416,6 +421,9 @@ Every requirement but the last concerns the named workflow. S4.def.6 is judged b
 | Vendor, model, data, and partner dependency review. | Technology |
 | Portability, rollback, or migration path. | Technology |
 | A decision process for continuation, expansion, constraint, or retirement. | Leadership |
+| A review of failures and a learning cadence after deployment. | Evidence |
+| Where the deployment depends on temporary funding: a plan for continuing the work when it ends. | Resources |
+| At least two people answered, and they agree on this stage's deciding answers. | Leadership (proposed) |
 
 **Examples that do not reach Stage 4.** Each misses the requirement in parentheses.
 
@@ -503,6 +511,7 @@ Sustainable funding and maintenance capacity stay one condition, in Resources, b
 | Interoperability and portability strategy. | Technology (proposed) |
 | Evidence that the infrastructure improves adoption or outcomes. | Evidence (proposed) |
 | Credibility with the communities and organizations affected. | Governance (proposed) |
+| At least two people answered, and they agree on this stage's deciding answers. | Leadership (proposed) |
 
 ### What it looks like
 

@@ -313,6 +313,15 @@ One team or function where AI is part of how the work is normally done is enough
 - Budget, credits, and protected implementation time.
 - Regular implementation cadence.
 - Criteria for deciding which workflows are ready for operational deployment.
+- Where AI affects the people served: participation by affected users or credible representatives.
+- Where AI affects the people served: documented limits on automated decisions.
+- Where AI affects the people served: qualified and accountable human review.
+- Where AI affects the people served: a clear method to question, correct, or appeal outcomes where relevant.
+- Where AI affects the people served: testing for exclusion, bias, and differential harm.
+- Where AI affects the people served: communication that makes the role of AI understandable.
+- Where AI affects the people served: safeguards appropriate to the political and surveillance environment.
+
+The last seven are the gates for the people the organization serves. AI affects the people the organization serves when those who would feel a mistake first are the people served, directly or indirectly, people deciding on their access to a service, or the wider public; or when a workflow that runs, or is going into, normal operations touches the people served or organizations that depend on it, or decides or helps decide something about a specific person. Where AI does not affect them, the gates are left out. An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
 ### What it looks like
 
@@ -385,7 +394,7 @@ A workflow matters when it passes this test: if it failed or went wrong for a we
 
 Every requirement but the last concerns the named workflow. S4.def.6 is judged by the organization's practice, not by whether every workflow meets every gate.
 
-"Governed" in the summary does not include the gates for the people the organization serves, listed below.
+"Governed" in the summary does not include the gates for the people the organization serves, which are Stage 3 readiness conditions.
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and keeps Stage 4 from being confirmed (§2). Before a mission-critical AI workflow is considered operationally ready, the organization should have:
 
@@ -401,18 +410,6 @@ Every requirement but the last concerns the named workflow. S4.def.6 is judged b
 - vendor, model, data, and partner dependency review;
 - portability, rollback, or migration path;
 - a decision process for continuation, expansion, constraint, or retirement.
-
-**When AI affects the people the organization serves.** When AI affects beneficiaries, users, applicants, public information, or vulnerable groups, the organization should also have:
-
-- participation by affected users or credible representatives;
-- documented limits on automated decisions;
-- qualified and accountable human review;
-- a clear method to question, correct, or appeal outcomes where relevant;
-- testing for exclusion, bias, and differential harm;
-- communication that makes the role of AI understandable;
-- safeguards appropriate to the political and surveillance environment.
-
-These gates never lower the stage. When AI affects the people the organization serves, a missing gate makes its domain red (§6). An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
 **Examples that do not reach Stage 4.** Each misses the requirement in parentheses.
 

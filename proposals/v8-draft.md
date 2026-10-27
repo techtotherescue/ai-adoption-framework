@@ -41,8 +41,8 @@ The adoption stage describes how deeply and reliably the organization can integr
 
 | Stage | Name | Core capability | Reached when | Required |
 | --- | --- | --- | --- | --- |
-| 1 | Resisting | Building trust that AI can fit the mission without harming the human work. | The organization does not use AI in its work, and nobody owns its adoption. | Nothing. |
-| 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly, or someone owns its adoption. | Nothing more. |
+| 1 | Resisting | Building trust that AI can fit the mission without harming the human work. | The organization does not use AI in its work. | Nothing. |
+| 2 | Exploring | Learning through fragmented individual and team experimentation. | People use AI in their own work, however unevenly. | Nothing more. |
 | 3 | Systematizing | Building an AI adoption operating system and running deliberate adoption loops. | The organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | • A named AI owner, champion, or adoption group with time and authority.<br>• People share what works and what fails.<br>• AI use is expected in selected areas. |
 | 4 | Innovating | Reliably operating redesigned mission-critical workflows around AI. | AI is integral to a workflow that matters to mission delivery or organizational performance: if it failed or went wrong for a week, the people served would be harmed, or a core operation would stop. | • The workflow runs in normal operations.<br>• It is redesigned, with explicit roles.<br>• It has accountable, technical, and data owners.<br>• Evidence improves it.<br>• Governance, maintenance, dependency, and failure handling are active practices. |
 | 5 | Enabling | Providing shared infrastructure, tools, standards, evidence, or capacity others can depend on. | At least two independent organizations use, in their own work, a tool, dataset, standard, playbook, or service the organization created. | • Other organizations obtain demonstrated value from it.<br>• Sustainable funding.<br>• Maintenance and incident capacity. |
@@ -218,7 +218,7 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 | Placement | v6 | How to check |
 | --- | --- | --- |
-| **Reached when** the organization does not use AI in its work, and nobody owns its adoption. AI has at most been discussed. | New | Does anyone in the organization use AI in their work? Does anyone own AI adoption? |
+| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | New | Does anyone in the organization use AI in their work? |
 | **Required:** nothing. Every organization starts here. | | |
 
 ### What it looks like
@@ -250,8 +250,10 @@ Individuals and teams are trying AI and discovering useful gains without shared 
 
 | Placement | v6 | How to check |
 | --- | --- | --- |
-| **Reached when** people use AI in their own work, however unevenly, or someone owns its adoption. | New, from S2.def.1 and S2.def.2 | Does anyone use AI in their work, even occasionally? Does anyone own AI adoption? |
+| **Reached when** people use AI in their own work, however unevenly. | New, from S2.def.1 and S2.def.2 | Does anyone use AI in their work, even occasionally? |
 | **Required:** nothing more. | | |
+
+Appointing an AI owner does not reach Stage 2: an organization with an owner where nobody uses AI is at Stage 1. The owner counts in Leadership and ownership, where Stage 3 requires a named owner with time and authority.
 
 Sharing what works and what fails, which Stage 3 requires, usually starts here.
 

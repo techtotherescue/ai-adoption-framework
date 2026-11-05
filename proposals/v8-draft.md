@@ -225,7 +225,7 @@ Organizations may run the loop many times while remaining at the same stage. Sta
 
 ## 5. Stage Profiles
 
-Each condition names its capacity domain (§6), by the first word of the domain's name, or the stage line (§2). In this draft, "(proposed)" marks a domain v7 does not give.
+Each condition names its capacity domain (§6), by the first word of the domain's name, or the stage line (§2). In this draft, "(proposed)" marks a domain v7 does not give. Each condition also names its Adoption Loop step (§4), which gives a result its next step (§8). The agreement of the people who answered has no step. v7 gives no steps, so every step in this draft is proposed.
 
 ## Stage 1: Resisting
 
@@ -233,12 +233,12 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 ### Placement
 
-| Placement | Identifier | Domain | How to check |
-| --- | --- | --- | --- |
-| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | — | Does anyone in the organization use AI in their work? |
-| **Required:** nothing. Every organization starts here. | | | |
+| Placement | Identifier | Domain | Loop step | How to check |
+| --- | --- | --- | --- | --- |
+| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | — | — | Does anyone in the organization use AI in their work? |
+| **Required:** nothing. Every organization starts here. | | | | |
 
-Stage 1 has no conditions: an organization is at Stage 1 whenever Stage 2 is not reached. The "Reached when" row describes the stage; it is not on the stage line and belongs to no domain (§2).
+Stage 1 has no conditions: an organization is at Stage 1 whenever Stage 2 is not reached. The "Reached when" row describes the stage; it is not on the stage line and has no domain or Adoption Loop step (§2).
 
 ### What it looks like
 
@@ -267,10 +267,10 @@ Individuals and teams are trying AI and discovering useful gains without shared 
 
 ### Placement
 
-| Placement | Identifier | Domain | How to check |
-| --- | --- | --- | --- |
-| **Reached when** people use AI in their own work, however unevenly. | S2.def.6 | Stage line | Does anyone use AI in their work, even occasionally? |
-| **Required:** nothing more. | | | |
+| Placement | Identifier | Domain | Loop step | How to check |
+| --- | --- | --- | --- | --- |
+| **Reached when** people use AI in their own work, however unevenly. | S2.def.6 | Stage line | 1 | Does anyone use AI in their work, even occasionally? |
+| **Required:** nothing more. | | | | |
 
 Appointing an AI owner does not reach Stage 2: an organization with an owner where nobody uses AI is at Stage 1. The owner counts in Leadership and ownership, where Stage 3 requires a named owner with time and authority.
 
@@ -309,43 +309,43 @@ Organizations are turning scattered AI use into a shared AI adoption operating s
 
 ### Placement
 
-| Placement | Identifier | Domain | How to check |
-| --- | --- | --- | --- |
-| **Reached when** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | S3.def.7 | Stage line | Have you run AI pilots on selected workflows, or gone through the Adoption Loop on them more than once? |
-| **Required:** a named AI owner, champion, or adoption group has time and authority. | S3.def.3 | Leadership (proposed) | Who owns AI adoption, and do they have protected time and the authority to decide? |
-| **Required:** people share what works and what fails across the organization. | S3.def.8 | Evidence (proposed) | Do people share what worked and what failed with AI across the organization? |
-| **Required:** AI use becomes expected in selected areas rather than exceptional. | S3.def.1 | Stage line | In which team or function is AI part of how the work is normally done? |
+| Placement | Identifier | Domain | Loop step | How to check |
+| --- | --- | --- | --- | --- |
+| **Reached when** the organization runs AI pilots on selected workflows, or has run the Adoption Loop on them more than once. | S3.def.7 | Stage line | 3 | Have you run AI pilots on selected workflows, or gone through the Adoption Loop on them more than once? |
+| **Required:** a named AI owner, champion, or adoption group has time and authority. | S3.def.3 | Leadership (proposed) | 6 | Who owns AI adoption, and do they have protected time and the authority to decide? |
+| **Required:** people share what works and what fails across the organization. | S3.def.8 | Evidence (proposed) | 7 | Do people share what worked and what failed with AI across the organization? |
+| **Required:** AI use becomes expected in selected areas rather than exceptional. | S3.def.1 | Stage line | 6 | In which team or function is AI part of how the work is normally done? |
 
 One team or function where AI is part of how the work is normally done is enough for S3.def.1.
 
 **Readiness checklist.** An unmet item is a gap to close (§6). With more than half of the items that apply met, Stage 3 is conditional; with all of them met, it is confirmed (§2).
 
-| Readiness condition | Domain |
-| --- | --- |
-| Shared licenses or approved tool stack. | Technology |
-| Team education and learning rhythm. | People |
-| Safe-use and data-handling norms. | Governance |
-| Workflow and use-case prioritization. | Leadership |
-| Baseline and intended outcome for priority workflows. | Evidence |
-| Data/context inventory and maintenance responsibility. | Data |
-| Explicit map of changing tasks, roles, review, and exceptions. | People |
-| Technical support model. | Technology |
-| Vendor and partner dependency view. | Technology |
-| Budget, credits, and protected implementation time. | Resources |
-| Regular implementation cadence. | Leadership |
-| Criteria for deciding which workflows are ready for operational deployment. | Governance |
-| Where there is an AI owner: a successor arranged, so the work survives their leaving. | Leadership |
-| The people who do the work take part in shaping how AI is used. | People |
-| Where the work is done pro bono: someone independent checks its quality, and a handover is agreed. | Technology |
-| Where the organization measures its AI work: results are judged by outcomes, not by the volume of output. | Evidence |
-| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) |
-| Where AI affects the people served: participation by affected users or credible representatives. | Governance |
-| Where AI affects the people served: documented limits on automated decisions. | Governance |
-| Where AI affects the people served: qualified and accountable human review. | Governance |
-| Where AI affects the people served: a clear method to question, correct, or appeal outcomes where relevant. | Governance |
-| Where AI affects the people served: testing for exclusion, bias, and differential harm. | Governance |
-| Where AI affects the people served: communication that makes the role of AI understandable. | Governance |
-| Where AI affects the people served: safeguards appropriate to the political and surveillance environment. | Governance |
+| Readiness condition | Domain | Loop step |
+| --- | --- | --- |
+| Shared licenses or approved tool stack. | Technology | 3 |
+| Team education and learning rhythm. | People | 1 |
+| Safe-use and data-handling norms. | Governance | 3 |
+| Workflow and use-case prioritization. | Leadership | 2 |
+| Baseline and intended outcome for priority workflows. | Evidence | 2 |
+| Data/context inventory and maintenance responsibility. | Data | 4 |
+| Explicit map of changing tasks, roles, review, and exceptions. | People | 5 |
+| Technical support model. | Technology | 6 |
+| Vendor and partner dependency view. | Technology | 4 |
+| Budget, credits, and protected implementation time. | Resources | 6 |
+| Regular implementation cadence. | Leadership | 7 |
+| Criteria for deciding which workflows are ready for operational deployment. | Governance | 6 |
+| Where there is an AI owner: a successor arranged, so the work survives their leaving. | Leadership | 6 |
+| The people who do the work take part in shaping how AI is used. | People | 5 |
+| Where the work is done pro bono: someone independent checks its quality, and a handover is agreed. | Technology | 6 |
+| Where the organization measures its AI work: results are judged by outcomes, not by the volume of output. | Evidence | 7 |
+| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) | — |
+| Where AI affects the people served: participation by affected users or credible representatives. | Governance | 5 |
+| Where AI affects the people served: documented limits on automated decisions. | Governance | 5 |
+| Where AI affects the people served: qualified and accountable human review. | Governance | 5 |
+| Where AI affects the people served: a clear method to question, correct, or appeal outcomes where relevant. | Governance | 5 |
+| Where AI affects the people served: testing for exclusion, bias, and differential harm. | Governance | 4 |
+| Where AI affects the people served: communication that makes the role of AI understandable. | Governance | 6 |
+| Where AI affects the people served: safeguards appropriate to the political and surveillance environment. | Governance | 6 |
 
 The last seven are the gates for the people the organization serves. AI affects the people the organization serves when:
 
@@ -414,15 +414,15 @@ Organizations have redesigned and reliably operate one or more mission-critical 
 
 In short: AI is deployed and governed in a crucial internal or important beneficiary-facing workflow. The test below the table says what makes a workflow crucial or important; the table says what deployed and governed mean.
 
-| Placement | Identifier | Domain | How to check |
-| --- | --- | --- | --- |
-| **Reached when** AI is integral to a workflow that matters to mission delivery or organizational performance. | S4.def.1 | Stage line | Name the workflow. If it failed or went wrong for a week, would the people you serve be harmed, or would a core operation stop? |
-| **Required:** the workflow operates repeatedly outside a temporary demo environment. | S4.def.4 | Stage line | Does it run as part of normal operations, rather than as a pilot limited in time or scale? |
-| **Required:** the workflow is redesigned rather than merely supplemented with an AI tool. Human roles, review, escalation, and exception handling are explicit. | S4.def.2, S4.def.3 | People (proposed) | Is it written down what the AI does, what people decide, who reviews its output, and what happens with exceptions? |
-| **Required:** accountable AI adoption and technical ownership. | S4.gate.3 | Leadership | Who is accountable for this workflow, including its technical side? |
-| **Required:** data/context ownership and quality controls. | S4.gate.5 | Data | Who owns the data it uses, and who checks its quality? |
-| **Required:** evidence is used to improve the workflow. | S4.def.5 | Evidence (proposed) | Name one change made to this workflow because of what its results or failures showed. |
-| **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Governance (proposed) | Does the organization govern and maintain its AI workflows, manage their dependencies, and have a plan for when one fails? |
+| Placement | Identifier | Domain | Loop step | How to check |
+| --- | --- | --- | --- | --- |
+| **Reached when** AI is integral to a workflow that matters to mission delivery or organizational performance. | S4.def.1 | Stage line | 2 | Name the workflow. If it failed or went wrong for a week, would the people you serve be harmed, or would a core operation stop? |
+| **Required:** the workflow operates repeatedly outside a temporary demo environment. | S4.def.4 | Stage line | 6 | Does it run as part of normal operations, rather than as a pilot limited in time or scale? |
+| **Required:** the workflow is redesigned rather than merely supplemented with an AI tool. Human roles, review, escalation, and exception handling are explicit. | S4.def.2, S4.def.3 | People (proposed) | 5 | Is it written down what the AI does, what people decide, who reviews its output, and what happens with exceptions? |
+| **Required:** accountable AI adoption and technical ownership. | S4.gate.3 | Leadership | 6 | Who is accountable for this workflow, including its technical side? |
+| **Required:** data/context ownership and quality controls. | S4.gate.5 | Data | 6 | Who owns the data it uses, and who checks its quality? |
+| **Required:** evidence is used to improve the workflow. | S4.def.5 | Evidence (proposed) | 7 | Name one change made to this workflow because of what its results or failures showed. |
+| **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Governance (proposed) | 6 | Does the organization govern and maintain its AI workflows, manage their dependencies, and have a plan for when one fails? |
 
 A workflow matters when it passes this test: if it failed or went wrong for a week, the people the organization serves would be harmed, or a core operation would stop. Allocating emergency food parcels passes. Drafting a newsletter does not. Writing grant applications passes only when the organization depends on those grants and AI is integral to how they are written.
 
@@ -432,23 +432,23 @@ Every requirement but the last concerns the named workflow. S4.def.6 is judged b
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and keeps Stage 4 from being confirmed (§2). Before a mission-critical AI workflow is considered operationally ready, the organization should have:
 
-| Readiness condition | Domain |
-| --- | --- |
-| A defined user need and intended outcome. | Evidence |
-| A baseline and evaluation plan. | Evidence |
-| A risk and consequence assessment. | Governance |
-| Human review, escalation, exception, and appeal rules where relevant. | Governance |
-| Security and privacy stance. | Technology |
-| Monitoring after deployment. | Evidence |
-| Staff or user acceptability checks. | People |
-| Maintenance and incident ownership. | Technology |
-| Cost and consumption controls. | Resources |
-| Vendor, model, data, and partner dependency review. | Technology |
-| Portability, rollback, or migration path. | Technology |
-| A decision process for continuation, expansion, constraint, or retirement. | Leadership |
-| A review of failures and a learning cadence after deployment. | Evidence |
-| Where the deployment depends on temporary funding: a plan for continuing the work when it ends. | Resources |
-| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) |
+| Readiness condition | Domain | Loop step |
+| --- | --- | --- |
+| A defined user need and intended outcome. | Evidence | 2 |
+| A baseline and evaluation plan. | Evidence | 2 |
+| A risk and consequence assessment. | Governance | 6 |
+| Human review, escalation, exception, and appeal rules where relevant. | Governance | 5 |
+| Security and privacy stance. | Technology | 6 |
+| Monitoring after deployment. | Evidence | 6 |
+| Staff or user acceptability checks. | People | 4 |
+| Maintenance and incident ownership. | Technology | 6 |
+| Cost and consumption controls. | Resources | 6 |
+| Vendor, model, data, and partner dependency review. | Technology | 4 |
+| Portability, rollback, or migration path. | Technology | 6 |
+| A decision process for continuation, expansion, constraint, or retirement. | Leadership | 7 |
+| A review of failures and a learning cadence after deployment. | Evidence | 7 |
+| Where the deployment depends on temporary funding: a plan for continuing the work when it ends. | Resources | 6 |
+| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) | — |
 
 **Examples that do not reach Stage 4.** Each misses the requirement in parentheses.
 
@@ -513,11 +513,11 @@ Organizations provide shared tools, infrastructure, standards, context, evidence
 
 ### Placement
 
-| Placement | Identifier | Domain | How to check |
-| --- | --- | --- | --- |
-| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.7, S5.def.2, S5.guardrail.1 | Stage line | Name what you created, and the organizations outside yours that use it in their own work today. |
-| **Required:** other organizations obtain demonstrated value from the capability. | S5.def.3 | Evidence (proposed) | What would each of them lose if it stopped tomorrow, in their own words? |
-| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5, S5.def.8 | Resources (proposed) | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
+| Placement | Identifier | Domain | Loop step | How to check |
+| --- | --- | --- | --- | --- |
+| **Reached when** the organization creates reusable tools, datasets, context assets, standards, playbooks, APIs, protocols, services, or learning systems, and there is demonstrated demand from other organizations: at least two independent organizations use one of them in their own work today. | S5.def.7, S5.def.2, S5.guardrail.1 | Stage line | 7 | Name what you created, and the organizations outside yours that use it in their own work today. |
+| **Required:** other organizations obtain demonstrated value from the capability. | S5.def.3 | Evidence (proposed) | 7 | What would each of them lose if it stopped tomorrow, in their own words? |
+| **Required:** sustainable funding; maintenance and incident capacity. Both cover the capability others use. | S5.guardrail.3, S5.guardrail.5, S5.def.8 | Resources (proposed) | 6 | Who maintains it and handles incidents? Would that continue if your current grant or project ended? |
 
 An independent organization is not a partner in delivering the capability, not its funder, and not a branch of the same network. The capability others use can itself be the workflow that places the organization at Stage 4. The assessment accepts the organization's own answer, provided it names the organizations.
 
@@ -525,18 +525,18 @@ Sustainable funding and maintenance capacity stay one condition, in Resources, b
 
 **Readiness checklist.** An unmet item is a gap to close (§6) and keeps Stage 5 from being confirmed (§2). Stage 5 is not just scale ambition. A Stage 5 organization should also have:
 
-| Readiness condition | Domain |
-| --- | --- |
-| Mission-control guardrails. | Governance (proposed) |
-| Standards and governance. | Governance (proposed) |
-| Distribution and implementation partnerships. | Resources (proposed) |
-| Clear ownership and accountability. | Leadership (proposed) |
-| Partner and corporate influence boundaries. | Technology (proposed) |
-| Support model for adopters. | People (proposed) |
-| Interoperability and portability strategy. | Technology (proposed) |
-| Evidence that the infrastructure improves adoption or outcomes. | Evidence (proposed) |
-| Credibility with the communities and organizations affected. | Governance (proposed) |
-| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) |
+| Readiness condition | Domain | Loop step |
+| --- | --- | --- |
+| Mission-control guardrails. | Governance (proposed) | 6 |
+| Standards and governance. | Governance (proposed) | 6 |
+| Distribution and implementation partnerships. | Resources (proposed) | 7 |
+| Clear ownership and accountability. | Leadership (proposed) | 6 |
+| Partner and corporate influence boundaries. | Technology (proposed) | 6 |
+| Support model for adopters. | People (proposed) | 5 |
+| Interoperability and portability strategy. | Technology (proposed) | 6 |
+| Evidence that the infrastructure improves adoption or outcomes. | Evidence (proposed) | 7 |
+| Credibility with the communities and organizations affected. | Governance (proposed) | 1 |
+| Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership (proposed) | — |
 
 ### What it looks like
 
@@ -762,7 +762,7 @@ When the stage above fails only on its stage line, the gap is the next step on t
 
 The recommendations are worked out again whenever the result is read, from the support available that day. The diagnosis, meaning the stage, its status and the gaps, stays as it was issued.
 
-The recommendations end with the next Adoption Loop step (§4). Every condition except the agreement of the people who answered belongs to one step, and a step is done when none of the organization's gaps belongs to it. With no workflow in operation, the next step is the first step the organization has not done. With one, it is the step the first recommended gap belongs to. When no gap belongs to a step, it is Step 7: feed evidence into the next loop.
+The recommendations end with the next Adoption Loop step (§4). Every condition except the agreement of the people who answered belongs to one step, named in §5, and a step is done when none of the organization's gaps belongs to it. With no workflow in operation, the next step is the first step the organization has not done. With one, it is the step the first recommended gap belongs to. When no gap belongs to a step, it is Step 7: feed evidence into the next loop.
 
 Examples:
 

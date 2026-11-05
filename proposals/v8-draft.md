@@ -99,7 +99,7 @@ Risk must be assessed independently of stage. More advanced organizations may op
 
 A useful diagnosis should say:
 
-> Stage 3 Hybrid organization. Mission-critical internal pilot. Moderate risk. Main bottlenecks: workflow redesign, evidence, and vendor exit readiness.
+> Hybrid organization. Mission-critical internal pilot. Moderate risk. Stage 3, conditional. Gaps: a map of changing tasks and roles, a baseline, and a view of vendor and partner dependency.
 
 This is more useful than a stage label alone.
 

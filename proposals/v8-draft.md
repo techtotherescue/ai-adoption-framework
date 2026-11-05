@@ -412,7 +412,8 @@ In short: AI is deployed and governed in a crucial internal or important benefic
 | **Reached when** AI is integral to a workflow that matters to mission delivery or organizational performance. | S4.def.1 | Stage line | Name the workflow. If it failed or went wrong for a week, would the people you serve be harmed, or would a core operation stop? |
 | **Required:** the workflow operates repeatedly outside a temporary demo environment. | S4.def.4 | Stage line | Does it run as part of normal operations, rather than as a pilot limited in time or scale? |
 | **Required:** the workflow is redesigned rather than merely supplemented with an AI tool. Human roles, review, escalation, and exception handling are explicit. | S4.def.2, S4.def.3 | People (proposed) | Is it written down what the AI does, what people decide, who reviews its output, and what happens with exceptions? |
-| **Required:** accountable AI adoption and technical ownership; data/context ownership and quality controls. | S4.gate.3, S4.gate.5 | Leadership; Data | Who is accountable for this workflow, including its technical side? Who owns the data it uses, and who checks its quality? |
+| **Required:** accountable AI adoption and technical ownership. | S4.gate.3 | Leadership | Who is accountable for this workflow, including its technical side? |
+| **Required:** data/context ownership and quality controls. | S4.gate.5 | Data | Who owns the data it uses, and who checks its quality? |
 | **Required:** evidence is used to improve the workflow. | S4.def.5 | Evidence (proposed) | Name one change made to this workflow because of what its results or failures showed. |
 | **Required:** governance, maintenance, dependency, and failure handling are active operating practices. | S4.def.6 | Governance (proposed) | Does the organization govern and maintain its AI workflows, manage their dependencies, and have a plan for when one fails? |
 

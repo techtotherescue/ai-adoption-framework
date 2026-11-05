@@ -600,7 +600,7 @@ Each domain shows which of its conditions are in place and which are missing tow
 - the deciding conditions and the readiness checklist of the stage the organization is working toward. From Stage 3, this includes the gates for the people the organization serves (§5, Stage 3) whenever AI affects them;
 - Stage 4's conditions and readiness checklist, for each workflow the organization is putting into operation or already operates.
 
-The stage the organization is working toward is its conditional stage, if it has one. Otherwise it is the stage above its highest confirmed stage: an organization at Stage 2 sees Stage 3's conditions, and one with Stage 3 confirmed sees Stage 4's. With Stage 5 confirmed, it sees Stage 5's.
+The stage the organization is working toward is its conditional stage, if it has one. Otherwise it is the stage above its highest confirmed stage: an organization at Stage 2 sees Stage 3's conditions, and one with Stage 3 confirmed sees Stage 4's. With Stage 5 confirmed, it sees Stage 5's. At Stage 1 the domains show nothing yet: the only gap is on the stage line, using AI at all.
 
 v8 does not use v7's green / yellow / red judgment. A domain lists what is in place and what is missing, so no assessor has to draw the line between yellow and green.
 

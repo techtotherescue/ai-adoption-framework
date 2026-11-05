@@ -762,7 +762,7 @@ When the stage above fails only on its stage line, the gap is the next step on t
 
 The recommendations are worked out again whenever the result is read, from the support available that day. The diagnosis, meaning the stage, its status and the gaps, stays as it was issued.
 
-The recommendations end with the next Adoption Loop step (§4). With no workflow in operation, it is the first step the organization has not done. With one, it is the step the first recommended gap belongs to.
+The recommendations end with the next Adoption Loop step (§4). Every condition except the agreement of the people who answered belongs to one step, and a step is done when none of the organization's gaps belongs to it. With no workflow in operation, the next step is the first step the organization has not done. With one, it is the step the first recommended gap belongs to. When no gap belongs to a step, it is Step 7: feed evidence into the next loop.
 
 Examples:
 
@@ -814,7 +814,7 @@ Example:
 >
 > **AI adoption stage:** Stage 3, conditional. The technology and evidence domains have gaps: a technical support model, quality assurance with a handover for the one pro-bono partner the organization depends on, and a baseline for the pilot workflow.
 >
-> **Recommendations for further AI adoption:** the three people who answered agree, so there is nothing to settle first. Recommended actions: set up a technical support model with a senior technical partner; have the pro-bono work checked by someone independent, with a portability and handoff plan; run a 90-day measurement-and-learning cycle that sets the pilot's baseline before operational deployment. Next Adoption Loop step: redesign and validate the pilot workflow (Step 5), then reassess deployment readiness.
+> **Recommendations for further AI adoption:** the three people who answered agree, so there is nothing to settle first. Recommended actions: set up a technical support model with a senior technical partner; have the pro-bono work checked by someone independent, with a portability and handoff plan; run a 90-day measurement-and-learning cycle that sets the pilot's baseline before operational deployment. Next Adoption Loop step: Step 2, set the pilot's baseline and intended outcome.
 
 ## 11. Core v8 Message
 

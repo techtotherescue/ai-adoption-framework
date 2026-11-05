@@ -57,7 +57,7 @@ Each stage from 3 to 5 has one of three statuses:
 - **Conditional:** every deciding condition is met, more than half of the readiness conditions that apply are met, and every stage below is confirmed. The stage is reached but does not yet stand firmly.
 - **Not reached:** anything else.
 
-Stage 1 is always confirmed. Stage 2 is confirmed when it is reached; it has no readiness checklist and is never conditional.
+Stage 1 is always confirmed. Stage 2 is confirmed when it is reached; it has no readiness checklist and is never conditional. Stage 2 is a fact, that people use AI in their work, so one person's answer is enough for it; the team's agreement, which needs at least two people, applies from Stage 3 (Several Respondents).
 
 Where a condition applies only in some cases, its wording says so. Where it does not apply, it is left out: it counts neither for the stage nor against it. A condition nobody can confirm ("we don't know") is not met.
 

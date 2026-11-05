@@ -1,6 +1,6 @@
 # AI Adoption Framework v8: which domain each condition belongs to
 
-A draft for the [v8 proposal](v8.md), 27 October 2026. Nothing here is in force yet.
+A draft for the [v8 proposal](v8.md), 27 October 2026, updated 5 November 2026. Nothing here is in force yet.
 
 In v8 every condition belongs to exactly one domain, except the conditions that say how far AI goes (the stage line), which belong to none. v7 already gives a domain to most conditions: the readiness checklists and the gates for the people the organization serves carry one in `v7.json`, and the fragility flags sit under their domains in §7, so the conditions made from them keep that domain. The 19 conditions below have none in v7, so v8 assigns one.
 
@@ -18,7 +18,7 @@ Domains: **Leadership** (Leadership and ownership), **People** (People, workflow
 | S4.def.5 | Evidence is used to improve the workflow. | Evidence | Evidence, Stage 4: "failure reviews, and a regular improvement cadence" | |
 | S4.def.6 | Governance, maintenance, dependency, and failure handling are active operating practices. | Governance | Governance, Stage 4: "active controls … and incident handling" | Technology (maintenance, dependency) |
 | S5.def.3 | Other organizations obtain demonstrated value from the capability. | Evidence | Evidence, Stage 5: "cross-organization adoption and outcome evidence" | |
-| S5.guardrail.3, S5.guardrail.5 | Sustainable funding, and maintenance and incident capacity, that cover the capability others use. | Resources | Resources, Stage 5: "sustained infrastructure funding" | Technology (maintenance and incident capacity) |
+| S5.guardrail.3, S5.guardrail.5, S5.def.8 | Sustainable funding, and maintenance and incident capacity, that cover the capability others use. | Resources | Resources, Stage 5: "sustained infrastructure funding" | Technology (maintenance and incident capacity) |
 
 S4.def.6 and the Stage 5 funding-and-maintenance requirement stay one condition each, as in v7. Split by domain, one missing practice would count as two gaps in two domains, and an assessment checks each as one fact. Stage 4 already asks for maintenance and incident ownership (S4.gate.11) and a dependency review (S4.gate.13) in Technology, so the alternative adds little.
 
@@ -40,7 +40,7 @@ S4.def.6 and the Stage 5 funding-and-maintenance requirement stay one condition 
 
 | ID | Condition | Proposed domain | Basis | Alternative |
 | --- | --- | --- | --- | --- |
-| new, one per stage | At least two people answered, and they agree on this stage's deciding answers. | Leadership | Leadership owns a shared picture of where the organization stands. | People |
+| new, one per stage | Where this is the highest stage whose deciding conditions are met: at least two people answered, and they agree on the deciding answers of this stage and of the stages below. | Leadership | Leadership owns a shared picture of where the organization stands. | People |
 
 The agreement condition gets its identifiers at release, with the six conditions made from fragility flags.
 

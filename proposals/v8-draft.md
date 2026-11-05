@@ -235,8 +235,10 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 
 | Placement | Identifier | Domain | How to check |
 | --- | --- | --- | --- |
-| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | Stage line | Does anyone in the organization use AI in their work? |
+| **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | — | Does anyone in the organization use AI in their work? |
 | **Required:** nothing. Every organization starts here. | | | |
+
+Stage 1 has no conditions: an organization is at Stage 1 whenever Stage 2 is not reached. The first row describes the stage; it is not on the stage line and belongs to no domain (§2).
 
 ### What it looks like
 

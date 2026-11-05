@@ -116,13 +116,13 @@ The six new conditions and the agreement condition have no identifier yet (`v8.m
 
 That is all 64 conditions of v8: 6 on the stage line, 9 that decide a stage and 49 readiness conditions.
 
-## Open: the next step with no workflow in operation
+## The next step with no workflow in operation
 
-With no workflow in operation, the next step is "the first step the organization has not done" (§8). The draft does not say when a step is done, so two assessors can name different steps. The example in §10 shows it. That organization has only a pilot. Its gaps are a technical support model and an independent check with a handover, both Step 6 here, and a baseline for the pilot, Step 2. The example names Step 5.
+With no workflow in operation, the next step is "the first step the organization has not done" (§8). A step is done when none of the organization's gaps belongs to it (RT, 5 November). The next step is then the earliest step one of its gaps belongs to, so this table answers both cases.
 
-Proposed, for RT to decide: a step is done when none of the organization's gaps belongs to it. The next step is then the earliest step one of its gaps belongs to, and this table answers both cases. The example in §10 would name Step 2: set the pilot's baseline and intended outcome.
+The example in §10 shows it. That organization has only a pilot. Its gaps are a technical support model and an independent check with a handover, both Step 6 here, and a baseline for the pilot, Step 2. Its next step is Step 2: set the pilot's baseline and intended outcome.
 
-Neither rule says what happens when no gap has a step. That happens when the only gap is the agreement, as when one person answers and everything else at Stage 3 is met, or when there is no gap at all, as with Stage 5 confirmed. Proposed: the next step is then Step 7, feed evidence into the next loop. The alternative is to name no step.
+When no gap has a step, the next step is Step 7, feed evidence into the next loop. That happens when the only gap is the agreement, as when one person answers and everything else at Stage 3 is met, or when there is no gap at all, as with Stage 5 confirmed.
 
 ## At release
 

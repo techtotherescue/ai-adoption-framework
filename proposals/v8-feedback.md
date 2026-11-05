@@ -33,13 +33,14 @@ Taken by Radosław Taraszka between 23 October and 5 November 2026.
 | P14 | A result shows the date it was issued and the framework version it was issued on. It does not expire; when a later framework version is released, it says it was issued on an earlier one. A later assessment shows what changed since the previous one. | §10 |
 | P15 | A domain shows the conditions of the stage the organization is working toward: its conditional stage, or else the stage above its highest confirmed stage (Stage 3 for an organization at Stage 2), or Stage 5 once it is confirmed. At Stage 1 the domains show nothing yet. The framework does not say how an assessment tool counts or displays these conditions (RT, 5 November). | §6 |
 | P16 | One person's answer is enough for Stage 2, which says only that people use AI. The team's agreement, which needs at least two people, applies from Stage 3 (RT, 5 November). | §2 |
+| P17 | A step of the Adoption Loop is done when none of the organization's gaps belongs to it. With no workflow in operation, the next step is the earliest step of a gap; when no gap has a step, it is Step 7. The agreement of the people who answered has no step, since it is not one of the actions (RT, 5 November). | §8, §10; `v8-loop-steps.md` |
 
 ## Open questions for the authors
 
 | ID | Question | Proposed |
 | --- | --- | --- |
 | Q1 | The domain of the 19 conditions v7 does not place. | `v8-domains.md` |
-| Q2 | Which Adoption Loop step each condition belongs to. P12 needs it for the next step after the first recommended gap. | The step drafted from §4 for each condition, for RT to check (RT, 5 November). Drafted in `v8-loop-steps.md`, which also proposes when a step counts as done. |
+| Q2 | Which Adoption Loop step each condition belongs to. P12 needs it for the next step after the first recommended gap. | The step drafted from §4 for each condition, for RT to check (RT, 5 November). Drafted in `v8-loop-steps.md`. When a step is done is decided (P17). |
 | Q3 | "Gap" and "recommended action" in place of "binding constraint". | As P10. |
 | Q4 | Stage 1 and Stage 2 wording without "someone owns its adoption". | As P13. |
 | Q5 | Stage 4 is assessed only once Stage 3 is confirmed, and one person's answers make a stage at most conditional. So an organization assessed by one person reaches at most Stage 3, conditional, whatever its AI does. Is that intended? | Closed (RT, 27 October 2026: "Rozwiąż"). The agreement condition applies only at the highest stage whose deciding conditions are met; certainty is checked once, where the organization stands. One person gets that stage as conditional, and the stages below are confirmed by their own conditions. P7 amended. |

@@ -747,7 +747,7 @@ The recommendations start with what the people who answered must agree on: every
 
 1. Gaps in the gates for the people the organization serves, whether or not support is available for them. Without support, the action says what the organization can do itself.
 2. Gaps that support available to the organization now can help close: support that addresses that condition, for which the organization is eligible, and which is open to it. First what a workflow in or going into normal operations still lacks; then the other missing conditions of the conditional stage; then the deciding conditions of the stage above. Ties go to a missing condition before one nobody could confirm, then by domain in the order of the §6 table.
-3. Gaps no available support helps with, in the same order. Support whose call nobody has checked counts as not available. They stay on the list of gaps, marked as having no support yet.
+3. Gaps no available support helps with, in the same order. They stay on the list of gaps, marked as having no support yet. Support whose call nobody has checked counts as not available when the actions are ranked; it may still be named on the list of gaps, marked as unchecked.
 
 When the stage above fails only on its stage line, the gap is the next step on the stage line, such as running a pilot on one selected workflow.
 

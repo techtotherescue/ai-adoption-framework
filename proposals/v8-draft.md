@@ -61,6 +61,8 @@ Stage 1 is always confirmed. Stage 2 is confirmed when it is reached; it has no 
 
 Where a condition applies only in some cases, its wording says so. Where it does not apply, it is left out: it counts neither for the stage nor against it. A condition nobody can confirm ("we don't know") is not met.
 
+A condition about a workflow is read on every workflow it applies to, and is met only when it is met on all of them. Stage 4's conditions are read on one workflow: the organization reaches Stage 4 when one workflow meets all of them.
+
 The organization's stage is its highest confirmed stage, or the stage just above it if that one is conditional. Only one stage can be conditional, and the stage above a conditional stage is not assessed. A conditional stage has no deadline; it is assessed again at the next assessment. Every unmet condition is a gap to close (§6).
 
 Each stage profile in §5 opens with a placement table. Its first row says what places an organization at the stage. Each further row is a requirement: if any one is missing, the organization is at the stage below. The identifier column gives the v7 identifier of each condition in the row. The last column is the question that checks the row; an assessment tool may word it its own way.

@@ -799,7 +799,13 @@ A result shows the date it was issued and the framework version it was issued on
 
 Example:
 
-> Hybrid organization. Healthy aspiration: Stage 4 for two mission-critical internal workflows. Current scope: shared internal with one mission-critical pilot. Moderate risk. Stage 3, conditional: the people and workflows, technology, and evidence domains have gaps. Recommended actions: a technical support model, a workflow baseline, and quality assurance with a handover for the one pro-bono partner it depends on; support from a service-design partner, senior technical QA with a portability and handoff plan, and a 90-day measurement-and-learning cycle before operational deployment. Next Adoption Loop step: redesign and validate one priority workflow, then reassess deployment readiness.
+> Issued on 5 November 2026, on framework version 8.0.0.
+>
+> **AI adoption aspiration:** a hybrid organization. Healthy aspiration: Stage 4 for two mission-critical internal workflows. Current scope: shared internal, with one mission-critical pilot. Moderate risk. AI does not affect the people the organization serves.
+>
+> **AI adoption stage:** Stage 3, conditional. The technology and evidence domains have gaps: a technical support model, quality assurance with a handover for the one pro-bono partner the organization depends on, and a baseline for the pilot workflow.
+>
+> **Recommendations for further AI adoption:** the three people who answered agree, so there is nothing to settle first. Recommended actions: senior technical support that becomes the organization's technical support model; an independent quality check of the pro-bono work, with a portability and handoff plan; a 90-day measurement-and-learning cycle that sets the baseline before operational deployment. Next Adoption Loop step: redesign and validate the pilot workflow (Step 5), then reassess deployment readiness.
 
 ## 11. Core v8 Message
 

@@ -587,10 +587,8 @@ Each domain is intentionally supportable. An organization should be able to resp
 
 Each domain shows which of its conditions are in place and which are missing toward the organization's next step:
 
-- the deciding conditions and the readiness checklist of the stage the organization is working toward; for a conditional stage, that stage itself. From Stage 3, this includes the gates for the people the organization serves (§5, Stage 3) whenever AI affects them;
+- the deciding conditions and the readiness checklist of the stage the organization is working toward: for a conditional stage, that stage itself; for a confirmed stage, the stage above it, so Stage 3 for an organization at Stage 2; once Stage 5 is confirmed, Stage 5 itself. From Stage 3, this includes the gates for the people the organization serves (§5, Stage 3) whenever AI affects them;
 - Stage 4's conditions and readiness checklist, for each workflow the organization is putting into operation or already operates.
-
-A domain's count covers the readiness conditions of the stage that apply, in place or missing; across the seven domains they add up to the stage's own count. Its deciding conditions are shown beside that count, and the conditions of the stage above are shown as counting once the stage is confirmed.
 
 v8 does not use v7's green / yellow / red judgment. A domain lists what is in place and what is missing, so no assessor has to draw the line between yellow and green.
 

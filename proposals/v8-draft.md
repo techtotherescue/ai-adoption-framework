@@ -61,7 +61,7 @@ Stage 1 is always confirmed. Stage 2 is confirmed when it is reached; it has no 
 
 Where a condition applies only in some cases, its wording says so. Where it does not apply, it is left out: it counts neither for the stage nor against it. A condition nobody can confirm ("we don't know") is not met.
 
-A condition about a workflow is met only when every workflow it applies to meets it. If AI ranks food-parcel applications and also sets the order of home visits, both workflows need a way to appeal. Stage 4 is the exception: one workflow that meets all of Stage 4's conditions is enough.
+A condition about a workflow is met only when every workflow it applies to meets it. If AI ranks food-parcel applications and also sets the order of home visits, both in normal operations, both workflows need a way to appeal. Stage 4 is the exception: one workflow that meets all of Stage 4's conditions is enough.
 
 The organization's stage is its highest confirmed stage, or the stage just above it if that one is conditional. Only one stage can be conditional, and the stage above a conditional stage is not assessed. A conditional stage has no deadline; it is assessed again at the next assessment. Every unmet condition is a gap to close (§6).
 

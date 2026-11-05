@@ -733,7 +733,7 @@ v7 names an initial consequence and risk screen among what helps at Stage 2, and
 
 ## 8. Support Pathways
 
-The assessment turns at most three gaps into recommended actions, each with a concrete support recommendation. The provider may be a nonprofit intermediary, a consultant, a funder, a technology company, a research partner, a pro-bono team, or a hired staff member.
+The assessment turns at most three gaps into recommended actions, each with a concrete support recommendation where support is available; without it, the action says what the organization can do itself. The provider may be a nonprofit intermediary, a consultant, a funder, a technology company, a research partner, a pro-bono team, or a hired staff member.
 
 A useful recommendation specifies:
 
@@ -793,7 +793,7 @@ A practical v8 assessment returns a result in three parts. Each answers one ques
 
 1. **AI adoption aspiration:** what kind of organization this is, and how far it is sensible to take AI. The healthy aspiration profile (§3), deployment scope, risk exposure, whether AI affects the people the organization serves (§5, Stage 3), and where respondents' answers differ on these. It never changes the stage; it sets the bar.
 2. **AI adoption stage:** where the organization is today. The stage and its status (§2), the stage line and the sentence when AI goes further than the stage (§9), the seven-domain capacity profile with the conditions in place and missing (§6), and where respondents' answers differ.
-3. **Recommendations for further AI adoption:** what to do first, and who can help. What to agree on, at most three recommended actions with a support pathway for each, including the expected capacity outcome and evidence of progress (§8), and the next Adoption Loop step.
+3. **Recommendations for further AI adoption:** what to do first, and who can help. What to agree on, at most three recommended actions, each with its support pathway where support is available, the expected capacity outcome and evidence of progress (§8), and the next Adoption Loop step.
 
 A result shows the date it was issued and the framework version it was issued on. It does not expire. When a later framework version is released, the result says it was issued on an earlier one. A later assessment of the same organization shows what changed since the previous one.
 

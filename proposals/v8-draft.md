@@ -57,11 +57,11 @@ Each stage from 3 to 5 has one of three statuses:
 - **Conditional:** every deciding condition is met, more than half of the readiness conditions that apply are met, and every stage below is confirmed. The stage is reached but does not yet stand firmly.
 - **Not reached:** anything else.
 
-Stage 1 is always confirmed. Stage 2 is confirmed when it is reached; it has no readiness checklist and is never conditional. Stage 2 is a fact, that people use AI in their work, so one person's answer is enough for it; the team's agreement, which needs at least two people, applies from Stage 3 (Several Respondents).
+Stage 1 is always confirmed. Stage 2 is confirmed when it is reached; it has no readiness checklist and is never conditional. So one person's answer is enough for Stage 2: the team's agreement, which needs at least two people, is a readiness condition, and readiness checklists start at Stage 3 (Several Respondents).
 
 Where a condition applies only in some cases, its wording says so. Where it does not apply, it is left out: it counts neither for the stage nor against it. A condition nobody can confirm ("we don't know") is not met.
 
-A condition about a workflow is read on every workflow it applies to, and is met only when it is met on all of them. Stage 4's conditions are read on one workflow: the organization reaches Stage 4 when one workflow meets all of them.
+A condition about a workflow is met only when every workflow it applies to meets it. If AI ranks food-parcel applications and also sets the order of home visits, both workflows need a way to appeal. Stage 4 is the exception: one workflow that meets all of Stage 4's conditions is enough.
 
 The organization's stage is its highest confirmed stage, or the stage just above it if that one is conditional. Only one stage can be conditional, and the stage above a conditional stage is not assessed. A conditional stage has no deadline; it is assessed again at the next assessment. Every unmet condition is a gap to close (§6).
 
@@ -238,7 +238,7 @@ Organizations are holding back from AI because they do not yet trust its fit wit
 | **Reached when** the organization does not use AI in its work. AI has at most been discussed. | S1.def.5 | — | Does anyone in the organization use AI in their work? |
 | **Required:** nothing. Every organization starts here. | | | |
 
-Stage 1 has no conditions: an organization is at Stage 1 whenever Stage 2 is not reached. The first row describes the stage; it is not on the stage line and belongs to no domain (§2).
+Stage 1 has no conditions: an organization is at Stage 1 whenever Stage 2 is not reached. The "Reached when" row describes the stage; it is not on the stage line and belongs to no domain (§2).
 
 ### What it looks like
 
@@ -347,7 +347,14 @@ One team or function where AI is part of how the work is normally done is enough
 | Where AI affects the people served: communication that makes the role of AI understandable. | Governance |
 | Where AI affects the people served: safeguards appropriate to the political and surveillance environment. | Governance |
 
-The last seven are the gates for the people the organization serves. AI affects the people the organization serves when those who would feel a mistake first are the people served, directly or indirectly, people deciding on their access to a service, or the wider public; or when a workflow that runs, or is going into, normal operations touches the people served or organizations that depend on it, or decides or helps decide something about a specific person. When nobody knows whether such a workflow touches the people served or decides something about a person, it counts as doing so, and the gates apply. Answers about sensitive data, or a worst consequence that harms a person, do not make the gates apply by themselves; where they contradict the answers above, the result shows the contradiction in the AI adoption aspiration (§10). Where AI does not affect them, the gates are left out. An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
+The last seven are the gates for the people the organization serves. AI affects the people the organization serves when:
+
+- those who would feel a mistake first are the people served, directly or indirectly, people deciding on their access to a service, or the wider public; or
+- a workflow that runs, or is going into, normal operations touches the people served or organizations that depend on it, or decides or helps decide something about a specific person. When nobody knows whether a workflow does either, it counts as doing so.
+
+Where AI does not affect them, the gates are left out. Sensitive data, or a worst consequence that harms a person, do not make the gates apply on their own. If the answers say only staff would feel a mistake first, but the AI drafts internal reports from case notes about the families served, the gates stay out and the AI adoption aspiration shows the contradiction (§10).
+
+An appeal route is relevant when AI makes or shapes a decision about a specific person: who receives help, who is refused, or in what order people are served.
 
 ### What it looks like
 
@@ -590,8 +597,10 @@ Each domain is intentionally supportable. An organization should be able to resp
 
 Each domain shows which of its conditions are in place and which are missing toward the organization's next step:
 
-- the deciding conditions and the readiness checklist of the stage the organization is working toward: for a conditional stage, that stage itself; for a confirmed stage, the stage above it, so Stage 3 for an organization at Stage 2; once Stage 5 is confirmed, Stage 5 itself. From Stage 3, this includes the gates for the people the organization serves (§5, Stage 3) whenever AI affects them;
+- the deciding conditions and the readiness checklist of the stage the organization is working toward. From Stage 3, this includes the gates for the people the organization serves (§5, Stage 3) whenever AI affects them;
 - Stage 4's conditions and readiness checklist, for each workflow the organization is putting into operation or already operates.
+
+The stage the organization is working toward is its conditional stage, if it has one. Otherwise it is the stage above its highest confirmed stage: an organization at Stage 2 sees Stage 3's conditions, and one with Stage 3 confirmed sees Stage 4's. With Stage 5 confirmed, it sees Stage 5's.
 
 v8 does not use v7's green / yellow / red judgment. A domain lists what is in place and what is missing, so no assessor has to draw the line between yellow and green.
 
@@ -747,7 +756,7 @@ The recommendations start with what the people who answered must agree on: every
 
 1. Gaps in the gates for the people the organization serves, whether or not support is available for them. Without support, the action says what the organization can do itself.
 2. Gaps that support available to the organization now can help close: support that addresses that condition, for which the organization is eligible, and which is open to it. First what a workflow in or going into normal operations still lacks; then the other missing conditions of the conditional stage; then the deciding conditions of the stage above. Ties go to a missing condition before one nobody could confirm, then by domain in the order of the §6 table.
-3. Gaps no available support helps with, in the same order. They stay on the list of gaps, marked as having no support yet. Support whose call nobody has checked counts as not available when the actions are ranked; it may still be named on the list of gaps, marked as unchecked.
+3. Gaps no available support helps with, in the same order. They stay on the list of gaps, marked as having no support yet. Support counts as available only once someone has checked that its call for applications is open. Until then, the gap is ranked as having no support, and the list of gaps may name the support, marked as unchecked.
 
 When the stage above fails only on its stage line, the gap is the next step on the stage line, such as running a pilot on one selected workflow.
 
@@ -793,7 +802,7 @@ A practical v8 assessment returns a result in three parts. Each answers one ques
 
 1. **AI adoption aspiration:** what kind of organization this is, and how far it is sensible to take AI. The healthy aspiration profile (§3), deployment scope, risk exposure, whether AI affects the people the organization serves (§5, Stage 3), and where respondents' answers differ on these. It never changes the stage; it sets the bar.
 2. **AI adoption stage:** where the organization is today. The stage and its status (§2), the stage line and the sentence when AI goes further than the stage (§9), the seven-domain capacity profile with the conditions in place and missing (§6), and where respondents' answers differ.
-3. **Recommendations for further AI adoption:** what to do first, and who can help. What to agree on, at most three recommended actions, each with its support pathway where support is available, the expected capacity outcome and evidence of progress (§8), and the next Adoption Loop step.
+3. **Recommendations for further AI adoption:** what to do first, and who can help. What to agree on; at most three recommended actions, each with its expected capacity outcome, its evidence of progress and, where support is available, its support pathway (§8); and the next Adoption Loop step.
 
 A result shows the date it was issued and the framework version it was issued on. It does not expire. When a later framework version is released, the result says it was issued on an earlier one. A later assessment of the same organization shows what changed since the previous one.
 
@@ -805,7 +814,7 @@ Example:
 >
 > **AI adoption stage:** Stage 3, conditional. The technology and evidence domains have gaps: a technical support model, quality assurance with a handover for the one pro-bono partner the organization depends on, and a baseline for the pilot workflow.
 >
-> **Recommendations for further AI adoption:** the three people who answered agree, so there is nothing to settle first. Recommended actions: senior technical support that becomes the organization's technical support model; an independent quality check of the pro-bono work, with a portability and handoff plan; a 90-day measurement-and-learning cycle that sets the baseline before operational deployment. Next Adoption Loop step: redesign and validate the pilot workflow (Step 5), then reassess deployment readiness.
+> **Recommendations for further AI adoption:** the three people who answered agree, so there is nothing to settle first. Recommended actions: set up a technical support model with a senior technical partner; have the pro-bono work checked by someone independent, with a portability and handoff plan; run a 90-day measurement-and-learning cycle that sets the pilot's baseline before operational deployment. Next Adoption Loop step: redesign and validate the pilot workflow (Step 5), then reassess deployment readiness.
 
 ## 11. Core v8 Message
 

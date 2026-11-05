@@ -588,6 +588,8 @@ Each domain shows which of its conditions are in place and which are missing tow
 - the deciding conditions and the readiness checklist of the stage the organization is working toward; for a conditional stage, that stage itself. From Stage 3, this includes the gates for the people the organization serves (§5, Stage 3) whenever AI affects them;
 - Stage 4's conditions and readiness checklist, for each workflow the organization is putting into operation or already operates.
 
+A domain's count covers the readiness conditions of the stage that apply, in place or missing; across the seven domains they add up to the stage's own count. Its deciding conditions are shown beside that count, and the conditions of the stage above are shown as counting once the stage is confirmed.
+
 v8 does not use v7's green / yellow / red judgment. A domain lists what is in place and what is missing, so no assessor has to draw the line between yellow and green.
 
 Each condition belongs to one domain; the stage line belongs to none (§2). Every missing condition is a gap. A missing deciding condition means the stage is not reached; a missing readiness condition keeps it from being confirmed (§2). The assessment lists every gap and turns at most three into recommended actions (§8), gaps in the gates for the people the organization serves first.
@@ -738,12 +740,11 @@ A useful recommendation specifies:
 - the expected capacity outcome;
 - the evidence that the gap has closed.
 
-The recommended actions come in this order:
+The recommendations start with what the people who answered must agree on: every marked difference (§2, Several Respondents), or, when only one person answered, asking at least one more person to answer. This comes before the actions and is not one of them. The recommended actions then come in this order:
 
-1. What the people who answered must agree on: every marked difference (§2, Several Respondents). When only one person answered, the first action is to ask at least one more person to answer.
-2. Gaps in the gates for the people the organization serves, whether or not support is available for them. Without support, the action says what the organization can do itself.
-3. Gaps that support available to the organization now can help close: support that addresses that condition, for which the organization is eligible, and which is open to it. First what a workflow in or going into normal operations still lacks; then the other missing conditions of the conditional stage; then the deciding conditions of the stage above. Ties go to a missing condition before one nobody could confirm, then by domain in the order of the §6 table.
-4. Gaps no available support helps with, in the same order. They stay on the list of gaps, marked as having no support yet.
+1. Gaps in the gates for the people the organization serves, whether or not support is available for them. Without support, the action says what the organization can do itself.
+2. Gaps that support available to the organization now can help close: support that addresses that condition, for which the organization is eligible, and which is open to it. First what a workflow in or going into normal operations still lacks; then the other missing conditions of the conditional stage; then the deciding conditions of the stage above. Ties go to a missing condition before one nobody could confirm, then by domain in the order of the §6 table.
+3. Gaps no available support helps with, in the same order. Support whose call nobody has checked counts as not available. They stay on the list of gaps, marked as having no support yet.
 
 When the stage above fails only on its stage line, the gap is the next step on the stage line, such as running a pilot on one selected workflow.
 

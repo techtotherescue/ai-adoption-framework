@@ -34,6 +34,7 @@ Taken by Radosław Taraszka between 23 October and 5 November 2026.
 | P15 | A domain shows the conditions of the stage the organization is working toward: its conditional stage, or else the stage above its highest confirmed stage (Stage 3 for an organization at Stage 2), or Stage 5 once it is confirmed. At Stage 1 the domains show nothing yet. The framework does not say how an assessment tool counts or displays these conditions (RT, 5 November). | §6 |
 | P16 | One person's answer is enough for Stage 2, which says only that people use AI. The team's agreement, which needs at least two people, applies from Stage 3 (RT, 5 November). | §2 |
 | P17 | A step of the Adoption Loop is done when none of the organization's gaps belongs to it. With no workflow in operation, the next step is the earliest step of a gap; when no gap has a step, it is Step 7. The agreement of the people who answered has no step, since it is not one of the actions (RT, 5 November). | §8, §10; `v8-loop-steps.md` |
+| P18 | Each condition's Adoption Loop step is shown in a "Loop step" column beside its domain in the tables of §5, so the text says it and `v8.json` can be checked against the text (RT, 5 November, for now). | §5; `v8-loop-steps.md` |
 
 ## Open questions for the authors
 

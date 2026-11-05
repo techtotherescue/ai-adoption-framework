@@ -126,4 +126,4 @@ When no gap has a step, the next step is Step 7, feed evidence into the next loo
 
 ## At release
 
-`v8.json` gives each condition its step. So that the text says it too, the proposal is a "Step" column in the tables of §5, beside the domain.
+The draft shows each step in a "Loop step" column of the tables in §5, beside the domain (RT, 5 November, for now). At release, `v8.json` gives each condition its step, and the check compares it with the text.

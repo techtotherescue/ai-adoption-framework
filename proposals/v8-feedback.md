@@ -39,7 +39,7 @@ Taken by Radosław Taraszka between 23 October and 5 November 2026.
 | ID | Question | Proposed |
 | --- | --- | --- |
 | Q1 | The domain of the 19 conditions v7 does not place. | `v8-domains.md` |
-| Q2 | Which Adoption Loop step each condition belongs to. P12 needs it for the next step after the first recommended gap. | The step drafted from §4 for each condition, for RT to check (RT, 5 November). Not drafted yet. |
+| Q2 | Which Adoption Loop step each condition belongs to. P12 needs it for the next step after the first recommended gap. | The step drafted from §4 for each condition, for RT to check (RT, 5 November). Drafted in `v8-loop-steps.md`, which also proposes when a step counts as done. |
 | Q3 | "Gap" and "recommended action" in place of "binding constraint". | As P10. |
 | Q4 | Stage 1 and Stage 2 wording without "someone owns its adoption". | As P13. |
 | Q5 | Stage 4 is assessed only once Stage 3 is confirmed, and one person's answers make a stage at most conditional. So an organization assessed by one person reaches at most Stage 3, conditional, whatever its AI does. Is that intended? | Closed (RT, 27 October 2026: "Rozwiąż"). The agreement condition applies only at the highest stage whose deciding conditions are met; certainty is checked once, where the organization stands. One person gets that stage as conditional, and the stages below are confirmed by their own conditions. P7 amended. |

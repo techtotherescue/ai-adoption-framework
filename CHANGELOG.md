@@ -7,6 +7,55 @@ Rescue), write it. A change starts as a proposal to them, not an edit to the
 text: see RELEASING.md. Each release records the authors' approval here. A
 patch needs one author's approval; a minor or major release needs both.
 
+## 8.0.0 — 2026-11-06
+
+Changes: v8, a major release; an organization's result can differ from v7.
+
+- **Stage status.** Every condition either decides a stage or is a
+  readiness condition. Stages 3 to 5 are confirmed (every condition met),
+  conditional (every deciding condition and more than half of the
+  readiness conditions that apply) or not reached (§2), so the readiness
+  checklist now counts. Only one stage can be conditional.
+  Stage 2 is reached by using AI, and one person's answer is enough for
+  it; it has no readiness checklist. A condition that applies only in
+  some cases says so ("Where …"); where it does not apply it is left out.
+- **Several respondents.** From Stage 3, the agreement of at least two
+  people on the deciding answers is a readiness condition (S3.signal.18,
+  S4.gate.18, S5.guardrail.13). It applies only at the highest stage whose
+  deciding conditions are met.
+- **Gates for the people served.** S4.exposure.1–7 move to the Stage 3
+  readiness checklist, in Governance, and apply where AI affects the
+  people the organization serves.
+- **Domains and steps.** Every condition, except those on the stage line,
+  belongs to one capacity domain, and every condition except the
+  agreement names its Adoption Loop step (§4), shown in the tables of §5.
+  A domain lists the conditions in place and missing toward the stage the
+  organization is working toward; v7's green / yellow / red is dropped.
+- **Fragility flags.** The 23 flags become conditions: 17 merge into the
+  condition they repeat, six become new readiness conditions
+  (S3.signal.14–17, S4.gate.16, S4.gate.17). §7 says where each went.
+- **Result.** An assessment returns three parts: AI adoption aspiration,
+  AI adoption stage, and recommendations (§10). Every missing condition
+  is a gap; at most three become recommended actions, ordered by the
+  support available now (§8), with the next Adoption Loop step. A result
+  names the date it was issued and the framework version it was issued
+  on.
+- **Identifiers.** Each condition in `v8.json` has a `role`
+  (`placement`, `stage_line`, `deciding`, `readiness`, `trait`, described
+  under `roles`), a `domain` and a `loop_step` where its role takes them,
+  `applies` for a "Where …" condition, and `condition` for the members of a
+  row that joins several. Eleven identifiers are new: the above, plus
+  S1.def.6 and S2.def.7, the reworded Stage 1 and Stage 2 placements
+  (they no longer mention who owns AI adoption). 25 v7 identifiers are
+  retired: S1.def.5, S2.def.6 and the 23 flags. The crosswalk in
+  `v8.json` maps every v7 identifier.
+
+v7 stays published unchanged as `v7.md` and `v7.json`.
+
+SHA-256: 891459f67be25daed6a01216681272e19ca4032e5b9e03c352341fc8f4053279
+
+Approved: Jacek Siadkowski (outside GitHub, 31.10.2026); Radosław Taraszka (PR #8)
+
 ## 7.0.0 — 2026-10-16
 
 Changes: v7, a major release; an organization's stage or colours can

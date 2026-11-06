@@ -54,7 +54,7 @@ v7 stays published unchanged as `v7.md` and `v7.json`.
 
 SHA-256: 891459f67be25daed6a01216681272e19ca4032e5b9e03c352341fc8f4053279
 
-Approved: TODO
+Approved: Jacek Siadkowski (outside GitHub, 31.10.2026); Radosław Taraszka (PR #8)
 
 ## 7.0.0 — 2026-10-16
 

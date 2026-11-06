@@ -34,6 +34,25 @@
  *     every `to` id exists. A major whose predecessor's v<N-1>.json is in
  *     the repo must have a crosswalk.
  *
+ * From v8 on, each `roles` entry is an object saying whether its conditions
+ * sit in table rows (`table`) and carry a capacity domain (`domain`) and an
+ * Adoption Loop step (`loop_step`); the domain belongs to the role, not the
+ * list, and there are no flag lists. For such a file:
+ *   - a condition carries a domain and a loop_step exactly when its role
+ *     says so; a loop_step is a step §4 names. Only the team's agreement
+ *     has no step: the conditions without one share one `applies` clause;
+ *   - every table holding conditions has "Domain" and "Loop step" columns,
+ *     and each condition's row shows its domain (the first word of the
+ *     domain's name; "Stage line" for the stage line; "—" otherwise) and its
+ *     step ("—" for none);
+ *   - a placement table's "Identifier" column names the condition(s) in
+ *     each row; a readiness table's rows are exactly its conditions, in list
+ *     and id order, each reading "<applies>: <text>" where it has `applies`
+ *     ("Where …");
+ *   - conditions that one row merges into one name carry, as `condition`,
+ *     the id of one of them; they share one row, role, domain, and step;
+ *   - ids may also skip a number an earlier major's crosswalk retired.
+ *
  * Then the CHANGELOG.md release record:
  *   - release headings read "## X.Y.Z — YYYY-MM-DD" (em dash) and every
  *     released entry appears in descending version order;
@@ -148,6 +167,7 @@ const DOMAIN_NAMES_BY_MAJOR = {
   },
 };
 DOMAIN_NAMES_BY_MAJOR[7] = DOMAIN_NAMES_BY_MAJOR[6];
+DOMAIN_NAMES_BY_MAJOR[8] = DOMAIN_NAMES_BY_MAJOR[6];
 
 function discoverMajors(root) {
   const entries = readdirSync(root);
@@ -186,11 +206,27 @@ function checkMajor(root, major) {
   );
   const { lists, conditions } = data;
   const located = conditions.some((c) => "where" in c);
-  const retired = new Set(
-    (data.crosswalk?.entries ?? [])
-      .filter((e) => !e.to?.includes(e.id))
-      .map((e) => e.id),
+  // From v8 on, each role says where its conditions sit and what they carry.
+  const typed = Object.values(data.roles ?? {}).some(
+    (r) => typeof r === "object",
   );
+  // Ids this crosswalk retires, and those an earlier major's crosswalk
+  // retired (v8 still has no S3.signal.1, which v7 retired).
+  const retired = new Set();
+  for (let k = 1; k <= major; k++) {
+    let cw = data.crosswalk;
+    if (k < major) {
+      try {
+        cw = JSON.parse(
+          readFileSync(path.join(root, `v${k}.json`), "utf8"),
+        ).crosswalk;
+      } catch {
+        continue;
+      }
+    }
+    for (const e of cw?.entries ?? [])
+      if (!e.to?.includes(e.id)) retired.add(e.id);
+  }
 
   // 1. every condition's text appears verbatim (same normalization as above)
   //    somewhere in v<major>.md.
@@ -281,7 +317,8 @@ function checkMajor(root, major) {
   //    its own declared section. A file whose conditions carry `where`
   //    (v7 on) is checked per condition instead, by checkLocated.
   const h2Headings = [...md.matchAll(/^## (.+)$/gm)];
-  if (located) checkLocated(md, data, major);
+  if (located) checkLocated(md, data, major, typed);
+  if (typed) checkTyped(md, data, major);
   for (const list of located ? [] : lists) {
     const parts = list.heading.split(" › ");
     if (parts.length !== 2) {
@@ -354,11 +391,12 @@ function checkMajor(root, major) {
   //    the domain table (§6).
   const domainNames = DOMAIN_NAMES_BY_MAJOR[major];
   check(
-    `v${major}: has a domain-name table for its flag lists`,
+    `v${major}: has a domain-name table for its ${typed ? "conditions" : "flag lists"}`,
     !!domainNames,
     `no domain list for v${major} — add DOMAIN_NAMES_BY_MAJOR[${major}] to scripts/check.mjs`,
   );
-  if (domainNames) {
+  // A v8 file has no flag lists; checkTyped reads its domains instead.
+  if (domainNames && !typed) {
     const domainSection = between(
       md,
       /^## 6\. Adoption Capacity Domains/m,
@@ -433,9 +471,11 @@ function resolveWhere(md, where) {
   return lines.slice(start, end < 0 ? undefined : end);
 }
 
-function checkLocated(md, data, major) {
+function checkLocated(md, data, major, typed) {
   const { conditions, lists, roles = {} } = data;
-  const TABLE_ROLES = new Set(["placement", "required"]);
+  const TABLE_ROLES = typed
+    ? new Set(Object.keys(roles).filter((r) => roles[r].table))
+    : new Set(["placement", "required"]);
   const domainNames = DOMAIN_NAMES_BY_MAJOR[major] ?? {};
   const listOrder = (c) => lists.findIndex((l) => l.list === c.list);
   const num = (c) => Number(c.id.slice(c.id.lastIndexOf(".") + 1));
@@ -481,7 +521,8 @@ function checkLocated(md, data, major) {
     );
   }
 
-  for (const list of lists) {
+  // v7: a list declares domains. v8: a role does (checkTyped).
+  for (const list of typed ? [] : lists) {
     const own = conditions.filter((c) => c.list === list.list);
     if (list.domains) {
       const bad = own.filter(
@@ -507,6 +548,210 @@ function checkLocated(md, data, major) {
         `${list.list}: every flag's domain is "${slug}"`,
         off.length === 0,
         `differs: ${off.map((c) => `${c.id}=${c.domain}`).join(", ")}`,
+      );
+    }
+  }
+}
+
+/**
+ * From v8 on, `roles` maps each role to { description, table, domain,
+ * loop_step }: whether its conditions sit in table rows, and whether each
+ * carries a capacity domain and an Adoption Loop step. In v<major>.md every
+ * table holding conditions has "Domain" and "Loop step" columns; a
+ * placement table also has an "Identifier" column naming the condition(s)
+ * in each row. A row can hold several conditions that count as one: they
+ * name, as `condition`, the id of one of them. A condition that applies
+ * only in some cases carries the clause as `applies` ("Where …"), and its
+ * row reads "<applies>: <text>".
+ */
+function checkTyped(md, data, major) {
+  const { conditions, lists, roles } = data;
+  const domainNames = DOMAIN_NAMES_BY_MAJOR[major] ?? {};
+  const short = (slug) => domainNames[slug]?.split(/[ ,]/)[0];
+  const steps = [
+    ...between(md, /^## 4\. /m, /^## 5\./m).matchAll(/^### Step (\d+):/gm),
+  ].map((m) => Number(m[1]));
+  const full = (c) => (c.applies ? `${c.applies}: ${c.text}` : c.text);
+  const listOrder = (c) => lists.findIndex((l) => l.list === c.list);
+  const num = (c) => Number(c.id.slice(c.id.lastIndexOf(".") + 1));
+  const ids = (c) => c.map((x) => x.id).join(", ");
+
+  const domainSection = between(
+    md,
+    /^## 6\. Adoption Capacity Domains/m,
+    /^## 7\./m,
+  );
+  const absent = Object.values(domainNames).filter(
+    (n) => !domainSection.includes(n),
+  );
+  check(
+    `v${major}: the ${Object.keys(domainNames).length} domains are in the §6 domain table`,
+    absent.length === 0,
+    `not found: ${absent.join(", ")}`,
+  );
+
+  for (const [role, rule] of Object.entries(roles)) {
+    const own = conditions.filter((c) => c.role === role);
+    const bad = rule.domain
+      ? own.filter((c) => !Object.hasOwn(domainNames, c.domain ?? ""))
+      : own.filter((c) => "domain" in c);
+    check(
+      rule.domain
+        ? `${role}: every condition has one of the ${Object.keys(domainNames).length} domains`
+        : `${role}: no condition has a domain`,
+      bad.length === 0,
+      bad.map((c) => `${c.id}=${c.domain}`).join(", "),
+    );
+    const badStep = rule.loop_step
+      ? own.filter((c) => "loop_step" in c && !steps.includes(c.loop_step))
+      : own.filter((c) => "loop_step" in c);
+    check(
+      rule.loop_step
+        ? `${role}: every loop_step is a step §4 names (${steps.join(", ")})`
+        : `${role}: no condition has a loop_step`,
+      badStep.length === 0,
+      badStep.map((c) => `${c.id}=${c.loop_step}`).join(", "),
+    );
+  }
+  // Only the team's agreement has no step (§5); its rows share one clause.
+  const stepless = conditions.filter(
+    (c) => roles[c.role]?.loop_step && !("loop_step" in c),
+  );
+  const clauses = new Set(stepless.map((c) => c.applies));
+  check(
+    `the ${stepless.length} condition(s) without a loop_step share one \`applies\` clause`,
+    stepless.length === 0 || (clauses.size === 1 && !clauses.has(undefined)),
+    stepless.map((c) => `${c.id}: ${c.applies ?? "(none)"}`).join("; "),
+  );
+  const badApplies = conditions.filter(
+    (c) => "applies" in c && !/^Where \S/.test(c.applies),
+  );
+  check(
+    'every `applies` reads "Where …"',
+    badApplies.length === 0,
+    ids(badApplies),
+  );
+
+  const groups = new Map();
+  for (const c of conditions.filter((c) => "condition" in c)) {
+    if (!groups.has(c.condition)) groups.set(c.condition, []);
+    groups.get(c.condition).push(c);
+  }
+  for (const [g, members] of groups) {
+    const same = (k) => members.every((c) => c[k] === members[0][k]);
+    check(
+      `condition ${g} (${ids(members)}): one where, role, domain, and loop_step`,
+      members.length > 1 &&
+        members.some((c) => c.id === g) &&
+        ["where", "role", "domain", "loop_step"].every(same),
+      members.length > 1
+        ? "they differ, or it is not the id of one of them"
+        : "a merged condition needs at least two ids",
+    );
+  }
+
+  const byWhere = new Map();
+  for (const c of conditions.filter((c) => roles[c.role]?.table)) {
+    if (!byWhere.has(c.where)) byWhere.set(c.where, []);
+    byWhere.get(c.where).push(c);
+  }
+  for (const [where, group] of byWhere) {
+    const body = resolveWhere(md, where ?? "");
+    if (!body) continue; // checkLocated reports the missing path
+    const cells = (l) =>
+      l
+        .split("|")
+        .slice(1, -1)
+        .map((s) => s.trim());
+    const rows = [];
+    let header = null;
+    for (const l of body) {
+      if (!l.startsWith("|")) header = null;
+      else if (!header) header = cells(l);
+      else if (!/^\|[\s:|-]+\|$/.test(l))
+        rows.push({ header, cells: cells(l) });
+    }
+    const shapes = new Set(
+      rows.map(
+        (r) =>
+          r.cells.length === r.header.length &&
+          r.header.includes("Domain") &&
+          r.header.includes("Loop step"),
+      ),
+    );
+    check(
+      `"${where}": every table row has its header's cells, among them Domain and Loop step`,
+      rows.length > 0 && !shapes.has(false),
+      `headers: ${[...new Set(rows.map((r) => r.header.join(" | ")))].join(" / ")}`,
+    );
+
+    // Where the table names its ids, find each condition by id; otherwise
+    // the rows are exactly the conditions, in list and id order.
+    const rowOf = new Map();
+    const named = rows.filter((r) => r.header.includes("Identifier"));
+    if (named.length) {
+      const idsIn = (r) =>
+        r.cells[r.header.indexOf("Identifier")]
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean);
+      const known = new Set(group.map((c) => c.id));
+      const stray = named.flatMap(idsIn).filter((id) => !known.has(id));
+      check(
+        `"${where}": every id in the Identifier column is a condition placed here`,
+        stray.length === 0,
+        `not in v${major}.json under this where: ${stray.join(", ")}`,
+      );
+      for (const c of group) {
+        const r = named.find((r) => idsIn(r).includes(c.id));
+        check(
+          `${c.id}: its row under "${where}" names it and holds its text`,
+          !!r && norm(r.cells[0]).includes(norm(full(c))),
+          r ? `row: "${r.cells[0]}"` : "no row names this id",
+        );
+        if (r) rowOf.set(c, r);
+      }
+    } else {
+      const ordered = [...group].sort(
+        (a, b) => listOrder(a) - listOrder(b) || num(a) - num(b),
+      );
+      const ok =
+        rows.length === ordered.length &&
+        ordered.every((c, i) => norm(rows[i].cells[0]) === norm(full(c)));
+      check(
+        `"${where}": ${ordered.length} row(s), matching v${major}.json in order`,
+        ok,
+        `v${major}.md: [${rows.map((r) => r.cells[0]).join(" | ")}]\n            v${major}.json: [${ordered.map(full).join(" | ")}]`,
+      );
+      if (ok) ordered.forEach((c, i) => rowOf.set(c, rows[i]));
+    }
+
+    for (const [c, r] of rowOf) {
+      const want = [
+        c.domain
+          ? short(c.domain)
+          : c.role === "stage_line"
+            ? "Stage line"
+            : "—",
+        String(c.loop_step ?? "—"),
+      ];
+      const got = ["Domain", "Loop step"].map(
+        (h) => r.cells[r.header.indexOf(h)],
+      );
+      check(
+        `${c.id}: Domain "${want[0]}", Loop step "${want[1]}" in its row`,
+        got[0] === want[0] && got[1] === want[1],
+        `the row says Domain "${got[0]}", Loop step "${got[1]}"`,
+      );
+    }
+    for (const [g, members] of groups) {
+      const here = members.filter((c) => rowOf.has(c));
+      if (here.length === 0) continue;
+      check(
+        `condition ${g} (${ids(members)}): one row under "${where}"`,
+        here.length === members.length &&
+          here.every((c) => rowOf.get(c) === rowOf.get(here[0])),
+        `rows differ for ${ids(members)}`,
       );
     }
   }

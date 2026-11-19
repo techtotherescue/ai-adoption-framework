@@ -11,17 +11,18 @@ leadership and ownership to resources and sustainability.
 
 ## Current release
 
-**8.0.0**, released 2026-11-06.
+**9.0.0**, released 2026-11-19.
 
-- [`v8.md`](v8.md): the framework text.
-- [`v8.json`](v8.json): its 87 identifiers, each with where it sits in the
+- [`v9.md`](v9.md): the framework text.
+- [`v9.json`](v9.json): its 87 identifiers, each with where it sits in the
   text and its role (what places an organization at Stage 1, a condition
   on the stage line, a deciding condition, a readiness condition, or a
   typical trait), and, where the role takes them, its capacity domain and
-  Adoption Loop step. It also holds the crosswalk from every v7
+  Adoption Loop step. It also holds the crosswalk from every v8
   identifier.
 
-Earlier major releases stay published: v7 (7.0.0), [`v7.md`](v7.md) and
+Earlier major releases stay published: v8 (8.0.0), [`v8.md`](v8.md) and
+[`v8.json`](v8.json); v7 (7.0.0), [`v7.md`](v7.md) and
 [`v7.json`](v7.json); v6 (6.0.1), [`v6.md`](v6.md) and
 [`v6.json`](v6.json).
 
@@ -29,12 +30,12 @@ See [CHANGELOG.md](CHANGELOG.md) for the release history.
 
 ## Citing a condition
 
-Cite a condition by its identifier and version, for example `v8:S4.gate.7`.
+Cite a condition by its identifier and version, for example `v9:S4.gate.7`.
 An identifier is never reused: a retired identifier's crosswalk entry points
 to whatever replaced it. A section that is not one of the enumerated lists is
 cited by its heading instead.
 
-| Family           | What it lists in v8                                              |
+| Family           | What it lists in v9                                              |
 | ---------------- | ---------------------------------------------------------------- |
 | `S<n>.def.k`     | Stage `n` (1 through 5): reached when, requirements, traits      |
 | `S3.signal.k`    | Stage 3 readiness checklist                                      |
@@ -60,5 +61,5 @@ Everything else, including the framework text and data, is licensed under
 
 Suggested attribution:
 
-> AI Adoption Framework v8, by Jacek Siadkowski and Radosław Taraszka (Tech
+> AI Adoption Framework v9, by Jacek Siadkowski and Radosław Taraszka (Tech
 > To The Rescue), CC BY 4.0.

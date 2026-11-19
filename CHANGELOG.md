@@ -35,9 +35,9 @@ Changes: v9, a major release; an organization's result can differ from v8.
   them state it; a person whose list does not state it does not disagree.
 - **Aspiration.** Everyone answers the type of organization and how far
   it wants to take AI. An answer given by more than half of the people
-  who answered is the organization's; otherwise none is stated, and the
-  people who answered are asked to agree on it (§2, §8). With no
-  majority on the type, the result names no healthy aspiration profile.
+  who answered is the organization's; otherwise none is stated, the
+  result shows the split, and the people who answered are asked to agree
+  on it (§2, §8, §10).
 - **Map of changing tasks.** S3.signal.8 is a condition about a
   workflow. It applies to every workflow whose deployment scope is shared
   internal or wider and that runs, or is going into, normal operations

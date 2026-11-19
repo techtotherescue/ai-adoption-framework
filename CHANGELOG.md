@@ -7,6 +7,65 @@ Rescue), write it. A change starts as a proposal to them, not an edit to the
 text: see RELEASING.md. Each release records the authors' approval here. A
 patch needs one author's approval; a minor or major release needs both.
 
+## 9.0.0 — 2026-11-19
+
+Changes: v9, a major release; an organization's result can differ from v8.
+
+- **Each person's own list.** When several people answer, each lists the
+  AI uses they know from their own work and answers the questions about a
+  workflow only for the entries on their own list; the lists are not
+  merged (§2). A tool may ask each person for at most three AI uses, the
+  ones that have gone furthest or that their work relies on most; one
+  that touches the people served, or decides or helps decide something
+  about a specific person, is listed first. An entry counts as at least
+  as far as it has gone, and a fact is read inside one entry. A fact on
+  the stage line counts when one person states it and is confirmed when
+  two people state it, each on their own list. A condition about a workflow is answered by the entry's
+  author only: a gate for the people served is met only when every entry
+  it applies to meets it, and one entry that meets all of Stage 4's
+  conditions is enough for Stage 4. The gates apply when any one entry,
+  on anyone's list, meets the test in §5, Stage 3. So one person's pilot
+  can place an organization at Stage 3, conditional, when Stage 3's other
+  deciding conditions hold, and Stage 4 is confirmed only when two people
+  each have an entry that meets its deciding conditions.
+- **Agreement.** The agreement conditions (S3.signal.18, S4.gate.18,
+  S5.guardrail.13) keep their text. They apply at the organization's
+  stage worked out with the agreement left out, no longer at the highest
+  stage whose deciding conditions are met, so one person's fact cannot
+  confirm the stage below. Unmet, the agreement keeps that stage from
+  being confirmed and does not count toward whether it is conditional.
+  On a fact read from the entries, people agree when at least two of
+  them state it; a person whose list does not state it does not disagree.
+- **Aspiration.** Everyone answers the type of organization and how far
+  it wants to take AI. An answer given by more than half of the people
+  who answered is the organization's; otherwise none is stated, the
+  result shows the split, and the people who answered are asked to agree
+  on it (§2, §8, §10).
+- **Map of changing tasks.** S3.signal.8 is a condition about a
+  workflow. It applies to every workflow whose deployment scope is shared
+  internal or wider and that runs, or is going into, normal operations
+  (§5, Stage 3).
+- **Stage 4's gaps.** Stage 4's conditions are shown, and what a
+  workflow still lacks is ranked first among the recommended actions,
+  only for a workflow that passes Stage 4's test (§6, §8).
+- **Result.** What to agree on first: the marked differences; then
+  asking one more person, or another person who knows that work when only
+  one person states a fact the stage rests on; then a split aspiration
+  (§8). A workflow is named in the words of the person who listed it, and
+  entries are not compared (§2, §9). A later assessment compared with one
+  issued on another major version says so; the framework does not rework
+  an earlier result under the new rules (§10).
+- **Identifiers.** No identifier is new or retired, and the text of every
+  condition is unchanged. In `v9.json`, only the `applies` field of the
+  three agreement conditions changes. The crosswalk maps every v8
+  identifier to itself.
+
+v8 stays published unchanged as `v8.md` and `v8.json`.
+
+SHA-256: 5952e98eedd6ce817129146ecc9b7984e6882ae63b12cdd49322dfdf76898f08
+
+Approved: Jacek Siadkowski (accepted the direction, own lists of AI uses and major release 9.0, in a Slack message to Radosław Taraszka, 19.11.2026); Radosław Taraszka (working session, 19.11.2026: ship v9 to production) 
+
 ## 8.0.0 — 2026-11-06
 
 Changes: v8, a major release; an organization's result can differ from v7.

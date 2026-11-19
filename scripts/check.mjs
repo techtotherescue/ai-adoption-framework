@@ -168,6 +168,7 @@ const DOMAIN_NAMES_BY_MAJOR = {
 };
 DOMAIN_NAMES_BY_MAJOR[7] = DOMAIN_NAMES_BY_MAJOR[6];
 DOMAIN_NAMES_BY_MAJOR[8] = DOMAIN_NAMES_BY_MAJOR[6];
+DOMAIN_NAMES_BY_MAJOR[9] = DOMAIN_NAMES_BY_MAJOR[6];
 
 function discoverMajors(root) {
   const entries = readdirSync(root);

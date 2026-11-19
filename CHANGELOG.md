@@ -64,7 +64,7 @@ v8 stays published unchanged as `v8.md` and `v8.json`.
 
 SHA-256: 5952e98eedd6ce817129146ecc9b7984e6882ae63b12cdd49322dfdf76898f08
 
-Approved: TODO
+Approved: Jacek Siadkowski (accepted the direction, own lists of AI uses and major release 9.0, in a Slack message to Radosław Taraszka, 19.11.2026); Radosław Taraszka (working session, 19.11.2026: ship v9 to production)
 
 ## 8.0.0 — 2026-11-06
 

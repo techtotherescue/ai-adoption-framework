@@ -14,10 +14,13 @@ Changes: v9, a major release; an organization's result can differ from v8.
 - **Each person's own list.** When several people answer, each lists the
   AI uses they know from their own work and answers the questions about a
   workflow only for the entries on their own list; the lists are not
-  merged (§2). An entry counts as at least as far as it has gone, and a
-  fact is read inside one entry. A fact on the stage line counts when one
-  person states it and is confirmed when two people state it, each on
-  their own list. A condition about a workflow is answered by the entry's
+  merged (§2). A tool may ask each person for at most three AI uses, the
+  ones that have gone furthest or that their work relies on most; one
+  that touches the people served, or decides or helps decide something
+  about a specific person, is listed first. An entry counts as at least
+  as far as it has gone, and a fact is read inside one entry. A fact on
+  the stage line counts when one person states it and is confirmed when
+  two people state it, each on their own list. A condition about a workflow is answered by the entry's
   author only: a gate for the people served is met only when every entry
   it applies to meets it, and one entry that meets all of Stage 4's
   conditions is enough for Stage 4. The gates apply when any one entry,
@@ -59,7 +62,7 @@ Changes: v9, a major release; an organization's result can differ from v8.
 
 v8 stays published unchanged as `v8.md` and `v8.json`.
 
-SHA-256: 54e12e42531f0d1f8dce6ff7a0ebd648090b1f0e986920797807e37d772fa0b3
+SHA-256: 5952e98eedd6ce817129146ecc9b7984e6882ae63b12cdd49322dfdf76898f08
 
 Approved: TODO
 

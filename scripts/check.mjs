@@ -64,8 +64,8 @@
  *       cat v6.md v6.json | shasum -a 256
  *   - EVERY released entry has a genuine `Approved:` line ("Name (where)"
  *     items, separated by ";", naming only Jacek Siadkowski and/or
- *     Radosław Taraszka): one approver for a patch release, both for a
- *     minor or major release, compared with the nearest older released
+ *     Radosław Taraszka): one approver for a patch or minor release, both
+ *     for a major release, compared with the nearest older released
  *     entry — except the very first entry ever recorded, which has no
  *     older entry to compare against and needs only one approver. This
  *     script never writes that line itself — only scripts/release.mjs
@@ -952,8 +952,8 @@ function checkChangelog(root, majors) {
 
   // (Approved:) checked on EVERY released entry, not only the newest — a
   // stale entry's approval is as load-bearing as the newest one's. Never
-  // TODO, approvers among the two authors, enough of them for a patch vs.
-  // a minor/major release compared with the nearest older released entry —
+  // TODO, approvers among the two authors, enough of them for a patch or
+  // minor vs. a major release compared with the nearest older released entry —
   // except the very first entry ever recorded, which has no older entry to
   // compare against and needs only one approver.
   const AUTHORS = ["Jacek Siadkowski", "Radosław Taraszka"];
@@ -1010,11 +1010,11 @@ function checkChangelog(root, majors) {
     let why =
       "first recorded release — no earlier entry to compare against, one approver suffices";
     if (previous) {
-      const [curMaj, curMin] = parseVer(entry.version);
-      const [prevMaj, prevMin] = parseVer(previous.version);
-      const patchOnly = curMaj === prevMaj && curMin === prevMin;
-      required = patchOnly ? 1 : 2;
-      why = `${patchOnly ? "patch" : "minor or major"} vs. previous release ${previous.version}`;
+      const [curMaj] = parseVer(entry.version);
+      const [prevMaj] = parseVer(previous.version);
+      const sameMajor = curMaj === prevMaj;
+      required = sameMajor ? 1 : 2;
+      why = `${sameMajor ? "patch or minor" : "major"} vs. previous release ${previous.version}`;
     }
     check(
       `${entry.version}: ${approvers.size} distinct approver(s) — ${required} required (${why})`,

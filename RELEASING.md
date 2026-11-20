@@ -7,8 +7,8 @@ Taraszka (Tech To The Rescue), write it. This is how a release is made.
 
 1. **Proposal.** A change starts as a proposal to the authors. Open an issue
    describing it.
-2. **Approval.** The authors approve it: one author's approval for a patch,
-   both authors' approval for a minor or major release. Each approval says
+2. **Approval.** The authors approve it: one author's approval for a patch or
+   minor release, both authors' approval for a major release. Each approval says
    where it was given, for example a PR comment, an email, or a Slack link.
    Only an author writes an `Approved:` line. The first release, 6.0.0,
    recorded v6 as its authors had already released it, so one approval

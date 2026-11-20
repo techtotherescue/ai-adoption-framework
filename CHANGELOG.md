@@ -7,6 +7,28 @@ Rescue), write it. A change starts as a proposal to them, not an edit to the
 text: see RELEASING.md. Each release records the authors' approval here. A
 patch needs one author's approval; a minor or major release needs both.
 
+## 9.1.0 — 2026-11-20
+
+Changes: v9.1, a minor release; the same answers give the same result.
+
+- **Deployment scope with several respondents.** v9.0 does not say how
+  the deployment scope of several people's entries combines. It is the
+  widest scope of any entry in use, on anyone's list, and None when no
+  entry is in use (§2).
+- **Worked examples.** §2 traces one example through the rules for
+  entries: three people, one food-parcel sorting workflow listed twice at
+  different stages, and one person whose list does not state it. §2 adds
+  how agreement falls to Stage 3 when Stage 4 is not reached, and §5
+  (Stage 3) adds what the map of changing tasks covers.
+- **Wording.** Plainer wording of how levels count (§2) and of the order
+  of what to agree on first (§8). No rule changes.
+
+`v9.json` is unchanged; the identifiers are unchanged.
+
+SHA-256: d4176bc9cf125388e13d63b3f59f8877b70718b56ae2b5712914f3b61ea4e454
+
+Approved: TODO
+
 ## 9.0.0 — 2026-11-19
 
 Changes: v9, a major release; an organization's result can differ from v8.

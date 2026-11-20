@@ -11,7 +11,7 @@ leadership and ownership to resources and sustainability.
 
 ## Current release
 
-**9.0.0**, released 2026-11-19.
+**9.1.0**, released 2026-11-20.
 
 - [`v9.md`](v9.md): the framework text.
 - [`v9.json`](v9.json): its 87 identifiers, each with where it sits in the

@@ -5,7 +5,8 @@ Changelog](https://keepachangelog.com/en/1.1.0/) form. The framework is the
 method. Its authors, Jacek Siadkowski and Radosław Taraszka (Tech To The
 Rescue), write it. A change starts as a proposal to them, not an edit to the
 text: see RELEASING.md. Each release records the authors' approval here. A
-patch needs one author's approval; a minor or major release needs both.
+patch or minor release needs one author's approval; a major release needs
+both.
 
 ## 9.1.0 — 2026-11-20
 

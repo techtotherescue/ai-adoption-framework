@@ -8,6 +8,22 @@ text: see RELEASING.md. Each release records the authors' approval here. A
 patch or minor release needs one author's approval; a major release needs
 both.
 
+## 9.2.0 — 2026-11-27
+
+Changes: v9.2, a minor release; the same answers give the same result.
+
+- **How to check Stage 5's readiness.** Stage 5's readiness conditions
+  are one-line labels carried over from v6, and its readiness checklist
+  said nothing about how to check them. Each now has a "How to check"
+  question, as the placement tables do (§5, Stage 5). The conditions and
+  their wording are unchanged.
+
+`v9.json` is unchanged; the identifiers are unchanged.
+
+SHA-256: 59c3e3e3498427ae29c4bfca957117e3ea07a4dafccdfb80a8a11f0c63573b84
+
+Approved: Radosław Taraszka (PR #13)
+
 ## 9.1.0 — 2026-11-20
 
 Changes: v9.1, a minor release; the same answers give the same result.

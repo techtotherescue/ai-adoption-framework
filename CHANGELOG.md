@@ -22,7 +22,7 @@ Changes: v9.2, a minor release; the same answers give the same result.
 
 SHA-256: 59c3e3e3498427ae29c4bfca957117e3ea07a4dafccdfb80a8a11f0c63573b84
 
-Approved: TODO
+Approved: Radosław Taraszka (PR #13)
 
 ## 9.1.0 — 2026-11-20
 
